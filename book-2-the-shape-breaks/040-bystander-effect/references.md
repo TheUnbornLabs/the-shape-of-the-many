@@ -1,0 +1,17 @@
+# References — 40. The bystander effect
+
+## Confirmed sources
+
+- Darley, J. M., & Latané, B. "Bystander intervention in emergencies: Diffusion of responsibility." *Journal of Personality and Social Psychology*, vol. 8, no. 4, 1968, pp. 377–383. — The founding experiment; establishes the diffusion-of-responsibility finding (the intercom "seizure" study).
+- Latané, B., & Darley, J. M. *The Unresponsive Bystander: Why Doesn't He Help?* Appleton-Century-Crofts, 1970. — Book-length account of the bystander research programme, including the smoke-filled-room study and the three-process model (diffusion of responsibility, pluralistic ignorance, evaluation apprehension).
+- Manning, R., Levine, M., & Collins, A. "The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses." *American Psychologist*, vol. 62, no. 6, 2007, pp. 555–562. — The debunking of the "38 witnesses" story; source for the critique beat and replication-humility point.
+- Fischer, P., Krueger, J. I., Greitemeyer, T., Vogrincic, C., Kastenmüller, A., Frey, D., Heene, M., Wicher, M., & Kainbacher, M. "The bystander-effect: A meta-analytic review on bystander intervention in dangerous and non-dangerous emergencies." *Psychological Bulletin*, vol. 137, no. 4, 2011, pp. 517–537. — Meta-analysis confirming the effect but showing it weakens or reverses in clearly dangerous emergencies.
+- Philpot, R., Liebst, L. S., Levine, M., Bernasco, W., & Lindegaard, M. R. "Would I be helped? Cross-national CCTV footage shows that intervention is the norm in public conflicts." *American Psychologist*, vol. 75, no. 1, 2020, pp. 66–75. — Real-world CCTV evidence that bystander intervention in public conflicts is common (intervention in ~90% of cases).
+- Original press account: "37 Who Saw Murder Didn't Call the Police." *The New York Times*, 27 March 1964 (Martin Gansberg). — The contemporaneous story whose distortions the 2007 Manning et al. paper corrects; cited as the origin myth, not as a reliable factual source.
+
+## Further reading to verify before final publication
+
+- Darley & Latané 1968 pagination: confirmed — *Journal of Personality and Social Psychology*, vol. 8, no. 4 (Pt. 1), pp. 377–383.
+- Philpot et al. 2020: confirmed — intervention in 9 of 10 public conflicts (N = 219 video clips); three countries confirmed as the United Kingdom (Lancaster), the Netherlands (Amsterdam), and South Africa (Cape Town); intervention likelihood similar across all three.
+- The detail that a neighbour reached and held the dying Genovese, and that at least one call to police was made: confirmed in substance — neighbour Sophia Farrar reached Genovese after the second attack and held her until an ambulance arrived; the police-call record is murky (no 911 system existed in 1964), but at least one witness (Karl Ross) did call police, and another witness reported an earlier call after the first attack. The chapter's framing ("at least one person did call the police, while a neighbour went to the dying woman and held her") is supported; exact sequence/timing remains partly uncertain in the historical record.
+- The characterization of the "seizure" study helping rates by perceived group size (near-universal help when alone versus far slower/absent when four others believed present) — directionally correct per Darley & Latané 1968; confirm exact percentages before quoting any figure.

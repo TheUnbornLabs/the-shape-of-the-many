@@ -1,0 +1,16 @@
+# References — 67. Schelling's segregation model
+
+## Confirmed sources
+
+- Schelling, Thomas C. "Dynamic Models of Segregation." *Journal of Mathematical Sociology*, vol. 1, no. 2, 1971, pp. 143–186. — The founding paper; sets out the spatial (checkerboard) and bounded-neighbourhood models in which mild individual thresholds produce extreme aggregate segregation. Anchors the idea, mechanism, and overshoot claim.
+- Schelling, Thomas C. *Micromotives and Macrobehavior*. W. W. Norton, 1978. — Book-length development of the thesis that individual motives and aggregate behaviour diverge; the segregation model is a central chapter. Supports the "macro ≠ micro intentions" framing of beat 5 and the "cannot infer preferences from pattern" point.
+- The Royal Swedish Academy of Sciences / Nobel Memorial Prize in Economic Sciences, 2005, awarded jointly to Robert J. Aumann and Thomas C. Schelling "for having enhanced our understanding of conflict and cooperation through game-theory analysis." — Supports the Nobel attribution.
+- Clark, William A. V. "Residential Preferences and Neighborhood Racial Segregation: A Test of the Schelling Segregation Model." *Demography*, vol. 28, no. 1, 1991, pp. 1–19. — Empirical work testing residential preferences against the Schelling framework; supports the beat-7 point that real stated preferences are real but group-asymmetric and entangled with constraints the pure model omits.
+
+## Further reading to verify before final publication
+
+- Schelling's biographical details (b. 1921, d. 2016; Marshall Plan / RAND career; work on nuclear strategy and *The Strategy of Conflict*, 1960) — accurate to general knowledge but each specific should be pinned to a reliable biography or obituary before publication.
+- The specific claim that Schelling first worked the model by hand on a physical checkerboard with coins (pennies and dimes) — widely reported and consistent with his 1971/1978 accounts of manual iteration, but the exact coin denominations and the "on a train/at a table" retellings vary across secondary sources; verify against a primary or authoritative secondary source before stating as fact.
+- Quantitative illustration that a one-third similarity threshold yields ~70–80% same-type neighbourhoods at equilibrium — representative of standard replications of Schelling's model, but the exact figures depend on parameters (threshold, group ratio, vacancy density, neighbourhood definition, move order). Present as illustrative, not as a fixed constant; pin to a specific replication (e.g., a published re-implementation) if a precise number is retained.
+- Morton Grodzins and the "tipping point" of neighbourhood racial change (1950s–60s work) — the association of Grodzins with residential tipping is well established, but confirm the specific attribution and dating before final publication.
+- Historical mechanisms of U.S. residential segregation named in beat 6 (racial covenants, redlining / HOLC maps, blockbusting, steering, exclusionary zoning, violence) — all well documented in the historical literature (e.g., Rothstein, *The Color of Law*, 2017; Massey and Denton, *American Apartheid*, 1993); cite a specific authoritative source for these before publication rather than asserting them generally.

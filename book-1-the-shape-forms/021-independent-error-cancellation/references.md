@@ -1,0 +1,16 @@
+# References — 21. Independent-error cancellation
+
+## Confirmed sources
+
+- Bernoulli, Jacob. *Ars Conjectandi*. Basel, 1713 (published posthumously). — The law of large numbers ("golden theorem"): observed frequencies converge on true probabilities as trials accumulate; the first mathematical form of error-cancellation in the long-run average.
+- Laplace, Pierre-Simon. *Théorie analytique des probabilités*. Paris, 1812. — Early general statement and development of the central limit theorem and the probabilistic treatment of observational error; foundation for the normal distribution of sums of independent influences and the one-over-root-N narrowing of the mean.
+- Gauss, Carl Friedrich. *Theoria Motus Corporum Coelestium*. Hamburg, 1809. — The method of least squares and the theory of combining discordant astronomical observations; the working distinction between random (cancelling) and systematic (non-cancelling) error.
+- Galton, Francis. "Vox Populi." *Nature*, vol. 75, 7 March 1907, pp. 450–451. — The country-fair ox-weight experiment: the averaged estimate of an untrained crowd falls very close to the true value; the empirical demonstration of independent-error cancellation invoked as the anchor's sunny face (developed fully in item 17).
+- Surowiecki, James. *The Wisdom of Crowds*. Doubleday, 2004. — Popular synthesis naming independence, diversity, decentralisation, and aggregation as the conditions for accurate collective judgment; independence and the cancellation logic are central (item 20).
+- Lyapunov, Aleksandr M. (1901) and Lindeberg, Jarl W. (1922). — The first rigorous general proof of the central limit theorem (Lyapunov, 1901) and Lindeberg's more general condition and method of proof (1922); these close the classical development that Laplace began, supporting the origin beat's account of the theorem "assembled by Laplace and refined for another hundred years." (Historical dating confirmed.)
+- Standard results in mathematical statistics for the variance of a mean of correlated variables — that the spread of an average of N variables each with variance σ² and pairwise correlation ρ tends toward a floor proportional to ρ rather than to zero, collapsing the effective sample size as ρ → 1. Standard textbook material (e.g. any graduate mathematical-statistics text; treatments of the standard error of the mean and intraclass correlation). — Underpins the mechanism beat's ρ argument.
+
+## Further reading to verify before final publication
+
+- The "bandwagon effect" in the history of measured physical constants — successive measurements clustering around a wrong accepted value before correcting — often illustrated by Millikan's electron-charge value and by drift in tabulated fundamental constants. The specific episodes, magnitudes, and dates cited in the anchor example need checking against a primary source (e.g. Particle Data Group historical reviews of constant measurements; Richard Feynman's Caltech commencement remarks on this pattern) before final publication.
+- The formal literature quantifying how error correlation degrades crowd accuracy (e.g. work in forecasting and ensemble methods on the variance of correlated averages) — a specific modern citation could strengthen the ρ-and-effective-sample-size claim beyond the textbook level.

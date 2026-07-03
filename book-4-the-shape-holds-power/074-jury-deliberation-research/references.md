@@ -1,0 +1,16 @@
+# References — 74. Jury deliberation
+
+## Confirmed sources
+
+- Kalven, Harry Jr., and Hans Zeisel. *The American Jury*. Little, Brown / University of Chicago (Chicago Jury Project), 1966. — The foundational empirical study comparing jury verdicts with judges' judgments across thousands of trials; source of the first-ballot-majority finding (the final verdict matches the initial majority in the large majority of cases) and the "developing photograph" image of deliberation.
+- Hastie, Reid, Steven D. Penrod, and Nancy Pennington. *Inside the Jury*. Harvard University Press, 1983. — Mock-jury laboratory study of deliberation; source of the evidence-driven vs. verdict-driven deliberation styles and the effects of unanimity vs. majority decision rules on thoroughness and treatment of minorities.
+- Pennington, Nancy, and Reid Hastie. "Explaining the Evidence: Tests of the Story Model for Juror Decision Making." *Journal of Personality and Social Psychology*, vol. 62, no. 2, 1992, pp. 189–206. — The story model: jurors construct competing narratives from evidence and select the verdict that best fits the strongest story.
+- Sommers, Samuel R. "On Racial Diversity and Group Decision Making: Identifying Multiple Effects of Racial Composition on Jury Deliberations." *Journal of Personality and Social Psychology*, vol. 90, no. 4, 2006, pp. 597–612. — Racially diverse mock juries discussed more evidence, made fewer factual errors, and raised more case-relevant issues than all-white juries; white jurors on diverse panels deliberated more thoroughly.
+
+## Further reading to verify before final publication
+
+- The first-ballot-majority effect — web-confirmed as Kalven & Zeisel's central finding: jury deliberation after the first ballot had no effect on the final verdict in roughly nine of ten cases (the minority reversed the initial majority or hung the jury in about 10% of cases). The chapter's "something over ninety per cent" phrasing is consistent with the source. Exact sub-sample percentages (e.g. the 7–11 first-ballot-to-convict breakdown) may still be checked against the original text if quoted precisely.
+- The claim that the first-ballot statistic "needs modern replication" — confirm the current state of replication literature (e.g., Devine et al. reviews of jury decision-making) before finalising the strength of this caution. Verify.
+- Demographic patterns in jury foreperson selection and speaking time (male, professional, higher-status jurors dominating) — real and widely reported in the jury-behaviour literature, but attribute to specific studies (e.g., work by Strodtbeck and colleagues, and later reviews) before publication rather than asserting generally. Verify.
+- *12 Angry Men* — Reginald Rose; teleplay 1954, film directed by Sidney Lumet 1957. Used as fiction and explicitly flagged as such; confirm date/attribution as cited.
+- Cross-reference item numbers and titles (18 Condorcet, 25 collective intelligence "c", 26 information cascades, 35 Asch/single ally, 41 normative/informational influence, 43 groupthink, 58 first follower, 72 deliberative democracy, 85 stratification) — reconcile against the master cross-reference map before final publication.

@@ -1,0 +1,48 @@
+% ---- The Shape of the Many : shared 6x9 book preamble ----
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{emptypage}     % no headers/numbers on blank pages
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% Suppress all section/chapter numbering (titles carry their own "N.")
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{0}
+
+% Chapter opener: centered, roomy, elegant
+\titleformat{\chapter}[display]
+  {\normalfont\centering}
+  {}
+  {0pt}
+  {\Huge\bfseries}
+  [\vspace{0.4em}]
+\titlespacing*{\chapter}{0pt}{28pt}{34pt}
+
+% Section (the seven beats): small caps, modest
+\titleformat{\section}
+  {\normalfont\large\scshape}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+
+% Running heads: series title verso, chapter title recto; page no. in footer
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\itshape The Shape of the Many}
+\fancyhead[RO]{\small\itshape\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Epigraph blockquotes (the chapter hook line): italic, indented, no quote bar
+\usepackage{etoolbox}
+\AtBeginEnvironment{quote}{\itshape\small}
+
+% Slightly looser leading for readability
+\linespread{1.06}
+
+% Tighten widows/orphans
+\clubpenalty=10000
+\widowpenalty=10000
