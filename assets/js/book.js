@@ -14,6 +14,9 @@
     const rows = book.chapters.map((c) => `
       <a class="chapter-row" href="read.html?b=${book.n}&c=${c.num}">
         <span class="cn">${c.n}</span>
+        ${c.thumb
+          ? `<img class="thumb" src="${escapeHtml(c.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+          : `<span class="thumb none"></span>`}
         <span class="ct"><b>${escapeHtml(c.title)}</b>
           ${c.epigraph ? `<span>${escapeHtml(truncate(c.epigraph, 120))}</span>` : ''}</span>
         <span class="cw">${c.words.toLocaleString()} w</span>

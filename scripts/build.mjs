@@ -105,9 +105,32 @@ function firstEpigraph(md) {
   return m[0].replace(/^>\s?/gm, '').replace(/\s+/g, ' ').trim();
 }
 
+function figureHtml(img) {
+  if (!img || !img.src) return '';
+  const credit = [img.credit, img.license].filter(Boolean).join(' · ');
+  return `<figure class="chapter-figure">` +
+    `<img src="${escapeHtml(img.src)}" alt="${escapeHtml(img.alt || '')}" loading="lazy" referrerpolicy="no-referrer">` +
+    `<figcaption>${escapeHtml(credit)}` +
+    (img.source ? ` · <a href="${escapeHtml(img.source)}" target="_blank" rel="noopener">Wikimedia Commons</a>` : '') +
+    `</figcaption></figure>`;
+}
+// Insert the figure just after the leading epigraph blockquote (or at the very top).
+function injectFigure(html, fig) {
+  if (!fig) return html;
+  const close = html.indexOf('</blockquote>');
+  if (close !== -1) {
+    const at = close + '</blockquote>'.length;
+    return html.slice(0, at) + '\n' + fig + html.slice(at);
+  }
+  return fig + '\n' + html;
+}
+
 function build() {
   rmSync(CH_OUT, { recursive: true, force: true });
   mkdirSync(CH_OUT, { recursive: true });
+
+  const images = existsSync(join(DATA, 'images.json'))
+    ? JSON.parse(readFileSync(join(DATA, 'images.json'), 'utf8')) : {};
 
   const manifestBooks = [];
   let totalChapters = 0;
@@ -142,7 +165,9 @@ function build() {
       const title = rawTitle.replace(/^\d+\.\s*/, '');
       const displayNum = parseInt(num, 10);
       const epigraph = firstEpigraph(md);
-      const { html } = renderMarkdown(md, { dropFirstH1: true });
+      const rendered = renderMarkdown(md, { dropFirstH1: true });
+      const img = images[`${book.n}/${num}`] || null;
+      const html = injectFigure(rendered.html, figureHtml(img));
       const words = wordCount(md);
       totalWords += words;
 
@@ -152,10 +177,10 @@ function build() {
       if (existsSync(refPath)) refsHtml = renderMarkdown(readFileSync(refPath, 'utf8'), { dropFirstH1: true }).html;
 
       writeFileSync(join(bOut, `${num}.json`), JSON.stringify({
-        book: book.n, num, displayNum, slug, title, epigraph, words, html, refsHtml
+        book: book.n, num, displayNum, slug, title, epigraph, words, html, refsHtml, image: img
       }, null, 0));
 
-      chapters.push({ num, n: displayNum, slug, title, epigraph, words });
+      chapters.push({ num, n: displayNum, slug, title, epigraph, words, thumb: img ? img.src : null });
     }
 
     totalChapters += chapters.length;

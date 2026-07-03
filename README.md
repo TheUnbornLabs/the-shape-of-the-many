@@ -48,6 +48,23 @@ generated from the source chapters — no framework, no runtime dependencies.
 - `data/manifest.json` + `data/chapters/bN/NNN.json` — generated site data.
 - `downloads/` — the typeset 6×9 PDFs, DOCX, and Markdown masters.
 
+### Chapter images
+
+Each chapter carries one relevant, freely-licensed image **hotlinked** from
+Wikimedia Commons — no image files live in this repo, so it stays light. The
+mapping of chapter → search subject lives in `scripts/images.mjs`, and the
+resolved URLs + attribution are cached in `data/images.json`.
+
+```
+node scripts/images.mjs            # fetch any chapters missing an image
+node scripts/images.mjs --force    # re-fetch all
+node scripts/images.mjs 4/085      # re-pick one chapter (edit its query first)
+```
+
+To swap a specific image, edit that chapter's query in `scripts/images.mjs`,
+re-run it for that key, then rebuild. Every image shows author + licence + a
+link back to Commons in its caption.
+
 ### Build the site data
 
 ```
