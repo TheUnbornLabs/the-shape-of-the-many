@@ -57,12 +57,21 @@ node scripts/build.mjs
 This walks the `book-*/` folders, renders each `chapter.md` to HTML, writes the
 manifest and per-chapter JSON, and copies the typeset editions into `downloads/`.
 Re-run it after editing any chapter. Then open `index.html` (serve the folder, e.g.
-`npx serve .`, since the pages `fetch` JSON).
+`python -m http.server`, since the pages `fetch` JSON).
 
 ### Publish to GitHub Pages
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which runs the build and
-deploys the whole folder. In the repo, set **Settings → Pages → Source → GitHub Actions** once.
+The generated `data/` and `downloads/` are committed, so Pages serves the site
+directly from the `main` branch root — no build step, no Actions workflow
+(`.nojekyll` keeps Jekyll out of the way). After editing chapters:
+
+```
+node scripts/build.mjs
+git add -A && git commit -m "Update chapters" && git push
+```
+
+GitHub rebuilds the Pages site on push. Live at
+<https://theunbornlabs.github.io/the-shape-of-the-many/>.
 
 ## Status
 
