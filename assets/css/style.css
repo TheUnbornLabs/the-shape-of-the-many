@@ -306,6 +306,15 @@ details.matter-fold .prose { padding: 0 1.4rem 1.2rem; }
   font-size: .93rem; line-height: 1.5; color: var(--ink-soft); }
 .ix-banner strong { color: var(--ink); }
 
+/* Extra simulation widgets */
+.sim-cascade-row { display: flex; flex-wrap: wrap; gap: 4px; padding: .6rem 0; }
+.cas-cell { width: 22px; height: 22px; border-radius: 4px; display: grid; place-items: center;
+  font-size: .7rem; font-weight: 700; color: #fff; }
+.cas-cell.b { background: #3a6ea5; } .cas-cell.r { background: #b0413e; }
+.sim-guess { display: flex; align-items: center; gap: .7rem; padding: .4rem 0 .8rem; font-size: .85rem; color: var(--ink-soft); }
+.sim-num { width: 5rem; padding: .4rem .5rem; font: inherit; border: 1px solid var(--rule); border-radius: .4rem; background: var(--paper); color: var(--ink); }
+.ipd-table { display: grid; gap: 0; }
+
 /* Assessment runner */
 .assess-progress { font-size: .8rem; color: var(--ink-faint); letter-spacing: .06em; text-transform: uppercase; margin-bottom: .4rem; }
 .assess-result { text-align: center; padding: 1.4rem 0; }

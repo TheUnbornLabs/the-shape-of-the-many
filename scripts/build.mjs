@@ -250,7 +250,7 @@ function build() {
       </a>`).join('');
     const bookHasIx = b.chapters.some((c) => interactive[`${b.n}/${c.num}`]);
     const ixBanner = bookHasIx ? `<div class="ix-banner">
-        <div><strong>Interactive edition.</strong> Every chapter in this book opens with a prediction, runs a live demonstration or confidence-rated quiz, and feeds a <a href="dashboard.html">mastery map</a>. End with the <a href="assessment-b1.html">Book One assessment</a>.</div>
+        <div><strong>Interactive edition.</strong> Every chapter in this book opens with a prediction, runs a live demonstration or confidence-rated quiz, and feeds a <a href="dashboard.html">mastery map</a>. End with the <a href="assessment-b${b.n}.html">Book ${WORD[b.n]} assessment</a>.</div>
       </div>` : '';
     const body = `
       <a class="crumb" href="index.html">← The Shape of the Many</a>
@@ -320,9 +320,11 @@ function build() {
   // About page
   writeAbout(books, totalChapters, totalWords, pretty);
 
-  // Mastery dashboard + Book One assessment (interactive pilot)
-  writeDashboard();
-  writeAssessment(interactive);
+  // Mastery dashboard (all interactive books) + per-book assessments
+  writeDashboard(books, interactive);
+  for (const b of books) {
+    if (b.chapters.some((c) => interactive[`${b.n}/${c.num}`])) writeAssessment(b, books, interactive);
+  }
 
   // 404
   writeFileSync(join(ROOT, '404.html'), page({
@@ -343,7 +345,8 @@ function build() {
   };
   writeFileSync(join(DATA, 'manifest.json'), JSON.stringify(manifest, null, 2));
 
-  const urls = [`${SITE_URL}/`, `${SITE_URL}/about.html`, `${SITE_URL}/dashboard.html`, `${SITE_URL}/assessment-b1.html`,
+  const urls = [`${SITE_URL}/`, `${SITE_URL}/about.html`, `${SITE_URL}/dashboard.html`,
+    ...books.filter((b) => b.chapters.some((c) => interactive[`${b.n}/${c.num}`])).map((b) => `${SITE_URL}/assessment-b${b.n}.html`),
     ...books.map((b) => `${SITE_URL}/${bookFile(b.n)}`),
     ...books.flatMap((b) => b.chapters.map((c) => `${SITE_URL}/${chapterFile(b.n, c.num)}`))];
   writeFileSync(join(ROOT, 'sitemap.xml'),
@@ -376,65 +379,71 @@ function nextBookLabel(books, b) {
   return nb ? `Book ${nb.n} · ${nb.title}` : 'Back to the series home';
 }
 
-function writeDashboard() {
-  // Book One category map baked in; JS fills mastery from localStorage.
-  const cfg = {
-    book1: { title: 'Book One · The Shape Forms', cats: [
-      { key: 'emergence', name: 'Emergence', chapters: 8 },
-      { key: 'grouping', name: 'Evolutionary grouping', chapters: 8 },
-      { key: 'wisdom', name: 'Crowd intelligence', chapters: 9 }
-    ] },
-    soon: ['Conformity', 'Networks', 'Power', 'Digital systems', 'Intervention design']
-  };
+const WORD = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five'];
+
+function writeDashboard(books, interactive) {
+  // Build the whole-series category map from the interactive data itself.
+  const cfg = { books: [] };
+  for (const b of books) {
+    const cats = {};
+    for (const c of b.chapters) {
+      const ix = interactive[`${b.n}/${c.num}`];
+      if (!ix) continue;
+      cats[ix.category] = cats[ix.category] || { key: ix.category, name: ix.catName, chapters: 0 };
+      cats[ix.category].chapters++;
+    }
+    const list = Object.values(cats);
+    if (list.length) cfg.books.push({ n: b.n, title: `Book ${WORD[b.n]} · ${b.title}`, cats: list });
+  }
   const body = `
     <a class="crumb" href="index.html">← The Shape of the Many</a>
     <div class="reader">
       <p class="eyebrow">Your progress</p>
       <h1>Mastery map</h1>
       <p class="mastery-note">Mastery is earned through understanding, not activity. Everything below is stored only
-      on this device — no account, no server. Answer chapter quizzes to build each track.</p>
+      on this device — no account, no server. Answer chapter quizzes to build each of the ${cfg.books.reduce((s, b) => s + b.cats.length, 0)} tracks across all five books.</p>
       <div id="masteryRoot" class="mastery-grid"></div>
       <div id="calibration" class="ix-block" hidden></div>
-      <p class="mastery-note" style="margin-top:1.5rem">Coming as later books gain the interactive treatment:
-      ${cfg.soon.join(' · ')}.</p>
-      <div class="cta-row"><a class="btn-primary" href="assessment-b1.html">Take the Book One assessment →</a>
-        <a class="btn-ghost" href="book-1.html">Back to Book One</a></div>
+      <div class="cta-row"><a class="btn-primary" href="assessment-b1.html">Book One assessment →</a>
+        <a class="btn-ghost" href="index.html">Back to the books</a></div>
     </div>`;
   writeFileSync(join(ROOT, 'dashboard.html'), page({
     title: 'Mastery map — The Shape of the Many',
-    desc: 'Track your understanding across Book One: Emergence, evolutionary grouping, and crowd intelligence.',
+    desc: 'Track your understanding across all five books: emergence, conformity, networks, power, digital swarms, and the toolkit.',
     canonical: SITE_URL + '/dashboard.html',
     extraHead: `<script>window.__MASTERY__=${JSON.stringify(cfg)}</script>`,
     body, bodyEnd: `<script src="assets/js/dashboard.js"></script>`
   }));
 }
 
-function writeAssessment(interactive) {
-  // Curate 12 questions across the three Book One tracks (chapter/qIndex pairs).
-  const pick = [
-    ['1/001', 2], ['1/006', 1], ['1/007', 1], ['1/008', 1],
-    ['1/009', 2], ['1/012', 1], ['1/015', 2], ['1/016', 2],
-    ['1/017', 1], ['1/018', 1], ['1/019', 0], ['1/021', 1]
-  ];
-  const questions = pick.map(([key, qi]) => {
-    const ix = interactive[key]; if (!ix) return null;
-    const q = ix.questions[qi];
+function writeAssessment(book, books, interactive) {
+  // Auto-select ~12 questions spread evenly across the book's interactive chapters.
+  const chs = book.chapters.filter((c) => interactive[`${book.n}/${c.num}`]);
+  const want = Math.min(12, chs.length);
+  const step = chs.length / want;
+  const picks = [];
+  for (let k = 0; k < want; k++) picks.push(chs[Math.floor(k * step)]);
+  const questions = picks.map((c, k) => {
+    const ix = interactive[`${book.n}/${c.num}`];
+    const q = ix.questions[[1, 2, 0][k % 3]]; // rotate scenario / predict / concept
     return { prompt: q.prompt, options: q.options, answer: q.answer, explanation: q.explanation, cat: ix.catName };
-  }).filter(Boolean);
+  });
+  const nextBook = books.find((x) => x.n === book.n + 1);
+  const next = nextBook ? { href: bookFile(nextBook.n), label: `On to Book ${WORD[nextBook.n]}` } : { href: 'index.html', label: 'Back to the series home' };
   const body = `
-    <a class="crumb" href="book-1.html">← Book One</a>
+    <a class="crumb" href="${bookFile(book.n)}">← Book ${WORD[book.n]}</a>
     <div class="reader">
-      <p class="eyebrow">Book One · Assessment</p>
+      <p class="eyebrow">Book ${WORD[book.n]} · Assessment</p>
       <h1>What did the shape teach you?</h1>
-      <p class="mastery-note">Twelve questions spanning emergence, evolutionary grouping, and crowd intelligence.
+      <p class="mastery-note">${questions.length} questions spanning <em>${escapeHtml(book.title)}</em>.
       Answer them all, then see your score and which track to revisit. No timer, no leaderboard.</p>
       <div id="assessRoot"></div>
     </div>`;
-  writeFileSync(join(ROOT, 'assessment-b1.html'), page({
-    title: 'Book One assessment — The Shape of the Many',
-    desc: 'A twelve-question assessment across Book One of The Shape of the Many.',
-    canonical: SITE_URL + '/assessment-b1.html',
-    extraHead: `<script>window.__ASSESS__=${JSON.stringify({ title: 'Book One', questions })}</script>`,
+  writeFileSync(join(ROOT, `assessment-b${book.n}.html`), page({
+    title: `Book ${WORD[book.n]} assessment — The Shape of the Many`,
+    desc: `A ${questions.length}-question assessment across Book ${WORD[book.n]} (${book.title}).`,
+    canonical: `${SITE_URL}/assessment-b${book.n}.html`,
+    extraHead: `<script>window.__ASSESS__=${JSON.stringify({ title: `Book ${WORD[book.n]}`, questions, next })}</script>`,
     body, bodyEnd: `<script src="assets/js/assessment.js"></script>`
   }));
 }

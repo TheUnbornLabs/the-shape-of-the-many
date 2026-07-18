@@ -52,7 +52,7 @@
         <div style="margin:1rem 0">${tracks}</div>
         ${weak.length ? `<p class="mastery-note">Revisit: <strong>${weak.map(esc).join(', ')}</strong>.</p>` : '<p class="mastery-note">Strong across every track.</p>'}
         <div class="cta-row"><a class="btn-primary" href="dashboard.html">Your mastery map →</a>
-          <a class="btn-ghost" href="book-2.html">On to Book Two</a></div></div>`;
+          <a class="btn-ghost" href="${(A.next && A.next.href) || 'index.html'}">${(A.next && A.next.label) || 'Back to the books'}</a></div></div>`;
       // record assessment result
       const s = load(); s.assessments = s.assessments || {}; s.assessments[A.title] = { correct, total: A.questions.length, at: Date.now() }; save(s);
     }

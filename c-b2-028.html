@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://theunbornlabs.github.io/the-shape-of-the-many/assets/og-image.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Bank runs","articleSection":"The Shape Breaks","url":"https://theunbornlabs.github.io/the-shape-of-the-many/c-b2-028.html","isPartOf":{"@type":"Book","name":"The Shape Breaks"},"inLanguage":"en","wordCount":2695,"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
-<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>
+<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div><script>window.__IX__={"book":2,"ch":"028","catKey":"cascades","catName":"Cascades & panics","data":{"prediction":{"prompt":"A bank is solvent, but a rumour spreads that it may fail. If enough depositors withdraw ‘just in case’, the bank:","options":["Stays fine — rumours don’t matter","Can be driven to failure by the withdrawals themselves","Becomes richer"],"answer":1,"reveal":"Bank runs are self-fulfilling: fear of collapse rationally motivates withdrawal, and mass withdrawal causes the very collapse feared. A coordination trap."},"questions":[{"type":"concept","prompt":"A bank run is self-fulfilling because withdrawing is rational when:","options":["The bank is definitely insolvent","You expect others to withdraw first","Interest rates rise"],"answer":1,"explanation":"It is individually rational to run if you think others will — even a healthy bank can fail on illiquidity."},{"type":"scenario","prompt":"Deposit insurance stops runs mainly by:","options":["Making the bank richer","Removing the incentive to withdraw first","Hiding information"],"answer":1,"explanation":"If your deposit is safe regardless, the race to withdraw disappears — the coordination trap is defused."},{"type":"predict","prompt":"Bank runs illustrate that a system can fail from:","options":["Fundamentals alone","Beliefs and coordination, not just fundamentals","Nothing at all"],"answer":1,"explanation":"Expectations can drive outcomes independently of the underlying balance sheet."}]}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -38,7 +38,7 @@
         <a class="crumb" href="book-2.html">← Book 2 · The Shape Breaks</a>
         <p class="eyebrow">Chapter 28 · The Shape Breaks</p>
         <h1>Bank runs</h1>
-        
+        <div id="ix-predict"></div>
         <article class="prose"><blockquote><p>A sound bank can be destroyed by nothing more than the belief that it will be destroyed — the panic writes the reality it predicts.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Bundesarchiv_Bild_102-12023%2C_Berlin%2C_Bankenkrach%2C_Andrang_bei_der_Sparkasse.jpg" alt="Bank run Great Depression crowd" loading="lazy" referrerpolicy="no-referrer"><figcaption>Georg Pahl · CC BY-SA 3.0 de · <a href="https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-12023,_Berlin,_Bankenkrach,_Andrang_bei_der_Sparkasse.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -71,7 +71,7 @@
 <p>The third is that the cure carries its own disease. Deposit insurance and a lender of last resort do abolish the run — but by guaranteeing depositors against loss, they also remove depositors' incentive to watch what their bank is doing, and they tempt bankers to take risks they would never take if the downside were fully theirs. This is moral hazard: the very policy that stabilises the system quietly encourages the reckless lending that produces the next crisis. There is no free removal of the bad equilibrium.</p>
 <p>Finally, the revolution analogy, on which this series leans, is illuminating and loose. Banks and states differ in ways that matter: a deposit is a legal claim redeemable in a defined way, whereas defying a regime is a diffuse act with no queue and no teller; the payoffs in politics are murkier, the information far worse, the timescales longer and stranger. The analogy captures a real shared structure — two equilibria, self-fulfilling expectations, sudden cascading collapse — and it should be held as an illumination, not a proof. That the bank and the tyranny break the same way is a deep observation. That they are the <em>same thing</em> is not something the mathematics of Diamond and Dybvig has any right to claim.</p></article>
         
-        
+        <div id="ix-quiz"></div>
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Diamond, Douglas W., and Philip H. Dybvig. &quot;Bank Runs, Deposit Insurance, and Liquidity.&quot; <em>Journal of Political Economy</em> 91, no. 3 (1983): 401–419. — The canonical model of the chapter: maturity transformation, sequential service, two self-fulfilling equilibria, and the stabilising role of deposit insurance.</li><li>Bryant, John. &quot;A Model of Reserves, Bank Runs, and Deposit Insurance.&quot; <em>Journal of Banking &amp; Finance</em> 4, no. 4 (1980): 335–344. — Earlier formal treatment showing how deposit insurance can stabilise a fragile banking arrangement; predecessor to Diamond–Dybvig.</li><li>Kuran, Timur. &quot;Sparks and Prairie Fires: A Theory of Unanticipated Political Revolution.&quot; <em>Public Choice</em> 61, no. 1 (1989): 41–74. — Revolutions as sudden, run-like shifts between equilibria, unpredictable because driven by hidden dissent.</li><li>Kuran, Timur. &quot;Now Out of Never: The Element of Surprise in the East European Revolution of 1989.&quot; <em>World Politics</em> 44, no. 1 (1991): 7–48. — Applies the preference-falsification / cascade account to a concrete case; underpins the bank-run–revolution analogy in beat 6.</li><li>Kuran, Timur. <em>Private Truths, Public Lies: The Social Consequences of Preference Falsification.</em> Harvard University Press, 1995. — Full statement of preference falsification and the sudden collapse of silent orders (cross-referenced to item 34).</li><li>The Royal Swedish Academy of Sciences. 2022 Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel, awarded to Ben Bernanke, Douglas W. Diamond, and Philip H. Dybvig for research on banks and financial crises. — Establishes the standing and influence of the Diamond–Dybvig model.</li></ul>
 <h2>Further reading to verify before final publication</h2>
@@ -91,6 +91,6 @@
   </div>
 </footer>
 <script src="assets/js/search.js"></script>
-<script src="assets/js/chapter.js"></script>
+<script src="assets/js/chapter.js"></script><script src="assets/js/interactive.js"></script>
 </body>
 </html>

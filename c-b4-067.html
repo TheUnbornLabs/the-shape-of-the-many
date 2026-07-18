@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://theunbornlabs.github.io/the-shape-of-the-many/assets/og-image.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Schelling's segregation model","articleSection":"The Shape Holds Power","url":"https://theunbornlabs.github.io/the-shape-of-the-many/c-b4-067.html","isPartOf":{"@type":"Book","name":"The Shape Holds Power"},"inLanguage":"en","wordCount":2677,"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
-<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>
+<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div><script>window.__IX__={"book":4,"ch":"067","catKey":"governance","catName":"Governance & collective choice","data":{"prediction":{"prompt":"Imagine everyone is happy to live in a mixed neighbourhood, but each prefers not to be a tiny minority (say, wants ≥30% similar neighbours). The result is likely:","options":["Full integration","Sharp segregation, despite tolerant individuals","Random mixing"],"answer":1,"reveal":"Schelling’s segregation model: mild individual preferences for similar neighbours can cascade into stark collective segregation, even when no one wants it. Run it below."},"questions":[{"type":"concept","prompt":"Schelling’s model shows that mild in-group preference can produce:","options":["Perfect integration","Extreme collective segregation","No pattern"],"answer":1,"explanation":"Individual tolerance thresholds aggregate into segregation nobody intended."},{"type":"scenario","prompt":"The striking lesson is that segregation can emerge:","options":["Only from bigotry","Even when everyone is fairly tolerant","Only by law"],"answer":1,"explanation":"Macro-segregation ≠ micro-racism; small preferences suffice."},{"type":"predict","prompt":"In the simulator, raising each agent’s ‘similar-neighbour’ threshold makes segregation:","options":["Weaker","Stronger and faster","Disappear"],"answer":1,"explanation":"Higher demands tip more agents to move, sharpening the sorting."}]}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -38,7 +38,7 @@
         <a class="crumb" href="book-4.html">← Book 4 · The Shape Holds Power</a>
         <p class="eyebrow">Chapter 67 · The Shape Holds Power</p>
         <h1>Schelling's segregation model</h1>
-        
+        <div id="ix-predict"></div>
         <article class="prose"><blockquote><p>Nobody in the room wanted a wall, and yet the room built one — mild preferences, iterated, can construct an outcome that not a single person chose.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Thomas_C._Schelling_%28cropped%29.jpg" alt="Thomas Schelling economist" loading="lazy" referrerpolicy="no-referrer"><figcaption>New America · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Thomas_C._Schelling_(cropped).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -73,8 +73,8 @@
 <p>The most serious hazard is the misreading already named: the model can be, and has been, deployed to argue that segregation is &quot;natural,&quot; an inevitable crystallisation of innocent preferences, and therefore beyond moral reproach or remedy. That conclusion does not follow, and the chapter must guard against it. Sufficiency is not necessity; a mechanism is not a history; and a model that deliberately excludes covenants, redlining, and violence cannot be cited as evidence that they did not matter.</p>
 <p>There is a parametric caveat too. The specific outcomes depend on the numbers — the threshold, the ratio of the two groups, the density of vacancies, the neighbourhood definition, the order of moves. Different settings yield different degrees of separation, and some yield little. What is robust is the qualitative surprise: across a wide range of mild thresholds, the aggregate overshoots the preference. That the overshoot happens is durable; how extreme it is in any particular run is not a universal constant.</p>
 <p>Finally, empirical work reminds us that real preferences are neither as simple nor as symmetric as the coins. William Clark's studies of residential preferences in the early 1990s found that stated tastes about neighbourhood composition are real and do shape mobility, but that they differ systematically across groups and interact with the constraints — income, discrimination, information — that the pure model sets aside. Schelling himself never claimed otherwise. His board was an existence proof, not a census: a demonstration that the shape a society holds can be one none of its members chose, offered as a warning against reading intention off of pattern — and against the easy comfort of believing that because no one meant the wall, no one need tear it down.</p></article>
-        
-        
+        <div id="ix-sim" data-sim="schelling"></div>
+        <div id="ix-quiz"></div>
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Schelling, Thomas C. &quot;Dynamic Models of Segregation.&quot; <em>Journal of Mathematical Sociology</em>, vol. 1, no. 2, 1971, pp. 143–186. — The founding paper; sets out the spatial (checkerboard) and bounded-neighbourhood models in which mild individual thresholds produce extreme aggregate segregation. Anchors the idea, mechanism, and overshoot claim.</li><li>Schelling, Thomas C. <em>Micromotives and Macrobehavior</em>. W. W. Norton, 1978. — Book-length development of the thesis that individual motives and aggregate behaviour diverge; the segregation model is a central chapter. Supports the &quot;macro ≠ micro intentions&quot; framing of beat 5 and the &quot;cannot infer preferences from pattern&quot; point.</li><li>The Royal Swedish Academy of Sciences / Nobel Memorial Prize in Economic Sciences, 2005, awarded jointly to Robert J. Aumann and Thomas C. Schelling &quot;for having enhanced our understanding of conflict and cooperation through game-theory analysis.&quot; — Supports the Nobel attribution.</li><li>Clark, William A. V. &quot;Residential Preferences and Neighborhood Racial Segregation: A Test of the Schelling Segregation Model.&quot; <em>Demography</em>, vol. 28, no. 1, 1991, pp. 1–19. — Empirical work testing residential preferences against the Schelling framework; supports the beat-7 point that real stated preferences are real but group-asymmetric and entangled with constraints the pure model omits.</li></ul>
 <h2>Further reading to verify before final publication</h2>
@@ -94,6 +94,6 @@
   </div>
 </footer>
 <script src="assets/js/search.js"></script>
-<script src="assets/js/chapter.js"></script>
+<script src="assets/js/chapter.js"></script><script src="assets/js/simulations.js"></script><script src="assets/js/interactive.js"></script>
 </body>
 </html>

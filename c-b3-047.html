@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://theunbornlabs.github.io/the-shape-of-the-many/assets/og-image.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Centrality — locating power in a network","articleSection":"The Shape Flows","url":"https://theunbornlabs.github.io/the-shape-of-the-many/c-b3-047.html","isPartOf":{"@type":"Book","name":"The Shape Flows"},"inLanguage":"en","wordCount":2523,"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
-<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>
+<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div><script>window.__IX__={"book":3,"ch":"047","catKey":"networks","catName":"Networks & contagion","data":{"prediction":{"prompt":"The most powerful person in a network is usually the one who:","options":["Has the most friends","Sits on the most paths between others","Talks the loudest"],"answer":1,"reveal":"Centrality has several meanings: degree (how many ties), betweenness (how often you lie on shortest paths), closeness, eigenvector. Power often lives in betweenness, not popularity."},"questions":[{"type":"concept","prompt":"Betweenness centrality measures how often a node:","options":["Has many neighbours","Lies on the shortest paths between other nodes","Is far from everyone"],"answer":1,"explanation":"High betweenness means you control flow between parts of the network — brokerage power."},{"type":"scenario","prompt":"A node with few ties can still be powerful if it:","options":["Is isolated","Bridges two otherwise-disconnected clusters","Has low betweenness"],"answer":1,"explanation":"One well-placed bridge can dominate information flow despite low degree."},{"type":"predict","prompt":"Eigenvector centrality is high when you are connected to:","options":["Many unimportant nodes","Other well-connected nodes","No one"],"answer":1,"explanation":"Being tied to central others makes you central — the logic behind PageRank."}]}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -38,7 +38,7 @@
         <a class="crumb" href="book-3.html">← Book 3 · The Shape Flows</a>
         <p class="eyebrow">Chapter 47 · The Shape Flows</p>
         <h1>Centrality — locating power in a network</h1>
-        
+        <div id="ix-predict"></div>
         <article class="prose"><blockquote><p>&quot;Who matters here?&quot; has at least four honest answers, and they do not always name the same person.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Hist1_network_circular.png/1280px-Hist1_network_circular.png" alt="Betweenness centrality network" loading="lazy" referrerpolicy="no-referrer"><figcaption>Cdagg96 · CC0 · <a href="https://commons.wikimedia.org/wiki/File:Hist1_network_circular.png" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -74,7 +74,7 @@
 <p>Third, the measures are static snapshots of things that move. Networks change; ties form and dissolve; a node central today may be peripheral next month. A single-frame centrality ignores the timing and direction of flows — whether a contact happened before or after another, which for contagion and information is everything.</p>
 <p>And finally, structural position is not the same as causal power. High centrality tells you a node <em>could</em> exert influence given its location; it does not tell you it <em>does</em>. The best-placed broker may lack the skill or will to broker; the highest-eigenvector page may be an accident of link topology, not authority. Centrality reifies position into importance, and the two come apart more often than the crisp rankings admit. The map shows you where power <em>could</em> sit. Whether it sits there, and whether the person who holds the map means to spread a vaccine or find a dissident, the mathematics will never say.</p></article>
         
-        
+        <div id="ix-quiz"></div>
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Freeman, Linton C. &quot;Centrality in Social Networks: Conceptual Clarification.&quot; <em>Social Networks</em>, vol. 1, no. 3, 1978/1979, pp. 215–239. — The synthesis that separated degree, betweenness, and closeness as distinct concepts, each encoding a different theory of importance (activity, control, independence). Central to the chapter's core argument.</li><li>Bonacich, Phillip. &quot;Factoring and Weighting Approaches to Status Scores and Clique Identification.&quot; <em>Journal of Mathematical Sociology</em>, vol. 2, no. 1, 1972, pp. 113–120. — Origin of eigenvector centrality: a node's status defined recursively by the status of its connections, resolving to the leading eigenvector of the adjacency matrix.</li><li>Katz, Leo. &quot;A New Status Index Derived from Sociometric Analysis.&quot; <em>Psychometrika</em>, vol. 18, no. 1, 1953, pp. 39–43. — Katz centrality: counting all paths to a node with a distance decay factor; an early formalisation of attenuating influence through a network.</li><li>Brin, Sergey, and Lawrence Page. &quot;The Anatomy of a Large-Scale Hypertextual Web Search Engine.&quot; <em>Computer Networks and ISDN Systems</em>, vol. 30, no. 1–7, 1998, pp. 107–117. — PageRank as eigenvector centrality applied to the web, with a damping/random-jump term; the foundation of Google.</li><li>Burt, Ronald S. <em>Structural Holes: The Social Structure of Competition</em>. Harvard University Press, 1992. — The theory of brokerage advantage from spanning gaps between otherwise-disconnected groups; supports the anchor example (high betweenness, low degree) and cross-reference to item 49.</li></ul>
 <h2>Further reading to verify before final publication</h2>
@@ -94,6 +94,6 @@
   </div>
 </footer>
 <script src="assets/js/search.js"></script>
-<script src="assets/js/chapter.js"></script>
+<script src="assets/js/chapter.js"></script><script src="assets/js/interactive.js"></script>
 </body>
 </html>

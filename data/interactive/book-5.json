@@ -1,0 +1,221 @@
+{
+  "book": 5,
+  "title": "The Shape Remade",
+  "categories": { "digital": "Digital swarms", "toolkit": "The toolkit & epistemics" },
+  "chapters": {
+    "086": {
+      "category": "digital",
+      "sim": "boids",
+      "prediction": {
+        "prompt": "Swarm robots (or drones) achieve coordinated group behaviour best by:",
+        "options": ["A central controller commanding each robot", "Simple local rules on each robot, no central control", "Random motion"],
+        "answer": 1,
+        "reveal": "Swarm intelligence and swarm robotics apply Book One’s lesson in engineering: robust group behaviour emerges from simple local rules — the same boids logic, now in machines. Revisit it below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Swarm robotics favours local rules over central control because it is more:", "options": ["Fragile", "Robust and scalable (no single point of failure)", "Expensive"], "answer": 1, "explanation": "Decentralised swarms degrade gracefully and scale — no controller to knock out." },
+        { "type": "scenario", "prompt": "Ant-inspired algorithms solve routing problems by mimicking:", "options": ["A queen’s orders", "Stigmergic pheromone trails", "Random search"], "answer": 1, "explanation": "Ant-colony optimisation reuses stigmergy (Book One, Ch 4) for computation." },
+        { "type": "predict", "prompt": "The engineering payoff of emergence is systems that are:", "options": ["Centrally brittle", "Self-organising, robust, and scalable", "Uncontrollable"], "answer": 1, "explanation": "Designing the local rules to get the desired global behaviour is the swarm-engineering craft." }
+      ]
+    },
+    "087": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "Recommendation algorithms optimise for engagement. A side effect is that they can:",
+        "options": ["Diversify what everyone sees", "Herd users toward already-popular or extreme content", "Show random items"],
+        "answer": 1,
+        "reveal": "Recommendation algorithms as herding engines: by amplifying what others engage with, they manufacture social proof at scale, concentrating attention and sometimes steering users toward extremes."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Engagement-optimising recommenders can act as herding engines because they amplify:", "options": ["Unpopular content", "What is already popular or provocative", "Random content"], "answer": 1, "explanation": "Feeding back popularity creates rich-get-richer attention dynamics." },
+        { "type": "scenario", "prompt": "This is algorithmic social proof because the feed treats popularity as:", "options": ["Irrelevant", "A signal of what to show you next", "A cost"], "answer": 1, "explanation": "The system encodes ‘others engaged, so surface it’ — Book Two’s social proof, automated." },
+        { "type": "predict", "prompt": "A feedback risk is that recommenders can:", "options": ["Only reflect preferences", "Shape the very preferences they claim to predict", "Have no effect"], "answer": 1, "explanation": "Reflexivity returns: the system alters the behaviour it measures." }
+      ]
+    },
+    "088": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "On social platforms, which content tends to spread fastest?",
+        "options": ["Calm, nuanced posts", "Morally outraged, emotionally charged posts", "Neutral facts"],
+        "answer": 1,
+        "reveal": "Outrage and virality: moral-emotional content, especially outrage, spreads further and faster. Platforms that reward engagement structurally favour anger — remaking public discourse."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Studies find each moral-emotional word in a post tends to:", "options": ["Reduce its spread", "Increase its spread", "Have no effect"], "answer": 1, "explanation": "Moral-emotional language raises diffusion, especially within ideological groups." },
+        { "type": "scenario", "prompt": "Outrage spreads partly because it earns:", "options": ["Social punishment", "Social reward and in-group signalling", "Nothing"], "answer": 1, "explanation": "Expressing outrage signals commitment and is reinforced by likes and shares." },
+        { "type": "predict", "prompt": "Engagement-maximising design therefore tends to:", "options": ["Cool public discourse", "Amplify anger and conflict", "Be neutral"], "answer": 1, "explanation": "If anger travels best, optimising for spread selects for anger." }
+      ]
+    },
+    "089": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "A ‘grassroots’ online movement can sometimes be manufactured by a few actors using many fake accounts. This is:",
+        "options": ["Genuine consensus", "Astroturfing", "Impossible"],
+        "answer": 1,
+        "reveal": "Bots, astroturfing, and manufactured consensus: fake accounts and coordinated inauthentic behaviour fabricate the appearance of a crowd, hijacking social proof to manipulate real people."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Astroturfing manufactures the false appearance of:", "options": ["Grassroots consensus", "Official policy", "Random noise"], "answer": 0, "explanation": "It fakes a spontaneous popular movement to exploit social proof." },
+        { "type": "scenario", "prompt": "Bots amplify a message mainly by inflating apparent:", "options": ["Accuracy", "Popularity and consensus", "Length"], "answer": 1, "explanation": "Fabricated volume tricks both people and ranking algorithms into treating it as real support." },
+        { "type": "predict", "prompt": "Astroturfing works because humans rely on:", "options": ["Independent verification always", "Social proof — assuming visible support is genuine", "Nothing"], "answer": 1, "explanation": "It weaponises the very heuristic that makes real crowds wise." }
+      ]
+    },
+    "090": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "Online pile-ons, where thousands condemn one person, resemble which earlier phenomena?",
+        "options": ["Wise crowds", "Moral panics and deindividuated mobs", "Prediction markets"],
+        "answer": 1,
+        "reveal": "Online mobs and pile-ons: anonymity, scale, and outrage-amplifying design recreate deindividuated crowds and moral panics at internet speed, with disproportionate real-world harm."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Online pile-ons combine which earlier mechanisms?", "options": ["Kin selection and boids", "Deindividuation, moral panic, and social proof", "Diversity and independence"], "answer": 1, "explanation": "Anonymity, folk-devil dynamics, and cascading condemnation all converge online." },
+        { "type": "scenario", "prompt": "Scale makes online mobs especially harmful because each participant feels:", "options": ["Fully responsible", "Only a tiny share of responsibility (diffusion)", "No emotion"], "answer": 1, "explanation": "Diffusion of responsibility across thousands licenses harm no individual would inflict alone." },
+        { "type": "predict", "prompt": "Design that re-individuates users (identity, friction) would likely:", "options": ["Worsen pile-ons", "Reduce mob behaviour", "Do nothing"], "answer": 1, "explanation": "Restoring accountability dampens deindividuated aggression." }
+      ]
+    },
+    "091": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "Wikipedia is written by strangers with no central editor, yet is broadly reliable. It works through:",
+        "options": ["A hidden authority", "Stigmergy — contributors respond to the current state of the article", "Pure luck"],
+        "answer": 1,
+        "reveal": "Wikipedia and open source as stigmergy: contributors coordinate through the shared artefact itself, plus lightweight norms and tools. Decentralised production of reliable public goods — the wise crowd institutionalised."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Wikipedia and open source coordinate primarily through:", "options": ["Central management", "The evolving shared artefact (stigmergy) plus norms", "Paid contracts"], "answer": 1, "explanation": "The current article/codebase cues the next edit — Book One’s stigmergy at civilisational scale." },
+        { "type": "scenario", "prompt": "Reliability emerges despite open editing because of:", "options": ["No oversight", "Many eyes, versioning, and enforceable norms", "One expert"], "answer": 1, "explanation": "Transparency, revert-ability and norms let a crowd self-correct." },
+        { "type": "predict", "prompt": "These projects show the wise crowd can be:", "options": ["Only theoretical", "Institutionalised to produce durable public goods", "Impossible online"], "answer": 1, "explanation": "Good design turns dispersed contribution into reliable output." }
+      ]
+    },
+    "092": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "Research found the best forecasters of world events were:",
+        "options": ["Famous pundits", "Ordinary people who update carefully and think in probabilities", "Nobody — it’s random"],
+        "answer": 1,
+        "reveal": "Superforecasting and forecasting tournaments: accuracy comes from open-mindedness, probabilistic thinking, frequent updating, and aggregating diverse forecasters — skills, not credentials (Tetlock)."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Superforecasters excel by:", "options": ["Bold single predictions", "Probabilistic thinking and frequent belief updating", "Ignoring evidence"], "answer": 1, "explanation": "They treat beliefs as probabilities to be revised, not identities to defend." },
+        { "type": "scenario", "prompt": "Aggregating and extremising diverse forecasters tends to:", "options": ["Worsen accuracy", "Beat almost any individual", "Have no effect"], "answer": 1, "explanation": "The wisdom-of-crowds logic: diverse, independent forecasts combined outperform." },
+        { "type": "predict", "prompt": "Tetlock’s work shows good judgment is:", "options": ["Innate and fixed", "A trainable skill", "Impossible"], "answer": 1, "explanation": "Forecasting accuracy improves with practice and the right habits." }
+      ]
+    },
+    "093": {
+      "category": "digital",
+      "prediction": {
+        "prompt": "Millions of volunteers classifying galaxies or counting birds can produce science that is:",
+        "options": ["Useless", "Rigorous and large-scale, beyond any single lab", "Always wrong"],
+        "answer": 1,
+        "reveal": "Crowdsourcing and citizen science: distributed volunteers, well-structured, generate data and discoveries at scales no institution could match — the wise crowd as a research instrument."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Citizen science succeeds when tasks are:", "options": ["Vague and unstructured", "Well-structured with aggregation and quality control", "Secret"], "answer": 1, "explanation": "Good design (clear tasks, redundancy, validation) turns volunteers into reliable data." },
+        { "type": "scenario", "prompt": "Aggregating many amateur classifications can rival experts because:", "options": ["Errors are correlated", "Independent errors cancel (wisdom of crowds)", "Amateurs never err"], "answer": 1, "explanation": "The same error-cancellation from Book One applies to distributed labelling." },
+        { "type": "predict", "prompt": "Crowdsourcing works best when contributions are:", "options": ["Copied from each other", "Independent and then aggregated", "Withheld"], "answer": 1, "explanation": "Independence preserves the crowd’s accuracy — the recurring condition." }
+      ]
+    },
+    "094": {
+      "category": "toolkit",
+      "prediction": {
+        "prompt": "To study how simple individual rules produce complex group outcomes, researchers often build:",
+        "options": ["One giant equation", "Agent-based models — many simulated agents interacting", "Nothing computational"],
+        "answer": 1,
+        "reveal": "Agent-based modelling: simulate many autonomous agents following local rules and watch macro-patterns emerge. The method behind boids, Schelling, and threshold models — a laboratory for the many."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Agent-based models build macro-behaviour from:", "options": ["Top-down equations", "Bottom-up local rules of many agents", "Random numbers only"], "answer": 1, "explanation": "You specify individual behaviour and let system-level patterns emerge." },
+        { "type": "scenario", "prompt": "ABMs are especially useful for phenomena that are:", "options": ["Linear and simple", "Emergent, nonlinear, and path-dependent", "Static"], "answer": 1, "explanation": "They capture emergence that closed-form equations struggle to express." },
+        { "type": "predict", "prompt": "A caution with ABMs is that they are:", "options": ["Always correct", "Only as good as their assumptions — suggestive, not proof", "Useless"], "answer": 1, "explanation": "Models illuminate mechanisms but must be validated against reality — epistemic humility." }
+      ]
+    },
+    "095": {
+      "category": "toolkit",
+      "sim": "ipd",
+      "prediction": {
+        "prompt": "Two prisoners each do better by betraying the other — yet if both betray, both do worse than if both stayed silent. Played once, rational players will:",
+        "options": ["Cooperate", "Both defect, to their mutual loss", "Refuse to play"],
+        "answer": 1,
+        "reveal": "The prisoner’s dilemma: individually rational defection yields a collectively bad outcome. But repeat the game, and cooperation can emerge. Run a tournament of strategies below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "In a one-shot prisoner’s dilemma, the dominant strategy is to:", "options": ["Cooperate", "Defect", "Randomise"], "answer": 1, "explanation": "Defection dominates each round, so both defect — worse for both than mutual cooperation." },
+        { "type": "scenario", "prompt": "In the simulator, ‘Tit-for-Tat’ does well because it is:", "options": ["Always nasty", "Nice, retaliatory, forgiving and clear", "Random"], "answer": 1, "explanation": "Axelrod’s tournaments: cooperate first, punish defection, forgive — simple and robust." },
+        { "type": "predict", "prompt": "Cooperation emerges in the repeated game because of:", "options": ["No future", "The shadow of the future — ongoing interaction", "Anonymity"], "answer": 1, "explanation": "Repeated play plus memory makes cooperation pay — Book One’s reciprocal altruism, formalised." }
+      ]
+    },
+    "096": {
+      "category": "toolkit",
+      "prediction": {
+        "prompt": "Axelrod’s computer tournaments asked which strategy wins the repeated prisoner’s dilemma. The champion was:",
+        "options": ["The most ruthless", "A simple, nice, forgiving strategy (Tit-for-Tat)", "A random one"],
+        "answer": 1,
+        "reveal": "The evolution of cooperation: cooperation can evolve among selfish agents given repetition, reciprocity, and clustering. ‘Nice’ strategies beat ruthless ones over the long run (Axelrod)."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Axelrod found that successful strategies tended to be:", "options": ["Nasty and unforgiving", "Nice, retaliatory, and forgiving", "Purely random"], "answer": 1, "explanation": "Never defect first, punish defection, then forgive — the recipe for durable cooperation." },
+        { "type": "scenario", "prompt": "Cooperation can invade a world of defectors if cooperators:", "options": ["Are isolated", "Cluster and interact mostly with each other", "Never meet"], "answer": 1, "explanation": "Clustering lets cooperators reap mutual benefits and outcompete defectors." },
+        { "type": "predict", "prompt": "The evolution of cooperation shows morality can arise from:", "options": ["Central design", "Repeated self-interested interaction", "Nothing"], "answer": 1, "explanation": "Cooperative norms can emerge bottom-up without a designer." }
+      ]
+    },
+    "097": {
+      "category": "toolkit",
+      "sim": "life",
+      "prediction": {
+        "prompt": "Conway’s Game of Life uses a handful of on/off rules on a grid. From them you can build:",
+        "options": ["Only static blobs", "Gliders, oscillators — even a universal computer", "Nothing interesting"],
+        "answer": 1,
+        "reveal": "Cellular automata: trivial local rules on a grid generate astonishing complexity — moving ‘gliders’, and in principle universal computation. The purest demonstration that simple rules breed emergence. Watch it below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Cellular automata generate complexity from:", "options": ["Complex global equations", "Simple local update rules on a grid", "Randomness alone"], "answer": 1, "explanation": "Each cell updates from its neighbours by fixed rules — yet the whole can compute anything." },
+        { "type": "scenario", "prompt": "A ‘glider’ in Life is a pattern that:", "options": ["Stays fixed", "Moves across the grid — emergent motion from static rules", "Vanishes instantly"], "answer": 1, "explanation": "Coordinated cell changes produce a travelling structure nobody encoded directly." },
+        { "type": "predict", "prompt": "The deep point of cellular automata is that:", "options": ["Complexity needs complex causes", "Simple rules can produce unlimited, even computational, complexity", "Rules don’t matter"], "answer": 1, "explanation": "Emergence at its starkest — the thesis of Book One in a grid of cells." }
+      ]
+    },
+    "098": {
+      "category": "toolkit",
+      "sim": "powerlaw",
+      "prediction": {
+        "prompt": "City sizes, wealth, word frequencies, and viral cascades often follow a ‘power law’, meaning:",
+        "options": ["Most values cluster near an average", "A few enormous values dominate a long tail of tiny ones", "Everything is equal"],
+        "answer": 1,
+        "reveal": "Power laws and heavy tails: many collective systems have no typical scale — a few giant events dominate. ‘Rich-get-richer’ dynamics generate them, and they make rare huge events far likelier than a bell curve suggests."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A power-law (heavy-tailed) distribution means:", "options": ["A well-defined average scale", "A few extreme values dominate; no typical scale", "All values equal"], "answer": 1, "explanation": "Unlike a bell curve, extreme events are far more probable — the tail is heavy." },
+        { "type": "scenario", "prompt": "Power laws often arise from:", "options": ["Independent coin flips", "Preferential attachment / rich-get-richer processes", "Perfect equality"], "answer": 1, "explanation": "Cumulative advantage generates scale-free, heavy-tailed outcomes (Ch 46’s hubs)." },
+        { "type": "predict", "prompt": "Assuming a bell curve where a power law rules leads you to:", "options": ["Overestimate rare extremes", "Badly underestimate rare extremes (crashes, pandemics)", "Predict perfectly"], "answer": 1, "explanation": "Heavy tails make ‘black swan’ events far likelier than normal-distribution intuitions expect." }
+      ]
+    },
+    "099": {
+      "category": "toolkit",
+      "prediction": {
+        "prompt": "Physicists model flocks, crowds, and traffic as systems of interacting particles because:",
+        "options": ["It never works", "Collective motion shows universal patterns like phase transitions, regardless of the ‘particles’", "People are literally atoms"],
+        "answer": 1,
+        "reveal": "The statistical physics of collective motion: models like Vicsek’s show that flocks, herds, and crowds undergo order–disorder phase transitions governed by density and noise — the same maths across very different ‘particles’."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Statistical physics models of flocks (e.g. Vicsek) show collective motion has:", "options": ["No transitions", "Order–disorder phase transitions with density/noise", "Only randomness"], "answer": 1, "explanation": "Above a critical alignment, the group moves coherently; below it, disorder — a phase transition." },
+        { "type": "scenario", "prompt": "The power of this approach is that the same equations describe:", "options": ["Only birds", "Birds, fish, bacteria, crowds and even active matter", "Nothing real"], "answer": 1, "explanation": "Universality: the maths transcends the specific system — a unifying lens for the book." },
+        { "type": "predict", "prompt": "This chapter reframes crowds as:", "options": ["Unmodellable", "Physical systems with lawful, universal collective behaviour", "Purely psychological"], "answer": 1, "explanation": "It closes the loop to Book One: emergence as rigorous, quantifiable physics." }
+      ]
+    },
+    "100": {
+      "category": "toolkit",
+      "prediction": {
+        "prompt": "Having toured a hundred mechanisms of collective behaviour, the wisest final stance is:",
+        "options": ["Certainty — we now have the formula", "Humility — powerful tools, but real systems resist neat prediction", "Despair — nothing is knowable"],
+        "answer": 1,
+        "reveal": "The epistemics of the field: we have genuine, hard-won tools — but collective systems are complex, contested, and often unpredictable. The book ends where it should: with disciplined humility, not a formula."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The book’s closing stance toward predicting collective behaviour is:", "options": ["Overconfidence", "Disciplined humility about genuine but limited tools", "Total scepticism"], "answer": 1, "explanation": "Real understanding includes knowing the limits of the models." },
+        { "type": "scenario", "prompt": "Many classic findings in the field are:", "options": ["Beyond question", "Contested, context-dependent, or partially failed to replicate", "All false"], "answer": 1, "explanation": "The replication and WEIRD cautions recur — treat vivid results with care." },
+        { "type": "predict", "prompt": "The right use of this toolkit is to:", "options": ["Claim precise control of crowds", "Diagnose mechanisms and shape conditions, humbly", "Abandon the effort"], "answer": 1, "explanation": "We steer distributions and design conditions; we rarely command exact outcomes." }
+      ]
+    }
+  }
+}

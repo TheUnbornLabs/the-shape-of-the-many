@@ -1,0 +1,373 @@
+{
+  "book": 4,
+  "title": "The Shape Holds Power",
+  "categories": { "markets": "Markets & finance", "governance": "Governance & collective choice", "ideology": "Ideology & crowd power" },
+  "chapters": {
+    "060": {
+      "category": "markets",
+      "prediction": {
+        "prompt": "If markets instantly price in all known information, then reliably beating the market by picking stocks should be:",
+        "options": ["Easy", "Very hard for most people", "Guaranteed"],
+        "answer": 1,
+        "reveal": "Efficient markets vs behavioural finance: prices aggregate information remarkably well (making them hard to beat), yet crowds of investors also herd, panic, and misprice — both are true."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The efficient-market hypothesis claims prices reflect:", "options": ["Only insider tips", "Available information, making them hard to beat", "Nothing"], "answer": 1, "explanation": "If information is already in the price, systematic outperformance is difficult." },
+        { "type": "scenario", "prompt": "Behavioural finance qualifies this by showing investors are prone to:", "options": ["Perfect rationality", "Herding, overconfidence and panic", "No emotion"], "answer": 1, "explanation": "Real markets show bubbles and crashes inconsistent with pure efficiency." },
+        { "type": "predict", "prompt": "The chapter’s balanced view is that markets are:", "options": ["Always efficient", "Usually informative but periodically driven by collective error", "Always irrational"], "answer": 1, "explanation": "Aggregation works most of the time; correlated error breaks it sometimes." }
+      ]
+    },
+    "061": {
+      "category": "markets",
+      "sim": "beauty",
+      "prediction": {
+        "prompt": "Everyone picks a number 0–100; the winner is closest to two-thirds of the average. What should a perfectly rational room full of rational people all guess?",
+        "options": ["About 33", "0", "50"],
+        "answer": 1,
+        "reveal": "Keynes’ beauty contest: you shouldn’t pick what you think is best, but what you think others think others will pick. Iterated to the limit, the answer is 0 — but real people stop after a few steps. Play it below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Keynes’ beauty contest says investors try to guess:", "options": ["The true value", "What others think others will value", "The past price"], "answer": 1, "explanation": "You anticipate average opinion about average opinion — a hall of mirrors." },
+        { "type": "scenario", "prompt": "In the two-thirds game, real people typically guess around 20–35 because they reason:", "options": ["Infinitely many steps", "Only one or two steps of ‘others are rational’", "Randomly"], "answer": 1, "explanation": "Bounded ‘levels of thinking’ mean the equilibrium 0 is rarely reached." },
+        { "type": "predict", "prompt": "The beauty contest implies asset prices can reflect:", "options": ["Only fundamentals", "Beliefs about others’ beliefs, detached from fundamentals", "Nothing social"], "answer": 1, "explanation": "Prices can chase expected crowd opinion rather than intrinsic value." }
+      ]
+    },
+    "062": {
+      "category": "markets",
+      "prediction": {
+        "prompt": "According to Minsky, long periods of financial stability tend to make the system:",
+        "options": ["Permanently safe", "More fragile, as confidence breeds risk-taking", "Unchanged"],
+        "answer": 1,
+        "reveal": "Minsky’s financial instability hypothesis: stability is destabilising. Calm encourages leverage and speculation until a ‘Minsky moment’ triggers collapse."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Minsky argued that stability itself breeds:", "options": ["More stability", "Rising leverage and hidden fragility", "Deflation"], "answer": 1, "explanation": "Good times encourage borrowing and speculation, seeding the next crisis." },
+        { "type": "scenario", "prompt": "A ‘Minsky moment’ is when:", "options": ["Debt is repaid calmly", "Overextended positions unwind suddenly", "Prices rise forever"], "answer": 1, "explanation": "Confidence flips and forced selling cascades — the collapse phase." },
+        { "type": "predict", "prompt": "Minsky’s lesson for regulators is that calm markets:", "options": ["Need no attention", "May be quietly accumulating risk", "Cannot crash"], "answer": 1, "explanation": "Absence of visible trouble is not absence of building fragility." }
+      ]
+    },
+    "063": {
+      "category": "markets",
+      "prediction": {
+        "prompt": "Professional fund managers often move together, buying and selling the same things at the same time, partly because:",
+        "options": ["They share secret data", "It is safer for a career to be wrong with the crowd than alone", "They are forced to"],
+        "answer": 1,
+        "reveal": "Institutional herding: reputational and incentive pressures push professionals to mimic peers — ‘better to fail conventionally than succeed unconventionally’ — amplifying market swings."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Institutional herding is driven largely by:", "options": ["Random noise", "Career and reputational incentives to follow peers", "Regulation only"], "answer": 1, "explanation": "Being wrong alone is career-ending; being wrong with everyone is survivable." },
+        { "type": "scenario", "prompt": "Herding among institutions tends to:", "options": ["Dampen price swings", "Amplify bubbles and crashes", "Have no effect"], "answer": 1, "explanation": "Correlated trading magnifies moves in both directions." },
+        { "type": "predict", "prompt": "Herding is a market version of Book One’s warning that:", "options": ["Diversity helps", "Copying destroys independence and error-cancellation", "Numbers always help"], "answer": 1, "explanation": "When everyone copies, the ‘wise crowd’ of investors becomes a mob." }
+      ]
+    },
+    "064": {
+      "category": "markets",
+      "prediction": {
+        "prompt": "Asset bubbles inflate and burst in a recognisable pattern. The crash usually comes:",
+        "options": ["Gradually and gently", "Suddenly, faster than the rise", "Never"],
+        "answer": 1,
+        "reveal": "Bubbles and crashes: displacement, boom, euphoria, profit-taking, then panic (Kindleberger/Minsky). Crashes are typically faster and sharper than the climb — fear moves quicker than greed."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A classic bubble sequence ends in:", "options": ["Euphoria forever", "Panic and a rapid crash", "Slow decline"], "answer": 1, "explanation": "Kindleberger’s stages culminate in revulsion and a sharp collapse." },
+        { "type": "scenario", "prompt": "Crashes are often sharper than build-ups because:", "options": ["Greed is faster than fear", "Fear and forced selling propagate faster than optimism", "Prices can’t fall"], "answer": 1, "explanation": "Deleveraging and stop-losses create self-reinforcing downward cascades." },
+        { "type": "predict", "prompt": "Bubbles recur across centuries because they arise from:", "options": ["New technology only", "Durable features of collective psychology and incentives", "Bad luck"], "answer": 1, "explanation": "The same herding and greater-fool dynamics repeat regardless of era." }
+      ]
+    },
+    "065": {
+      "category": "markets",
+      "prediction": {
+        "prompt": "Soros argued that investors’ beliefs don’t just observe markets — they change the very fundamentals they’re predicting. He called this:",
+        "options": ["Efficiency", "Reflexivity", "Arbitrage"],
+        "answer": 1,
+        "reveal": "Reflexivity: a two-way feedback where perceptions shape fundamentals, which reshape perceptions. Rising prices can improve a company’s real prospects, validating the rise — until they don’t."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Reflexivity describes a feedback loop between:", "options": ["Two unrelated markets", "Participants’ beliefs and the fundamentals they assess", "Buyers and regulators"], "answer": 1, "explanation": "Beliefs alter reality, which alters beliefs — Soros’s challenge to equilibrium thinking." },
+        { "type": "scenario", "prompt": "A rising share price can be self-validating when it:", "options": ["Lowers the firm’s prospects", "Cheapens capital and improves the firm’s real fundamentals", "Does nothing"], "answer": 1, "explanation": "Perception feeds back into fundamentals — a boom can manufacture its own justification." },
+        { "type": "predict", "prompt": "Reflexive loops are dangerous because they:", "options": ["Self-correct instantly", "Can run far from equilibrium before reversing violently", "Never reverse"], "answer": 1, "explanation": "Self-reinforcing belief–reality loops overshoot, then snap back." }
+      ]
+    },
+    "066": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "When a pasture is shared by many herders, each with private incentive to graze more, the likely outcome is:",
+        "options": ["Careful sustainable use", "Overuse and ruin — unless it’s governed", "Abandonment"],
+        "answer": 1,
+        "reveal": "The tragedy of the commons — and Ostrom’s rebuttal: shared resources can be overused, but Ostrom showed communities routinely avoid ruin through self-governance, not just markets or states."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The tragedy of the commons arises when individual incentives and collective good:", "options": ["Align perfectly", "Diverge, so private gain drives shared ruin", "Are irrelevant"], "answer": 1, "explanation": "Each user’s rational overuse aggregates into collective depletion." },
+        { "type": "scenario", "prompt": "Ostrom’s key rebuttal was that communities often avoid tragedy by:", "options": ["Doing nothing", "Crafting their own rules, monitoring and sanctions", "Always privatising"], "answer": 1, "explanation": "Self-organised institutions manage commons sustainably without top-down control." },
+        { "type": "predict", "prompt": "Ostrom’s work shows the ‘tragedy’ is:", "options": ["Inevitable", "Avoidable under the right institutions", "A myth"], "answer": 1, "explanation": "Governance design, not human nature, determines the outcome." }
+      ]
+    },
+    "067": {
+      "category": "governance",
+      "sim": "schelling",
+      "prediction": {
+        "prompt": "Imagine everyone is happy to live in a mixed neighbourhood, but each prefers not to be a tiny minority (say, wants ≥30% similar neighbours). The result is likely:",
+        "options": ["Full integration", "Sharp segregation, despite tolerant individuals", "Random mixing"],
+        "answer": 1,
+        "reveal": "Schelling’s segregation model: mild individual preferences for similar neighbours can cascade into stark collective segregation, even when no one wants it. Run it below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Schelling’s model shows that mild in-group preference can produce:", "options": ["Perfect integration", "Extreme collective segregation", "No pattern"], "answer": 1, "explanation": "Individual tolerance thresholds aggregate into segregation nobody intended." },
+        { "type": "scenario", "prompt": "The striking lesson is that segregation can emerge:", "options": ["Only from bigotry", "Even when everyone is fairly tolerant", "Only by law"], "answer": 1, "explanation": "Macro-segregation ≠ micro-racism; small preferences suffice." },
+        { "type": "predict", "prompt": "In the simulator, raising each agent’s ‘similar-neighbour’ threshold makes segregation:", "options": ["Weaker", "Stronger and faster", "Disappear"], "answer": 1, "explanation": "Higher demands tip more agents to move, sharpening the sorting." }
+      ]
+    },
+    "068": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "A honeybee swarm choosing a new nest site reaches an accurate collective decision through:",
+        "options": ["A queen’s command", "Scout bees advertising options and building quorum, with cross-inhibition", "Random landing"],
+        "answer": 1,
+        "reveal": "Honeybee democracy: scouts dance to advertise sites, recruit others, and inhibit rival options; when a site’s quorum is reached, the swarm commits. Decentralised, accurate, leaderless."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Honeybee nest-site choice is decided by:", "options": ["The queen", "Decentralised scouting, recruitment and quorum sensing", "The oldest bee"], "answer": 1, "explanation": "Seeley showed a leaderless process aggregates information into an accurate choice." },
+        { "type": "scenario", "prompt": "Cross-inhibition between competing dances helps the swarm:", "options": ["Deadlock forever", "Break ties and reach a clear decision", "Ignore quality"], "answer": 1, "explanation": "Bees suppress rival options, preventing stalemate and sharpening consensus." },
+        { "type": "predict", "prompt": "Honeybee democracy is a natural example of good collective decision-making because it preserves:", "options": ["Central control", "Independence, diversity of scouting, and honest aggregation", "Secrecy"], "answer": 1, "explanation": "It embodies Book One’s conditions in a biological system." }
+      ]
+    },
+    "069": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "Ostrom identified design principles that let communities govern shared resources well. A core one is:",
+        "options": ["Unlimited open access", "Clear boundaries and rules made by the users themselves", "Rule by a distant authority"],
+        "answer": 1,
+        "reveal": "Ostrom’s eight principles: clear boundaries, locally-fitted rules, participation in rule-making, monitoring, graduated sanctions, cheap conflict resolution, recognised self-governance, and nested layers."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A recurring Ostrom principle is that rules should be:", "options": ["Imposed from outside", "Made and adjusted by the resource users", "Never enforced"], "answer": 1, "explanation": "Local participation and legitimacy make rules stick." },
+        { "type": "scenario", "prompt": "Ostrom found sanctions for rule-breaking work best when they are:", "options": ["Immediately maximal", "Graduated, escalating with repeat offences", "Nonexistent"], "answer": 1, "explanation": "Graduated sanctions preserve cooperation while deterring free-riding." },
+        { "type": "predict", "prompt": "Ostrom’s principles imply governance should be:", "options": ["One-size-fits-all", "Polycentric and fitted to local conditions", "Fully centralised"], "answer": 1, "explanation": "Nested, local institutions outperform uniform top-down designs." }
+      ]
+    },
+    "070": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "A group must decide. Requiring unanimity rather than majority tends to:",
+        "options": ["Speed decisions", "Protect minorities but risk deadlock", "Change nothing"],
+        "answer": 1,
+        "reveal": "Consensus, majority, and quorum: every aggregation rule trades off speed, minority protection, and legitimacy. There is no neutral way to turn many wills into one."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Compared with majority rule, unanimity:", "options": ["Is always faster", "Protects minorities but invites deadlock", "Ignores minorities"], "answer": 1, "explanation": "Requiring everyone empowers any single blocker — safety versus gridlock." },
+        { "type": "scenario", "prompt": "A quorum requirement exists to ensure decisions have:", "options": ["Minimal participation legitimacy", "No participation", "Maximum speed"], "answer": 0, "explanation": "Quorums prevent a tiny unrepresentative group from binding the whole." },
+        { "type": "predict", "prompt": "The choice of decision rule is never neutral because it:", "options": ["Has no effect", "Shapes which outcomes and whose voices prevail", "Is purely technical"], "answer": 1, "explanation": "Aggregation rules encode values — a theme Arrow makes formal next." }
+      ]
+    },
+    "071": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "Arrow asked whether any voting system can fairly turn individual rankings into a group ranking meeting a few reasonable conditions. His answer:",
+        "options": ["Yes, several do", "No perfect system exists (with 3+ options)", "Only unanimity works"],
+        "answer": 1,
+        "reveal": "Arrow’s impossibility theorem: no ranked voting rule can simultaneously satisfy a small set of fairness conditions for three or more options — the aggregation of preferences is fundamentally constrained."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Arrow’s theorem proves that with 3+ options, no ranked rule can satisfy all of his fairness criteria without becoming:", "options": ["Perfectly fair", "A dictatorship or violating a condition", "Unanimous"], "answer": 1, "explanation": "The only rule meeting the rest forces one person’s ranking — impossibility." },
+        { "type": "scenario", "prompt": "A practical implication is that different fair-seeming voting methods can:", "options": ["Always agree", "Produce different winners from the same votes", "Never disagree"], "answer": 1, "explanation": "Because no method is uniquely ‘correct’, the rule choice changes outcomes." },
+        { "type": "predict", "prompt": "Arrow’s result means ‘the will of the people’ is:", "options": ["Perfectly well-defined", "Not uniquely definable by any ideal aggregation rule", "Meaningless"], "answer": 1, "explanation": "Aggregating diverse preferences has no flawless solution — a deep limit, not mere technicality." }
+      ]
+    },
+    "072": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "Bringing citizens together to deliberate can improve decisions — but it can also fail. A common failure is:",
+        "options": ["Too much diversity", "Polarisation as like-minded people reinforce each other", "Too much information"],
+        "answer": 1,
+        "reveal": "Deliberative democracy and its failure modes: good deliberation harnesses diversity, but poorly designed groups can polarise, defer to status, or cascade — deliberation is not automatically wise."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Deliberation improves decisions when it preserves:", "options": ["Homogeneity", "Diverse, independent input before convergence", "Status hierarchy"], "answer": 1, "explanation": "The wise-crowd conditions apply to deliberation too." },
+        { "type": "scenario", "prompt": "Group polarisation is when discussion among like-minded people makes their view:", "options": ["More moderate", "More extreme", "Unchanged"], "answer": 1, "explanation": "Deliberation among similar people can push the group further, not toward the centre." },
+        { "type": "predict", "prompt": "Well-designed deliberation counters these failures by engineering:", "options": ["Uniform panels", "Diversity, anonymity of early input, and structured turn-taking", "Faster consensus"], "answer": 1, "explanation": "Design choices decide whether deliberation is wise or foolish." }
+      ]
+    },
+    "073": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "Liquid democracy lets you either vote directly or delegate your vote to someone you trust, revocably. Its main appeal is:",
+        "options": ["Removing all voting", "Combining direct participation with expert delegation, flexibly", "Guaranteeing unanimity"],
+        "answer": 1,
+        "reveal": "Liquid & delegated democracy: a hybrid where votes can be delegated transitively and reclaimed. Promising for scaling expertise — but risks delegation hubs concentrating power."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Liquid democracy allows a voter to:", "options": ["Only vote directly", "Delegate their vote flexibly and reclaim it", "Never vote"], "answer": 1, "explanation": "Delegation is transitive and revocable — direct and representative democracy blended." },
+        { "type": "scenario", "prompt": "A risk of transitive delegation is that votes:", "options": ["Spread evenly", "Concentrate on a few popular delegates (super-voters)", "Disappear"], "answer": 1, "explanation": "Delegation hubs can accumulate outsized influence — a scale-free-like concentration." },
+        { "type": "predict", "prompt": "Liquid democracy tries to capture the benefits of:", "options": ["Only direct democracy", "Both participation and delegated expertise", "Neither"], "answer": 1, "explanation": "It seeks expert-informed yet participatory decisions." }
+      ]
+    },
+    "074": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "A jury of twelve deliberating to unanimity is a deliberate design to:",
+        "options": ["Speed verdicts", "Force diverse independent views to be reconciled before deciding", "Favour the loudest"],
+        "answer": 1,
+        "reveal": "Jury deliberation: a structured attempt at collective judgment — diversity and required discussion can improve accuracy, but conformity, dominant voices, and cascades remain real risks."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Unanimous juries are designed to force:", "options": ["Quick agreement", "Engagement with dissenting views before a verdict", "One person to decide"], "answer": 1, "explanation": "Requiring unanimity compels the group to address minority objections." },
+        { "type": "scenario", "prompt": "A known failure of jury deliberation is:", "options": ["Too much independence", "Dominant jurors or conformity cascades swaying others", "No discussion"], "answer": 1, "explanation": "Status and social proof can override evidence — the ‘12 Angry Men’ risk in reverse." },
+        { "type": "predict", "prompt": "Juries work best when early opinions are:", "options": ["Announced publicly first", "Gathered independently before open discussion", "Never gathered"], "answer": 1, "explanation": "Independent initial judgments protect against premature cascades." }
+      ]
+    },
+    "075": {
+      "category": "governance",
+      "prediction": {
+        "prompt": "When a benefit is shared by all regardless of who pays for it, individuals are tempted to:",
+        "options": ["Contribute generously", "Free-ride on others’ contributions", "Refuse the benefit"],
+        "answer": 1,
+        "reveal": "Collective action and free-riding: public goods are under-provided because each person benefits whether or not they contribute. Olson’s logic — and why organising the many is hard."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The free-rider problem arises because a public good is:", "options": ["Excludable", "Non-excludable — you benefit even without paying", "Private"], "answer": 1, "explanation": "If you can’t be excluded from the benefit, your incentive to contribute weakens." },
+        { "type": "scenario", "prompt": "Olson argued large groups struggle to organise because:", "options": ["Each member’s share of benefit is tiny relative to cost", "They have too few members", "Coordination is free"], "answer": 0, "explanation": "In big groups the individual payoff to acting is small, so few act — the logic of collective inaction." },
+        { "type": "predict", "prompt": "Solutions to free-riding often add:", "options": ["More anonymity", "Selective incentives, monitoring, or smaller groups", "Larger groups"], "answer": 1, "explanation": "Targeted rewards/sanctions and Ostrom-style institutions overcome free-riding." }
+      ]
+    },
+    "076": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "At a concert, ritual, or rally, people can feel a surge of unity and energy larger than themselves. Durkheim called this:",
+        "options": ["Mass hysteria", "Collective effervescence", "Deindividuation"],
+        "answer": 1,
+        "reveal": "Durkheim’s collective effervescence: gathered, synchronised crowds generate a shared emotional energy that binds the group and charges its symbols with meaning — the engine of the sacred."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Collective effervescence is the shared emotional energy generated by:", "options": ["Solitude", "Assembled, synchronised groups", "Written rules"], "answer": 1, "explanation": "Durkheim: co-presence and shared action produce a felt collective force." },
+        { "type": "scenario", "prompt": "Durkheim argued this energy is what charges:", "options": ["Money only", "Sacred symbols and social solidarity", "Nothing"], "answer": 1, "explanation": "The group projects its effervescent energy onto totems and symbols." },
+        { "type": "predict", "prompt": "Collective effervescence helps explain the power of:", "options": ["Isolated study", "Rituals, festivals, sport and political rallies", "Silence"], "answer": 1, "explanation": "Gatherings manufacture solidarity and meaning through shared arousal." }
+      ]
+    },
+    "077": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Le Bon claimed that individuals in a crowd become more:",
+        "options": ["Rational and independent", "Suggestible, emotional and prone to a ‘group mind’", "Silent"],
+        "answer": 1,
+        "reveal": "Le Bon’s The Crowd (1895): influential but flawed. He saw crowds as reducing individuals to a suggestible, irrational ‘group mind’ — a view later crowd science has substantially revised."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Le Bon characterised the crowd as producing a:", "options": ["Wiser collective", "Suggestible, emotional ‘group mind’", "Silent mass"], "answer": 1, "explanation": "He emphasised contagion, suggestibility and loss of individual reason." },
+        { "type": "scenario", "prompt": "Modern crowd research revises Le Bon by showing crowds often retain:", "options": ["No structure", "Identity, norms and rational coordination", "Only violence"], "answer": 1, "explanation": "Crowds are frequently orderly and norm-governed, not mindless mobs." },
+        { "type": "predict", "prompt": "The chapter treats Le Bon as:", "options": ["The final word", "Historically pivotal but empirically superseded", "Entirely worthless"], "answer": 1, "explanation": "Important influence on later thinkers, but his ‘group mind’ is largely rejected — epistemic humility." }
+      ]
+    },
+    "078": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Freud explained a crowd’s cohesion around a leader through:",
+        "options": ["Economic contracts", "Members’ shared emotional identification with the leader", "Random chance"],
+        "answer": 1,
+        "reveal": "Freud on the group and the leader: members bind together by each putting the same leader in the place of their ego-ideal, identifying with one another through him — a psychodynamic account of followership."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Freud argued group cohesion comes from members sharing:", "options": ["A common enemy only", "Identification with the same leader/ideal", "Nothing"], "answer": 1, "explanation": "Each substitutes the leader for their ego-ideal, bonding the members to one another." },
+        { "type": "scenario", "prompt": "In Freud’s account, the leader’s power rests on:", "options": ["Rational argument", "Members’ libidinal/emotional ties and identification", "Legal authority"], "answer": 1, "explanation": "Emotional identification, not reasoned consent, holds the group together." },
+        { "type": "predict", "prompt": "Freud’s model helps explain why removing a charismatic leader can:", "options": ["Strengthen the group", "Dissolve the bonds and scatter the group", "Do nothing"], "answer": 1, "explanation": "If cohesion runs through the leader, losing them can unravel the group (‘panic’)." }
+      ]
+    },
+    "079": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Canetti analysed crowds by their dynamics — growth, density, direction. A ‘baiting crowd’ forms around:",
+        "options": ["A shared meal", "A common target to attack", "Quiet reflection"],
+        "answer": 1,
+        "reveal": "Canetti’s Crowds and Power: a phenomenology of crowd types (baiting, flight, prohibition, reversal, feast) and the deep link between the survivor-ruler and command. Idiosyncratic but penetrating."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Canetti classified crowds by their:", "options": ["Income", "Dynamics and emotional aims (baiting, flight, feast…)", "Age"], "answer": 1, "explanation": "He built a typology from how crowds form, move and feel." },
+        { "type": "scenario", "prompt": "For Canetti, ‘command’ leaves in each person a:", "options": ["Reward", "‘Sting’ that accumulates and seeks discharge", "Contract"], "answer": 1, "explanation": "Commands deposit a residue of resentment — his account of power’s psychic cost." },
+        { "type": "predict", "prompt": "The chapter presents Canetti as:", "options": ["A rigorous empiricist", "A literary, insightful, non-empirical theorist", "A statistician"], "answer": 1, "explanation": "Brilliant phenomenology, not testable science — read for insight, not data." }
+      ]
+    },
+    "080": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Humans dominate the planet largely because we can accumulate knowledge across generations. This ‘second inheritance system’ is:",
+        "options": ["Genetic only", "Culture, evolving alongside genes (dual inheritance)", "Instinct"],
+        "answer": 1,
+        "reveal": "Cultural evolution and dual inheritance: culture is a second, faster inheritance system that co-evolves with genes. Cumulative culture — not individual genius — is our species’ superpower."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Dual inheritance theory holds that human behaviour is shaped by:", "options": ["Genes alone", "Two interacting inheritance systems: genes and culture", "Culture alone"], "answer": 1, "explanation": "Genes and culture co-evolve, each shaping the other (Boyd & Richerson)." },
+        { "type": "scenario", "prompt": "Cumulative culture works because individuals mostly:", "options": ["Reinvent everything", "Faithfully copy and slightly improve others", "Ignore predecessors"], "answer": 1, "explanation": "High-fidelity social learning lets improvements ratchet up over generations." },
+        { "type": "predict", "prompt": "The chapter’s point is that human success is largely:", "options": ["Individual brilliance", "Collective and cumulative, not individual", "Genetic luck"], "answer": 1, "explanation": "We are smart because we are collective learners, not lone geniuses." }
+      ]
+    },
+    "081": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Marching in step, chanting, and dancing together tend to make people:",
+        "options": ["More individualistic", "More bonded and cooperative with the group", "Indifferent"],
+        "answer": 1,
+        "reveal": "Ritual and behavioural synchrony: moving in time with others raises trust, cooperation, and group identity. Synchrony is a cheap, powerful technology for manufacturing solidarity."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Behavioural synchrony (moving in unison) reliably increases:", "options": ["Group bonding and cooperation", "Aggression toward the in-group", "Isolation"], "answer": 0, "explanation": "Synchronised action boosts affiliation, trust and cooperation." },
+        { "type": "scenario", "prompt": "Militaries, religions and sports use synchrony because it:", "options": ["Wastes time", "Cheaply builds cohesion and shared identity", "Reduces morale"], "answer": 1, "explanation": "Drill, chant and dance are technologies of solidarity." },
+        { "type": "predict", "prompt": "Synchrony’s bonding power can be used for:", "options": ["Only good ends", "Both prosocial cohesion and manipulation", "Nothing"], "answer": 1, "explanation": "The same mechanism unites a choir and a rally — power is neutral." }
+      ]
+    },
+    "082": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Propaganda works best not by arguing, but by:",
+        "options": ["Presenting balanced evidence", "Repetition, emotion, and controlling what seems normal/sayable", "Encouraging debate"],
+        "answer": 1,
+        "reveal": "Propaganda and manufactured consent: shaping the range of acceptable opinion through repetition, emotion, and control of salience — engineering apparent consensus (Bernays; Herman & Chomsky)."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Effective propaganda relies less on argument than on:", "options": ["Repetition, emotion and framing", "Peer-reviewed data", "Open debate"], "answer": 0, "explanation": "It shapes what feels normal and sayable rather than winning on evidence." },
+        { "type": "scenario", "prompt": "‘Manufacturing consent’ refers to shaping the:", "options": ["Weather", "Boundaries of acceptable public opinion", "Vote count directly"], "answer": 1, "explanation": "Control the frame and you narrow the debate without banning anything." },
+        { "type": "predict", "prompt": "Propaganda connects to earlier chapters via:", "options": ["Preference falsification and availability cascades", "Kin selection", "Boids"], "answer": 0, "explanation": "It weaponises the same conformity and salience mechanisms studied earlier." }
+      ]
+    },
+    "083": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Money, nations, and companies have no physical existence, yet coordinate millions. They work because they are:",
+        "options": ["Natural facts", "Shared fictions everyone agrees to treat as real", "Illusions with no effect"],
+        "answer": 1,
+        "reveal": "Shared fictions as coordination devices: money, law, and nations are collective agreements. They are ‘fictions’ in origin but utterly real in effect — they let strangers cooperate at scale."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A ‘shared fiction’ like money coordinates behaviour because its value rests on:", "options": ["Physical properties", "Mutual belief and expectation that others accept it", "Government metal"], "answer": 1, "explanation": "Its power is collective agreement, not intrinsic substance." },
+        { "type": "scenario", "prompt": "Shared fictions let strangers cooperate by providing:", "options": ["A common frame both trust", "Genetic relatedness", "Physical force"], "answer": 0, "explanation": "Shared institutions substitute for kinship and personal trust at scale (Harari)." },
+        { "type": "predict", "prompt": "A shared fiction collapses when:", "options": ["It is written down", "Enough people stop believing others believe in it", "It is taxed"], "answer": 1, "explanation": "Currency crises and legitimacy collapses are failures of shared belief — a coordination unravelling." }
+      ]
+    },
+    "084": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Some group memberships become fused with personal identity, so ‘us’ feels like ‘me’. People in this state may:",
+        "options": ["Never sacrifice for the group", "Sacrifice greatly, even their lives, for the group", "Leave easily"],
+        "answer": 1,
+        "reveal": "Identity fusion and sacred values: when group and self merge, and certain values become non-negotiable, people will make extreme sacrifices and resist trade-offs — the psychology of devotion and extremism."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Identity fusion is when personal and group identity:", "options": ["Stay separate", "Merge, so the group is felt as the self", "Disappear"], "answer": 1, "explanation": "Fused individuals experience the group’s fate as their own (Swann; Whitehouse)." },
+        { "type": "scenario", "prompt": "‘Sacred values’ are resistant to:", "options": ["Any change", "Cost-benefit trade-offs and material incentives", "Emotion"], "answer": 1, "explanation": "Offering money to abandon a sacred value can backfire, increasing resistance." },
+        { "type": "predict", "prompt": "Fusion plus sacred values helps explain:", "options": ["Casual membership", "Extreme self-sacrifice and intractable conflict", "Indifference"], "answer": 1, "explanation": "It underlies devoted actors — soldiers, martyrs, die-hard partisans." }
+      ]
+    },
+    "085": {
+      "category": "ideology",
+      "prediction": {
+        "prompt": "Stable social hierarchies (class, caste, rank) are held in place less by force than by:",
+        "options": ["Constant policing", "Widely shared beliefs that the order is normal or legitimate", "Nothing"],
+        "answer": 1,
+        "reveal": "Stratification as collective behaviour: hierarchies persist because enough people — including the disadvantaged — treat them as natural. Inequality is a self-reinforcing collective belief, not just coercion."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Durable stratification is sustained largely by:", "options": ["Force alone", "Shared beliefs in the order’s legitimacy", "Random chance"], "answer": 1, "explanation": "Legitimating beliefs make hierarchies feel natural, lowering the cost of maintaining them." },
+        { "type": "scenario", "prompt": "Stratification is self-reinforcing because those within it:", "options": ["Always resist", "Often act in ways that reproduce their position", "Ignore it"], "answer": 1, "explanation": "Expectations and behaviour reproduce the structure across generations." },
+        { "type": "predict", "prompt": "Framing stratification as collective behaviour implies it can:", "options": ["Never change", "Shift when shared beliefs and coordination shift", "Only change by force"], "answer": 1, "explanation": "If belief sustains it, changing belief can destabilise it — a hopeful corollary." }
+      ]
+    }
+  }
+}

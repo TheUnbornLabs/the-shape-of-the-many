@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://theunbornlabs.github.io/the-shape-of-the-many/assets/og-image.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Keynes' beauty contest","articleSection":"The Shape Holds Power","url":"https://theunbornlabs.github.io/the-shape-of-the-many/c-b4-061.html","isPartOf":{"@type":"Book","name":"The Shape Holds Power"},"inLanguage":"en","wordCount":2633,"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
-<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>
+<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div><script>window.__IX__={"book":4,"ch":"061","catKey":"markets","catName":"Markets & finance","data":{"prediction":{"prompt":"Everyone picks a number 0–100; the winner is closest to two-thirds of the average. What should a perfectly rational room full of rational people all guess?","options":["About 33","0","50"],"answer":1,"reveal":"Keynes’ beauty contest: you shouldn’t pick what you think is best, but what you think others think others will pick. Iterated to the limit, the answer is 0 — but real people stop after a few steps. Play it below."},"questions":[{"type":"concept","prompt":"Keynes’ beauty contest says investors try to guess:","options":["The true value","What others think others will value","The past price"],"answer":1,"explanation":"You anticipate average opinion about average opinion — a hall of mirrors."},{"type":"scenario","prompt":"In the two-thirds game, real people typically guess around 20–35 because they reason:","options":["Infinitely many steps","Only one or two steps of ‘others are rational’","Randomly"],"answer":1,"explanation":"Bounded ‘levels of thinking’ mean the equilibrium 0 is rarely reached."},{"type":"predict","prompt":"The beauty contest implies asset prices can reflect:","options":["Only fundamentals","Beliefs about others’ beliefs, detached from fundamentals","Nothing social"],"answer":1,"explanation":"Prices can chase expected crowd opinion rather than intrinsic value."}]}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -38,7 +38,7 @@
         <a class="crumb" href="book-4.html">← Book 4 · The Shape Holds Power</a>
         <p class="eyebrow">Chapter 61 · The Shape Holds Power</p>
         <h1>Keynes' beauty contest</h1>
-        
+        <div id="ix-predict"></div>
         <article class="prose"><blockquote><p>When the prize goes to whoever guesses the crowd's taste, nobody is left looking at the faces — only at each other.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/John_Maynard_Keynes_1929.jpg/1280px-John_Maynard_Keynes_1929.jpg" alt="John Maynard Keynes 1929" loading="lazy" referrerpolicy="no-referrer"><figcaption>Unknown authorUnknown author · Public domain · <a href="https://commons.wikimedia.org/wiki/File:John_Maynard_Keynes_1929.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -70,8 +70,8 @@
 <p>The laboratory model has its own limits. Level-k thinking is a wonderfully clean description of how people reason in the two-thirds game, but it is more descriptive than predictive: it fits the distribution of guesses after the fact better than it forecasts them before. The parameter &quot;k&quot; is often estimated from the very data it is meant to explain. And the two-thirds game is artificial — a one-shot puzzle with a known structure and a cash prize, played mostly by students and economists, a long way from the messy, high-stakes, information-rich environment of a real market. Its charm is its cleanliness, and cleanliness is bought at the price of realism.</p>
 <p>There are structural checks on beauty-contest dynamics too. Arbitrage lets traders who <em>do</em> look at fundamentals profit at the expense of those merely chasing the crowd, which should, in theory, pull prices back toward value; long investment horizons reward patience over the anticipation of next week's mood. How strong these correctives are is contested — the behavioural school argues that arbitrage is limited and risky, that the market can stay irrational longer than a rational trader can stay solvent — but they are real, and a fair account cannot pretend the mirror-hall has no exits.</p>
 <p>The deepest risk is overextension. It is tempting, once you have the beauty-contest lens, to dismiss all social valuation as mere convention with nothing real underneath — to treat every price, every reputation, every norm as pure crowd-guessing. That is a cynicism the analogy does not license. Most of the world's estimation problems still have an ox in them somewhere: a fact that eventually asserts itself, a reality the crowd is, however clumsily, trying to track. The beauty contest is what happens when the ox is removed, or forgotten, or drowned out by the noise of everyone watching everyone else. Naming that condition precisely is the achievement. Mistaking it for the whole of human judgment is the error.</p></article>
-        
-        
+        <div id="ix-sim" data-sim="beauty"></div>
+        <div id="ix-quiz"></div>
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Keynes, John Maynard. <em>The General Theory of Employment, Interest and Money</em>. Macmillan, 1936. — Chapter 12, &quot;The State of Long-Term Expectation,&quot; contains the newspaper beauty-contest analogy and the passage on anticipating what average opinion expects average opinion to be, including the &quot;third degree, fourth, fifth and higher degrees&quot; of anticipation. The foundational source for the chapter's central idea and Keynes' framing of investment as crowd-anticipation.</li></ul>
 <ul><li>Nagel, Rosemarie. &quot;Unraveling in Guessing Games: An Experimental Study.&quot; <em>American Economic Review</em>, vol. 85, no. 5, 1995, pp. 1313–1326. — The landmark experiment introducing the &quot;guess two-thirds of the average&quot; game (p-beauty contest) as an empirical instrument, reporting that real guesses cluster well above the Nash equilibrium of zero and introducing the levels-of-reasoning (&quot;steps&quot;) interpretation that became level-k thinking. Supports the mechanism and anchor-example beats.</li></ul>
@@ -99,6 +99,6 @@
   </div>
 </footer>
 <script src="assets/js/search.js"></script>
-<script src="assets/js/chapter.js"></script>
+<script src="assets/js/chapter.js"></script><script src="assets/js/simulations.js"></script><script src="assets/js/interactive.js"></script>
 </body>
 </html>

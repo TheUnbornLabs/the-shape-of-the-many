@@ -1,0 +1,261 @@
+{
+  "book": 2,
+  "title": "The Shape Breaks",
+  "categories": { "cascades": "Cascades & panics", "conformity": "Conformity & obedience" },
+  "chapters": {
+    "026": {
+      "category": "cascades",
+      "sim": "cascade",
+      "prediction": {
+        "prompt": "You privately think option A is best, but the three people before you all publicly chose B. Rationally, you might now:",
+        "options": ["Always follow your private signal", "Ignore your own signal and choose B too", "Flip a coin"],
+        "answer": 1,
+        "reveal": "Information cascades: once enough people act publicly, it becomes rational to ignore your own private evidence and copy them — and everyone after you inherits the same distortion. Try it below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "An information cascade forms when people rationally:", "options": ["Ignore others and use only private evidence", "Discard their own signal and copy prior public actions", "Vote at random"], "answer": 1, "explanation": "Each person infers from others’ visible choices; past a point, public behaviour outweighs private information." },
+        { "type": "scenario", "prompt": "A cascade can lock a whole crowd onto a wrong choice because early public actions:", "options": ["Reveal all private information", "Hide the private signals that follow", "Are always correct"], "answer": 1, "explanation": "Once people copy rather than reveal, later private signals never enter the public pool — the crowd stops learning." },
+        { "type": "predict", "prompt": "Cascades are fragile: a little new public information can:", "options": ["Never change anything", "Flip the entire crowd at once", "Only affect one person"], "answer": 1, "explanation": "Because the cascade rests on thin information, a credible new signal can reverse everyone rapidly." }
+      ]
+    },
+    "027": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "A risk that is easy to recall (a dramatic news story) tends to be judged as:",
+        "options": ["Less likely than it is", "More likely than it is", "Correctly likely"],
+        "answer": 1,
+        "reveal": "Availability cascades: a self-reinforcing loop where a vivid, repeated claim becomes more available in memory, feels truer, gets repeated more, and cascades through public discourse."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "An availability cascade is driven by:", "options": ["Careful base-rate reasoning", "Repetition making a claim feel more probable", "Random chance"], "answer": 1, "explanation": "Ease of recall is mistaken for likelihood; repetition amplifies availability, which amplifies repetition." },
+        { "type": "scenario", "prompt": "‘Availability entrepreneurs’ accelerate the loop by:", "options": ["Suppressing a story", "Repeating and dramatising a claim to keep it salient", "Publishing base rates"], "answer": 1, "explanation": "Actors with an interest in the narrative feed the cycle, detaching perceived risk from actual risk." },
+        { "type": "predict", "prompt": "The best antidote to an availability cascade is usually:", "options": ["More vivid anecdotes", "Base rates and statistical context", "Louder repetition"], "answer": 1, "explanation": "Grounding perception in frequencies counteracts the salience distortion." }
+      ]
+    },
+    "028": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "A bank is solvent, but a rumour spreads that it may fail. If enough depositors withdraw ‘just in case’, the bank:",
+        "options": ["Stays fine — rumours don’t matter", "Can be driven to failure by the withdrawals themselves", "Becomes richer"],
+        "answer": 1,
+        "reveal": "Bank runs are self-fulfilling: fear of collapse rationally motivates withdrawal, and mass withdrawal causes the very collapse feared. A coordination trap."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A bank run is self-fulfilling because withdrawing is rational when:", "options": ["The bank is definitely insolvent", "You expect others to withdraw first", "Interest rates rise"], "answer": 1, "explanation": "It is individually rational to run if you think others will — even a healthy bank can fail on illiquidity." },
+        { "type": "scenario", "prompt": "Deposit insurance stops runs mainly by:", "options": ["Making the bank richer", "Removing the incentive to withdraw first", "Hiding information"], "answer": 1, "explanation": "If your deposit is safe regardless, the race to withdraw disappears — the coordination trap is defused." },
+        { "type": "predict", "prompt": "Bank runs illustrate that a system can fail from:", "options": ["Fundamentals alone", "Beliefs and coordination, not just fundamentals", "Nothing at all"], "answer": 1, "explanation": "Expectations can drive outcomes independently of the underlying balance sheet." }
+      ]
+    },
+    "029": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "Deadly crowd crushes usually happen because people:",
+        "options": ["Panic and act irrationally as a mob", "Are packed to a density where physical forces take over, regardless of intent", "Are inherently violent"],
+        "answer": 1,
+        "reveal": "Crowd-crush dynamics are largely physical: above a critical density, shockwaves travel through bodies and individuals lose control of their own movement. Not moral panic — fluid-like mechanics."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Fatal crowd crushes are best understood as:", "options": ["Mass irrationality", "Density-driven physical dynamics beyond individual control", "Deliberate stampedes"], "answer": 1, "explanation": "Once density crosses a threshold, propagating forces move people involuntarily — a fluid-like failure." },
+        { "type": "scenario", "prompt": "The key control variable for crush safety is:", "options": ["Crowd mood", "Crowd density (people per square metre)", "Crowd age"], "answer": 1, "explanation": "Managing flow and density — not policing ‘panic’ — is what prevents crushes." },
+        { "type": "predict", "prompt": "Blaming victims for ‘panicking’ is misleading because:", "options": ["They chose to push", "At critical density no individual can control their motion", "Panic never occurs"], "answer": 1, "explanation": "The failure is systemic and physical; individual intent is largely irrelevant." }
+      ]
+    },
+    "030": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "In 1637 a single tulip bulb sold for the price of a house. Manias like this are mainly powered by:",
+        "options": ["Accurate valuation", "The belief that someone else will pay more (greater-fool dynamics)", "Government policy"],
+        "answer": 1,
+        "reveal": "Manias and delusions: prices detach from value when people buy expecting to resell to a ‘greater fool’. The bubble lasts only while new buyers keep arriving."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A speculative mania is sustained by:", "options": ["Fundamentals", "Expectations of selling to a greater fool", "Falling prices"], "answer": 1, "explanation": "Buyers accept absurd prices believing a later buyer will pay more — until the buyers run out." },
+        { "type": "scenario", "prompt": "Manias collapse when:", "options": ["The last greater fool has bought", "Prices are fair", "Regulators approve"], "answer": 0, "explanation": "When the flow of new buyers dries up, the greater-fool chain breaks and prices crash." },
+        { "type": "predict", "prompt": "Charles Mackay’s lesson is that people ‘go mad in herds’ and recover:", "options": ["All at once", "Slowly, one by one", "Never"], "answer": 1, "explanation": "Collective delusion spreads fast but unwinds gradually as individuals regain judgment." }
+      ]
+    },
+    "031": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "A moral panic (over witches, ‘video-game violence’, etc.) is characterised by public alarm that is:",
+        "options": ["Proportionate to the real threat", "Disproportionate to the actual threat", "Always fabricated"],
+        "answer": 1,
+        "reveal": "Moral panics: a condition or group is defined as a threat to social values, amplified by media and ‘moral entrepreneurs’, with reaction far exceeding the real danger."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A moral panic features reaction that is:", "options": ["Proportionate", "Disproportionate to the threat, with a folk-devil scapegoat", "Absent"], "answer": 1, "explanation": "Cohen’s model: media amplification and moral entrepreneurs create a ‘folk devil’ and outsized alarm." },
+        { "type": "scenario", "prompt": "Media amplification contributes to moral panics by:", "options": ["Reporting base rates", "Repeating and dramatising rare events", "Ignoring the story"], "answer": 1, "explanation": "Selective, dramatic coverage inflates perceived prevalence — close kin to the availability cascade." },
+        { "type": "predict", "prompt": "Moral panics tend to:", "options": ["Last forever", "Subside once the folk devil loses novelty", "Never end"], "answer": 1, "explanation": "Panics have a life-cycle; attention fades and the reaction recedes." }
+      ]
+    },
+    "032": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "People in masks, uniforms, or anonymous crowds often behave more extremely because anonymity:",
+        "options": ["Increases personal accountability", "Loosens self-awareness and individual restraint", "Has no effect"],
+        "answer": 1,
+        "reveal": "Deindividuation: immersion in a group plus anonymity can reduce self-monitoring and personal accountability, lowering the threshold for behaviour one wouldn’t do alone."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Deindividuation involves a loss of:", "options": ["Group identity", "Individual self-awareness and accountability", "Physical strength"], "answer": 1, "explanation": "Anonymity and group immersion weaken the internal brakes that normally guide behaviour." },
+        { "type": "scenario", "prompt": "Modern accounts refine deindividuation as a shift toward:", "options": ["No identity at all", "Salient group norms over personal norms", "Random behaviour"], "answer": 1, "explanation": "People don’t become mindless; they act on the local group’s norms rather than personal ones (the SIDE model)." },
+        { "type": "predict", "prompt": "Adding identifiability (name badges, cameras) tends to:", "options": ["Increase extreme behaviour", "Restore personal accountability and restraint", "Do nothing"], "answer": 1, "explanation": "Re-individuating people reinstates the accountability anonymity had removed." }
+      ]
+    },
+    "033": {
+      "category": "cascades",
+      "prediction": {
+        "prompt": "Sit among laughing people and you feel more amused; among anxious people, more tense. Emotions:",
+        "options": ["Stay strictly individual", "Spread between people almost automatically", "Cannot be shared"],
+        "answer": 1,
+        "reveal": "Emotional contagion: moods transfer through mimicry of expressions, posture and voice — often below awareness — synchronising a crowd’s feeling."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Emotional contagion spreads largely through:", "options": ["Reasoned argument", "Automatic mimicry of expressions and tone", "Written contracts"], "answer": 1, "explanation": "We unconsciously copy others’ facial and vocal cues, then feel the matching emotion." },
+        { "type": "scenario", "prompt": "A calm, steady leader can dampen a fearful crowd by:", "options": ["Shouting louder", "Providing calm cues that others mimic", "Leaving"], "answer": 1, "explanation": "Contagion runs both ways: composed signals can spread composure." },
+        { "type": "predict", "prompt": "Online, emotional contagion can occur:", "options": ["Only face to face", "Even through text and feeds, without direct contact", "Never"], "answer": 1, "explanation": "Studies show mood can transfer through purely textual social-media exposure." }
+      ]
+    },
+    "034": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "Everyone privately doubts the emperor’s new clothes, yet all praise them. This gap between private belief and public statement is:",
+        "options": ["Rare and unstable", "Common and can persist for years", "Impossible"],
+        "answer": 1,
+        "reveal": "Preference falsification: people misrepresent their true preferences under social pressure, so public opinion can diverge massively from private opinion — and flip suddenly when the pressure breaks."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Preference falsification means people publicly express:", "options": ["Their true preference", "A preference they don’t privately hold, due to social pressure", "No preference"], "answer": 1, "explanation": "Fear of sanction leads people to voice acceptable rather than actual views." },
+        { "type": "scenario", "prompt": "Regimes can look stable then collapse overnight because falsification:", "options": ["Reveals real opinion continuously", "Hides real opinion until a trigger unmasks it", "Never happens"], "answer": 1, "explanation": "Hidden opposition is invisible until a spark lets people reveal it — then preferences cascade (Kuran)." },
+        { "type": "predict", "prompt": "Preference falsification makes public opinion:", "options": ["A reliable guide to private belief", "Potentially a poor guide to private belief", "Irrelevant"], "answer": 1, "explanation": "Visible consensus may mask deep private disagreement." }
+      ]
+    },
+    "035": {
+      "category": "conformity",
+      "sim": "asch",
+      "prediction": {
+        "prompt": "Asked which line matches a reference, the answer is obvious. But if several confederates first give the same wrong answer, what fraction of people conform at least once?",
+        "options": ["Almost none", "About three quarters", "Everyone, always"],
+        "answer": 1,
+        "reveal": "Asch’s conformity experiments: about 75% of people gave a clearly wrong answer to match the group at least once. See how group size and a single ally change the pressure below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Asch showed that on an unambiguous task, group pressure could make people:", "options": ["Always stay independent", "Publicly give an obviously wrong answer", "Answer faster"], "answer": 1, "explanation": "Roughly a third of critical trials produced conformity to a plainly incorrect majority." },
+        { "type": "scenario", "prompt": "Adding one dissenting ally to the group:", "options": ["Increases conformity", "Sharply reduces conformity", "Has no effect"], "answer": 1, "explanation": "A single non-conforming partner breaks the unanimity that drives the pressure." },
+        { "type": "predict", "prompt": "In the simulator, conformity pressure rises with majority size but plateaus after about:", "options": ["2 people", "3–4 people", "50 people"], "answer": 1, "explanation": "Asch found the effect saturates around three to four unanimous confederates." }
+      ]
+    },
+    "036": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "In a dark room, a stationary pinpoint of light appears to move (the autokinetic effect). Groups asked how far it moved will:",
+        "options": ["Disagree forever", "Converge on a shared ‘norm’ that persists", "Give random numbers"],
+        "answer": 1,
+        "reveal": "Sherif’s autokinetic studies: on genuinely ambiguous tasks, people build a shared group norm and then keep using it even alone — norms are internalised, not just performed."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Sherif’s autokinetic study shows norms form fastest when the situation is:", "options": ["Unambiguous", "Ambiguous", "Dangerous"], "answer": 1, "explanation": "Uncertainty makes people rely on others to define reality — informational influence." },
+        { "type": "scenario", "prompt": "Unlike Asch’s public compliance, Sherif’s norm was:", "options": ["Abandoned immediately", "Internalised and used even when alone", "Never formed"], "answer": 1, "explanation": "The shared estimate became each person’s private frame of reference." },
+        { "type": "predict", "prompt": "A norm seeded in an ambiguous group can:", "options": ["Vanish at once", "Persist across generations of members", "Never transmit"], "answer": 1, "explanation": "Replacement studies show arbitrary norms passing to newcomers long after the originators leave." }
+      ]
+    },
+    "037": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "In Milgram’s study, what share of ordinary people administered what they believed were the maximum, dangerous shocks when an authority insisted?",
+        "options": ["Almost none", "Around two thirds", "Only sadists"],
+        "answer": 1,
+        "reveal": "Milgram’s obedience studies: roughly 65% went to the maximum voltage under authority. Read the chapter’s critique — the framing and ethics are heavily contested."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Milgram’s core finding was that obedience to authority could override:", "options": ["Personal conscience for many ordinary people", "Nothing", "Only weak personalities"], "answer": 0, "explanation": "A majority complied with an authority’s instructions to harm, against their own discomfort." },
+        { "type": "scenario", "prompt": "Obedience dropped most when:", "options": ["The authority was physically present", "The authority was remote or peers rebelled", "The victim was silent"], "answer": 1, "explanation": "Proximity of authority raised obedience; disobedient peers and distant authority lowered it." },
+        { "type": "predict", "prompt": "The chapter’s critique notes Milgram’s results are:", "options": ["Beyond question", "Contested on ethics, variability, and how participants understood the task", "Fabricated"], "answer": 1, "explanation": "Later scrutiny of archives and framing complicates the simple ‘we all obey’ reading — replication humility." }
+      ]
+    },
+    "038": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "Cialdini distilled influence into six principles. Which pair most directly exploits collective behaviour?",
+        "options": ["Reciprocity and authority", "Social proof and scarcity", "Commitment and liking"],
+        "answer": 1,
+        "reveal": "Cialdini’s six principles — reciprocity, commitment, social proof, authority, liking, scarcity — are levers of compliance. Social proof and scarcity most directly harness what others do and fear of missing out."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Cialdini’s ‘social proof’ principle says we look to others’ behaviour especially when:", "options": ["We are certain", "We are uncertain or the situation is ambiguous", "We are alone forever"], "answer": 1, "explanation": "Uncertainty makes the crowd’s behaviour a shortcut for the ‘correct’ action." },
+        { "type": "scenario", "prompt": "‘Only 3 left in stock!’ leverages the principle of:", "options": ["Authority", "Scarcity", "Reciprocity"], "answer": 1, "explanation": "Perceived scarcity raises desirability and urgency." },
+        { "type": "predict", "prompt": "Cialdini’s principles are powerful because they are:", "options": ["Rarely used", "Cognitive shortcuts that usually serve us but can be exploited", "Always harmful"], "answer": 1, "explanation": "They are heuristics — efficient by default, manipulable by design." }
+      ]
+    },
+    "039": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "A restaurant with a queue outside attracts more customers than an empty one nearby, even without tasting either. This is:",
+        "options": ["Random", "Social proof — using others’ choices as evidence of quality", "Bad luck for the empty one"],
+        "answer": 1,
+        "reveal": "Social proof: we treat others’ actions as information about what is correct or good, which is efficient — and exactly what fuels cascades and bubbles."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Social proof is a heuristic that treats popularity as:", "options": ["Irrelevant", "Evidence of correctness or quality", "Proof of falsehood"], "answer": 1, "explanation": "‘If many chose it, it’s probably good’ — usually helpful, sometimes badly misleading." },
+        { "type": "scenario", "prompt": "Social proof can manufacture outcomes when displayed counts are:", "options": ["Accurate", "Faked or gamed (bots, fake reviews)", "Hidden"], "answer": 1, "explanation": "Fabricated popularity hijacks the heuristic — a bridge to Book Five’s astroturfing." },
+        { "type": "predict", "prompt": "Social proof links directly to information cascades because both rest on:", "options": ["Private evidence only", "Inferring correctness from others’ visible choices", "Coin flips"], "answer": 1, "explanation": "They share the same engine: copying others’ actions as information." }
+      ]
+    },
+    "040": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "Someone collapses on a busy street. Are they more likely to get help if many bystanders are present, or few?",
+        "options": ["Many — safety in numbers", "Few — responsibility isn’t diffused", "No difference"],
+        "answer": 1,
+        "reveal": "The bystander effect: as the number of witnesses rises, each individual feels less personal responsibility, and help can become less likely. Diffusion of responsibility plus pluralistic ignorance."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The bystander effect is driven partly by:", "options": ["Diffusion of responsibility across witnesses", "Increased courage in crowds", "Better information"], "answer": 0, "explanation": "‘Someone else will act’ spreads across the group, lowering each person’s felt duty." },
+        { "type": "scenario", "prompt": "A second driver of bystander inaction is pluralistic ignorance, where each person:", "options": ["Knows it’s an emergency", "Reads others’ calm as evidence it isn’t serious", "Panics instantly"], "answer": 1, "explanation": "Everyone looks calm because everyone is watching everyone else — and infers ‘no emergency’." },
+        { "type": "predict", "prompt": "Naming a specific person (‘you in the red coat, call an ambulance’) helps because it:", "options": ["Increases diffusion", "Reassigns personal responsibility to one individual", "Adds bystanders"], "answer": 1, "explanation": "Direct address defeats diffusion by making the duty unambiguous." }
+      ]
+    },
+    "041": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "You go along with the group either because you want to be right, or because you want to be liked. These are:",
+        "options": ["The same motive", "Two distinct influences — informational and normative", "Both irrational"],
+        "answer": 1,
+        "reveal": "Informational influence (others as evidence of reality) versus normative influence (others as a source of approval). Asch is mostly normative; Sherif mostly informational."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Normative influence is conformity motivated by:", "options": ["Wanting accurate beliefs", "Wanting acceptance and avoiding disapproval", "Random choice"], "answer": 1, "explanation": "You comply to belong, even when you privately disagree." },
+        { "type": "scenario", "prompt": "Informational influence tends to produce:", "options": ["Public compliance only", "Genuine private belief change", "No change"], "answer": 1, "explanation": "Treating others as evidence updates what you actually believe, not just what you say." },
+        { "type": "predict", "prompt": "Anonymity should reduce which influence most?", "options": ["Informational", "Normative", "Both equally to zero"], "answer": 1, "explanation": "Remove the audience and the need for approval (normative) falls; informational influence can persist." }
+      ]
+    },
+    "042": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "In a classroom nobody understands the lecture, but no one asks a question because everyone looks calm. Each student concludes:",
+        "options": ["‘Everyone else is confused too’", "‘I must be the only one lost’", "‘The lecture is clear’"],
+        "answer": 1,
+        "reveal": "Pluralistic ignorance: privately most people reject or doubt something, but each wrongly assumes they are alone because everyone else stays silent."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Pluralistic ignorance is a mismatch between:", "options": ["Two different groups", "Private belief and the belief each person attributes to others", "Facts and fiction"], "answer": 1, "explanation": "A shared private view coexists with the false belief that ‘everyone else thinks otherwise’." },
+        { "type": "scenario", "prompt": "Pluralistic ignorance can prop up an unpopular norm because:", "options": ["Everyone privately supports it", "Each person conforms to a majority that doesn’t actually exist", "It is enforced by law"], "answer": 1, "explanation": "People obey a phantom majority, sustaining norms almost no one privately holds." },
+        { "type": "predict", "prompt": "Publicly revealing true private opinions tends to:", "options": ["Strengthen the false norm", "Collapse it quickly", "Have no effect"], "answer": 1, "explanation": "Once people learn others agree, the illusory majority evaporates." }
+      ]
+    },
+    "043": {
+      "category": "conformity",
+      "prediction": {
+        "prompt": "A cohesive, high-status team under pressure to agree tends to make decisions that are:",
+        "options": ["Always superior", "Sometimes worse, as dissent is suppressed", "Random"],
+        "answer": 1,
+        "reveal": "Groupthink: the drive for unanimity in a cohesive group overrides realistic appraisal of alternatives — self-censorship, illusion of unanimity, and pressure on doubters."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Groupthink is the tendency of cohesive groups to prioritise:", "options": ["Accuracy over harmony", "Consensus and harmony over critical evaluation", "Dissent over agreement"], "answer": 1, "explanation": "Janis: the wish for agreement suppresses doubts and alternatives." },
+        { "type": "scenario", "prompt": "A symptom of groupthink is:", "options": ["Active devil’s advocacy", "Self-censorship and an illusion of unanimity", "Diverse independent input"], "answer": 1, "explanation": "Members silence doubts and mistake silence for agreement." },
+        { "type": "predict", "prompt": "A structural fix for groupthink is to:", "options": ["Increase cohesion and time pressure", "Assign a devil’s advocate and gather independent views first", "Punish disagreement"], "answer": 1, "explanation": "Structured dissent and independent judgment restore the conditions for good collective decisions." }
+      ]
+    }
+  }
+}

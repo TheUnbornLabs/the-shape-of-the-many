@@ -22,21 +22,22 @@
     const s = load();
     const chapters = s.chapters || {};
     const root = document.getElementById('masteryRoot');
-    const b1 = cfg.book1;
-    root.innerHTML = `<h2 class="section-title" style="margin:.4rem 0 .2rem">${esc(b1.title)}</h2>` + b1.cats.map((cat) => {
-      const engaged = Object.values(chapters).filter((c) => c.cat === cat.key);
-      const done = engaged.length;
-      const correct = engaged.reduce((a, c) => a + c.correct, 0);
-      const total = engaged.reduce((a, c) => a + c.total, 0);
-      const ratio = total ? correct / total : 0;
-      const [cls, label] = levelOf(ratio, done > 0);
-      return `<div class="mastery-cat">
-        <h3>${esc(cat.name)}</h3>
-        <span class="lvl ${cls}">${label}</span>
-        <div class="mastery-bar"><i style="width:${Math.round(ratio * 100)}%"></i></div>
-        <p>${DESC[cls]} ${done ? `(${done}/${cat.chapters} chapters engaged · ${correct}/${total} correct)` : ''}</p>
-      </div>`;
-    }).join('');
+    root.innerHTML = cfg.books.map((bk) =>
+      `<h2 class="section-title" style="margin:.6rem 0 .2rem">${esc(bk.title)}</h2>` + bk.cats.map((cat) => {
+        const engaged = Object.values(chapters).filter((c) => c.cat === cat.key);
+        const done = engaged.length;
+        const correct = engaged.reduce((a, c) => a + c.correct, 0);
+        const total = engaged.reduce((a, c) => a + c.total, 0);
+        const ratio = total ? correct / total : 0;
+        const [cls, label] = levelOf(ratio, done > 0);
+        return `<div class="mastery-cat">
+          <h3>${esc(cat.name)}</h3>
+          <span class="lvl ${cls}">${label}</span>
+          <div class="mastery-bar"><i style="width:${Math.round(ratio * 100)}%"></i></div>
+          <p>${DESC[cls]} ${done ? `(${done}/${cat.chapters} chapters engaged · ${correct}/${total} correct)` : ''}</p>
+        </div>`;
+      }).join('')
+    ).join('');
 
     // Confidence calibration
     const cal = s.confidence;
