@@ -38,14 +38,18 @@ The Shape of the Many/
 
 ## Read online
 
-This repository doubles as a static reading website (GitHub Pages). The site is
-generated from the source chapters — no framework, no runtime dependencies.
+This repository doubles as a static reading website (GitHub Pages). Every page is
+**pre-rendered to real HTML at build time** — no framework, no runtime content
+fetching — so crawlers, no-JS readers, and link previews get the actual text.
+JavaScript only enhances (search, reading progress, continue-reading).
 
-- `index.html` — series home: the thesis, the five books, stats, and downloads.
-- `book.html?b=N` — a book's front matter, chapter list, and closing synthesis.
-- `read.html?b=N&c=NNN` — a single chapter, with references and prev/next.
-- `assets/` — one stylesheet, a shared data layer, and one script per page.
-- `data/manifest.json` + `data/chapters/bN/NNN.json` — generated site data.
+- `index.html` — series home: thesis, five books, stats, downloads (all baked in).
+- `book-N.html` — a book's front matter, chapter list, and closing synthesis.
+- `c-bN-NNN.html` — one fully-rendered chapter, with image, references, prev/next.
+- `about.html` — thesis, method, and the binding citation policy.
+- `assets/` — one stylesheet + small enhancement scripts (search / progress / continue).
+- `data/manifest.json` — lightweight index used only by the search box.
+- `sitemap.xml`, `robots.txt`, per-page Open Graph / Twitter / JSON-LD metadata.
 - `downloads/` — the typeset 6×9 PDFs, DOCX, and Markdown masters.
 
 ### Chapter images

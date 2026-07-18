@@ -56,6 +56,9 @@ a:hover { text-decoration: underline; }
 .brand span { color: var(--accent); margin-inline: .15em; }
 .brand:hover { text-decoration: none; }
 .nav-spacer { flex: 1; }
+.topnav { display: flex; gap: 1.1rem; margin-right: .4rem; }
+.topnav a { color: var(--ink-soft); font-size: .9rem; font-weight: 500; }
+@media (max-width: 40rem) { .topnav { display: none; } }
 .search-wrap { position: relative; flex: 1 1 22rem; max-width: 30rem; }
 #globalSearch {
   width: 100%; padding: .5rem .8rem; font: inherit; font-size: .92rem;
@@ -88,7 +91,26 @@ a:hover { text-decoration: underline; }
   font-family: var(--serif); font-size: clamp(1.05rem, 2.4vw, 1.3rem);
   color: var(--ink-soft); max-width: 46rem; margin: 0 0 1.6rem; line-height: 1.5;
 }
-.stats { display: flex; flex-wrap: wrap; gap: 2.2rem; margin-top: 1.6rem; }
+.cta-row { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.8rem 0 0; }
+.btn-primary, .btn-ghost {
+  display: inline-block; padding: .7rem 1.3rem; border-radius: .55rem;
+  font-weight: 600; font-size: .95rem; transition: transform .12s, background .12s;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { transform: translateY(-1px); text-decoration: none; background: color-mix(in srgb, var(--accent) 88%, #000); }
+.btn-ghost { border: 1px solid var(--rule); color: var(--ink); background: var(--card); }
+.btn-ghost:hover { border-color: var(--accent); text-decoration: none; }
+
+.continue-card {
+  display: inline-flex; flex-direction: column; margin-top: 1.4rem;
+  padding: .7rem 1.1rem; background: var(--accent-wash); border: 1px solid var(--accent);
+  border-radius: .6rem; color: var(--ink);
+}
+.continue-card:hover { text-decoration: none; transform: translateY(-1px); }
+.continue-label { font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.continue-title { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; }
+
+.stats { display: flex; flex-wrap: wrap; gap: 2.2rem; margin-top: 1.8rem; }
 .stat .num { display: block; font-family: var(--serif); font-size: 1.9rem; font-weight: 600; color: var(--accent); line-height: 1; }
 .stat .lbl { font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
 
@@ -156,8 +178,9 @@ details.matter-fold .prose { padding: 0 1.4rem 1.2rem; }
   font-style: italic; color: var(--ink-soft); font-size: 1.24rem; line-height: 1.5;
 }
 .prose blockquote p { margin: 0; }
-.prose ul { margin: 0 0 1.3rem; padding-left: 1.3rem; }
+.prose ul, .prose ol { margin: 0 0 1.3rem; padding-left: 1.3rem; }
 .prose li { margin: 0 0 .5rem; }
+.about h2 { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); text-transform: none; letter-spacing: 0; margin: 2rem 0 .8rem; }
 .prose em { font-style: italic; }
 .prose strong { font-weight: 700; }
 .prose > h2:first-child, .prose > p:first-child { margin-top: 0; }

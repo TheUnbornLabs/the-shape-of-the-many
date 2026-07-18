@@ -1,7 +1,6 @@
 {
   "meta": {
     "title": "The Shape of the Many",
-    "subtitle": "A five-book study of human collective behaviour",
     "thesis": "The wise crowd and the mob are the same people. One mechanism — local interaction producing group-level order — runs under different conditions, and a nameable condition flips the sign between collective wisdom and collective catastrophe."
   },
   "totals": {
@@ -12,986 +11,761 @@
   "books": [
     {
       "n": 1,
-      "dir": "book-1-the-shape-forms",
-      "slug": "the-shape-forms",
       "title": "The Shape Forms",
+      "gloss": "The mechanism, its evolutionary roots, and the wise crowd.",
       "range": [
         1,
         25
       ],
-      "gloss": "The mechanism, its evolutionary roots, and the wise crowd.",
-      "chapterCount": 25,
-      "words": 65630,
-      "hasFront": true,
-      "hasBack": true,
+      "file": "book-1.html",
       "chapters": [
         {
-          "num": "001",
           "n": 1,
-          "slug": "emergence",
+          "num": "001",
           "title": "Emergence",
           "epigraph": "A traffic jam can travel backward down a motorway while every car in it is moving forward — and no driver ordered the jam, chose it, or can find it in their own steering wheel.",
-          "words": 2771,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/93/A_starling_murmuration_-_geograph.org.uk_-_6389346.jpg"
+          "file": "c-b1-001.html"
         },
         {
-          "num": "002",
           "n": 2,
-          "slug": "self-organisation",
+          "num": "002",
           "title": "Self-organisation",
           "epigraph": "Order can assemble itself with no one holding the blueprint — and the same process that finds the near-perfect answer also builds the fatal one.",
-          "words": 2770,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Benard_cell.jpg/1280px-Benard_cell.jpg"
+          "file": "c-b1-002.html"
         },
         {
-          "num": "003",
           "n": 3,
-          "slug": "reynolds-boids",
+          "num": "003",
           "title": "Reynolds' boids",
           "epigraph": "Three rules, one neighbour at a time, and a shape no bird intended rises over the reeds at dusk.",
-          "words": 2522,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/A_Flock_of_Snow_Geese_on_the_Refuge_%288600074407%29.jpg/1280px-A_Flock_of_Snow_Geese_on_the_Refuge_%288600074407%29.jpg"
+          "file": "c-b1-003.html"
         },
         {
-          "num": "004",
           "n": 4,
-          "slug": "stigmergy",
+          "num": "004",
           "title": "Stigmergy",
           "epigraph": "Leave a mark, and the mark tells the next worker what to do — coordination without a word spoken, a plan drawn, or a single agent who knows the whole.",
-          "words": 2657,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cathedral_Termite_Mound_in_Australia_-_panoramio.jpg/1280px-Cathedral_Termite_Mound_in_Australia_-_panoramio.jpg"
+          "file": "c-b1-004.html"
         },
         {
-          "num": "005",
           "n": 5,
-          "slug": "feedback-loops",
+          "num": "005",
           "title": "Positive & negative feedback loops",
           "epigraph": "Two loops run under everything a crowd does: one amplifies, one restrains. Their ratio decides whether a system settles or explodes — and the word \"positive\" is a warning, not a compliment.",
-          "words": 2710,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Water_heater_dial_-_Easy_Set_Thermostat%2C_gas_powered.jpg/1280px-Water_heater_dial_-_Easy_Set_Thermostat%2C_gas_powered.jpg"
+          "file": "c-b1-005.html"
         },
         {
-          "num": "006",
           "n": 6,
-          "slug": "phase-transitions",
+          "num": "006",
           "title": "Phase transitions & thresholds",
           "epigraph": "Order can hold, and hold, and hold — and then, at one more turn of a single dial, flip everything at once.",
-          "words": 2477,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Melting_ice_thermometer.jpg/1280px-Melting_ice_thermometer.jpg"
+          "file": "c-b1-006.html"
         },
         {
-          "num": "007",
           "n": 7,
-          "slug": "granovetter-threshold-model",
+          "num": "007",
           "title": "Granovetter's threshold model",
           "epigraph": "A riot and a quiet afternoon can be made of the exact same people; what differs is not who they are but the order in which they would move.",
-          "words": 2587,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mexican_wave_approaches_%287707159728%29.jpg/1280px-Mexican_wave_approaches_%287707159728%29.jpg"
+          "file": "c-b1-007.html"
         },
         {
-          "num": "008",
           "n": 8,
-          "slug": "complex-adaptive-systems",
+          "num": "008",
           "title": "Complex adaptive systems",
           "epigraph": "Many parts, each following its own local rules, adapting to each other — and out of that ceaseless mutual adjustment comes a whole that no part intended and no one commands.",
-          "words": 2514,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/GT_Slime_mould_Physarum_polycephalum_on_stored_oak_post.jpg/1280px-GT_Slime_mould_Physarum_polycephalum_on_stored_oak_post.jpg"
+          "file": "c-b1-008.html"
         },
         {
-          "num": "009",
           "n": 9,
-          "slug": "hamilton-selfish-herd",
+          "num": "009",
           "title": "Hamilton's selfish herd",
           "epigraph": "The herd is not a brotherhood. It is a crowd of individuals each trying to put someone else between itself and the teeth.",
-          "words": 3049,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/CINMS_diver_with_bait_ball_%2848770613818%29.jpg/1280px-CINMS_diver_with_bait_ball_%2848770613818%29.jpg"
+          "file": "c-b1-009.html"
         },
         {
-          "num": "010",
           "n": 10,
-          "slug": "dilution-effect",
+          "num": "010",
           "title": "The dilution effect",
           "epigraph": "The simplest reason to stand in a crowd is also the coldest: if the predator can only eat so many, every neighbour you gain is one more candidate to be eaten instead of you.",
-          "words": 2535,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Wildebeest_Herd_Retreating.jpg/1280px-Wildebeest_Herd_Retreating.jpg"
+          "file": "c-b1-010.html"
         },
         {
-          "num": "011",
           "n": 11,
-          "slug": "predator-confusion-effect",
+          "num": "011",
           "title": "The predator confusion effect",
           "epigraph": "A hunter can starve inside a cloud of food, because a thousand identical targets are harder to catch than one.",
-          "words": 2538,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/School_of_sardines_at_the_Monterey_Bay_Aquarium_%2812056%29.jpg/1280px-School_of_sardines_at_the_Monterey_Bay_Aquarium_%2812056%29.jpg"
+          "file": "c-b1-011.html"
         },
         {
-          "num": "012",
           "n": 12,
-          "slug": "collective-vigilance-many-eyes",
+          "num": "012",
           "title": "Collective vigilance & the many-eyes effect",
           "epigraph": "Put enough heads together and the group sees a hawk before any single animal was even looking — but only if each still bothers to look.",
-          "words": 2624,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/BelfastZoo_Meerkat_Sentinel_Grass_2026.jpg/1280px-BelfastZoo_Meerkat_Sentinel_Grass_2026.jpg"
+          "file": "c-b1-012.html"
         },
         {
-          "num": "013",
           "n": 13,
-          "slug": "costs-of-group-living",
+          "num": "013",
           "title": "The costs of group living",
           "epigraph": "Every benefit of the crowd arrives with an invoice, and the same density that buys safety also concentrates hunger, disease, and betrayal.",
-          "words": 2339,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Northern_Gannet_Colony_%28Little_Skellig%29.jpg/1280px-Northern_Gannet_Colony_%28Little_Skellig%29.jpg"
+          "file": "c-b1-013.html"
         },
         {
-          "num": "014",
           "n": 14,
-          "slug": "reciprocal-altruism",
+          "num": "014",
           "title": "Reciprocal altruism",
           "epigraph": "I pay a cost to help you today because the relationship will pay me back tomorrow — and cooperation between strangers turns out to be a loan, not a gift.",
-          "words": 2662,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Common_vampire_bat_%28Desmodus_rotundus%29_Rio_Negro.jpg/1280px-Common_vampire_bat_%28Desmodus_rotundus%29_Rio_Negro.jpg"
+          "file": "c-b1-014.html"
         },
         {
-          "num": "015",
           "n": 15,
-          "slug": "kin-selection-inclusive-fitness",
+          "num": "015",
           "title": "Kin selection & inclusive fitness",
           "epigraph": "A gene for self-sacrifice can conquer a species, provided it spends its host on behalf of the copies of itself riding in the host's relatives.",
-          "words": 2854,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/210714_honeybees_%2851325436483%29.jpg/1280px-210714_honeybees_%2851325436483%29.jpg"
+          "file": "c-b1-015.html"
         },
         {
-          "num": "016",
           "n": 16,
-          "slug": "costly-signalling-handicap",
+          "num": "016",
           "title": "Costly signalling & the handicap principle",
           "epigraph": "A signal is believed precisely because it is too expensive to fake — and the same waste that guarantees honesty can bankrupt those who must pay it.",
-          "words": 2675,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Blue-peafowl-tail-Indian-peacock-courtship-displays.jpg"
+          "file": "c-b1-016.html"
         },
         {
-          "num": "017",
           "n": 17,
-          "slug": "galton-ox",
+          "num": "017",
           "title": "Galton's ox",
           "epigraph": "Eight hundred people who each guessed wrong guessed the ox's weight together to within a pound — and the man who ran the experiment had expected them to prove the opposite.",
-          "words": 2527,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sir_Francis_Galton%2C_1890s.jpg"
+          "file": "c-b1-017.html"
         },
         {
-          "num": "018",
           "n": 18,
-          "slug": "condorcet-jury-theorem",
+          "num": "018",
           "title": "Condorcet's Jury Theorem",
           "epigraph": "A crowd of the barely-competent can be nearly infallible — or reliably, catastrophically wrong. The same equation says both, and the sign is set by a single number.",
-          "words": 2200,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Nicolas_de_Condorcet.PNG"
+          "file": "c-b1-018.html"
         },
         {
-          "num": "019",
           "n": 19,
-          "slug": "diversity-prediction-theorem",
+          "num": "019",
           "title": "The diversity prediction theorem",
           "epigraph": "A group's error is its members' average error minus their diversity — so difference is not decoration on the crowd's wisdom; it is a term that gets subtracted, exactly, from the crowd's mistake.",
-          "words": 2565,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/President_Holding_Jelly_Bean_Jar_at_a_Lunch_at_La_Esquina_De_Tejas_Restaurant_in_Miami_Florida_-_DPLA_-_0b6a3a5b822270ece5fa6092aa86d308.jpg/1280px-President_Holding_Jelly_Bean_Jar_at_a_Lunch_at_La_Esquina_De_Tejas_Restaurant_in_Miami_Florida_-_DPLA_-_0b6a3a5b822270ece5fa6092aa86d308.jpg"
+          "file": "c-b1-019.html"
         },
         {
-          "num": "020",
           "n": 20,
-          "slug": "surowiecki-four-conditions",
+          "num": "020",
           "title": "Surowiecki's four conditions",
           "epigraph": "A crowd is wise on four conditions and mad on the loss of any one of them; this chapter is the dial the whole book turns.",
-          "words": 2899,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Rock_band_performs_electrifying_set_at_outdoor_festival_in_summer_with_vibrant_lighting_and_enthusiastic_crowd_cheers.jpg/1280px-Rock_band_performs_electrifying_set_at_outdoor_festival_in_summer_with_vibrant_lighting_and_enthusiastic_crowd_cheers.jpg"
+          "file": "c-b1-020.html"
         },
         {
-          "num": "021",
           "n": 21,
-          "slug": "independent-error-cancellation",
+          "num": "021",
           "title": "Independent-error cancellation",
           "epigraph": "Average enough honest mistakes and they annihilate each other; average enough shared mistakes and they add up. Same arithmetic, opposite fate — and only one word decides which.",
-          "words": 2592,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Tabuleiros_de_Galton_%28antes_e_depois%29.jpg/1280px-Tabuleiros_de_Galton_%28antes_e_depois%29.jpg"
+          "file": "c-b1-021.html"
         },
         {
-          "num": "022",
           "n": 22,
-          "slug": "delphi-method",
+          "num": "022",
           "title": "The Delphi method",
           "epigraph": "The wise crowd, it turns out, can be built rather than found — if you engineer out the pressures that make experts in a room agree with the loudest person present.",
-          "words": 2448,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Delphi_BW_2017-10-08_11-44-18.jpg/1280px-Delphi_BW_2017-10-08_11-44-18.jpg"
+          "file": "c-b1-022.html"
         },
         {
-          "num": "023",
           "n": 23,
-          "slug": "prediction-markets",
+          "num": "023",
           "title": "Prediction markets",
           "epigraph": "A price is a crowd's probability, made honest by money — the same instrument that reads the future can also stop reading it and start reading itself.",
-          "words": 2566,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/23/Trading_Floor_at_the_New_York_Stock_Exchange.jpg"
+          "file": "c-b1-023.html"
         },
         {
-          "num": "024",
           "n": 24,
-          "slug": "ensemble-methods-random-forests",
+          "num": "024",
           "title": "Ensemble methods & random forests",
           "epigraph": "Machine learning rediscovered the wisdom of crowds — and then had to prove, in code, that the crowd is only wise if you force its members to disagree.",
-          "words": 2630,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Decision_Tree_Depth_2.png"
+          "file": "c-b1-024.html"
         },
         {
-          "num": "025",
           "n": 25,
-          "slug": "collective-intelligence-factor-c",
+          "num": "025",
           "title": "The collective intelligence factor \"c\"",
           "epigraph": "A group has an IQ, it is measurable, and it is set less by how clever its members are than by how they take turns.",
-          "words": 2919,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rapid_Response_Team_Annual_Meeting%2C_November_2014_%2815866585627%29.jpg"
+          "file": "c-b1-025.html"
         }
       ]
     },
     {
       "n": 2,
-      "dir": "book-2-the-shape-breaks",
-      "slug": "the-shape-breaks",
       "title": "The Shape Breaks",
+      "gloss": "Cascades, panics, and conformity — the frontier of imposed silence.",
       "range": [
         26,
         43
       ],
-      "gloss": "Cascades, panics, and conformity — the frontier of imposed silence.",
-      "chapterCount": 18,
-      "words": 48568,
-      "hasFront": true,
-      "hasBack": true,
+      "file": "book-2.html",
       "chapters": [
         {
-          "num": "026",
           "n": 26,
-          "slug": "information-cascades",
+          "num": "026",
           "title": "Information cascades",
           "epigraph": "Watch enough people choose before you, and it becomes rational to stop thinking — at which point a thousand followers carry no more knowledge than the first two.",
-          "words": 2976,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Queue_for_the_trophy_%283785732961%29.jpg/1280px-Queue_for_the_trophy_%283785732961%29.jpg"
+          "file": "c-b2-026.html"
         },
         {
-          "num": "027",
           "n": 27,
-          "slug": "availability-cascades",
+          "num": "027",
           "title": "Availability cascades",
           "epigraph": "Say a thing often enough and it stops needing to be true; repetition is not evidence, but to a human mind it feels exactly like it.",
-          "words": 2346,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Front_page_of_newspaper_Wilnaer_Zeitung_with_Lithuanian_Vytis_%28Waykimas%29%2C_published_on_12_April_1918.jpg/1280px-Front_page_of_newspaper_Wilnaer_Zeitung_with_Lithuanian_Vytis_%28Waykimas%29%2C_published_on_12_April_1918.jpg"
+          "file": "c-b2-027.html"
         },
         {
-          "num": "028",
           "n": 28,
-          "slug": "bank-runs",
+          "num": "028",
           "title": "Bank runs",
           "epigraph": "A sound bank can be destroyed by nothing more than the belief that it will be destroyed — the panic writes the reality it predicts.",
-          "words": 2695,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/54/Bundesarchiv_Bild_102-12023%2C_Berlin%2C_Bankenkrach%2C_Andrang_bei_der_Sparkasse.jpg"
+          "file": "c-b2-028.html"
         },
         {
-          "num": "029",
           "n": 29,
-          "slug": "crowd-crushes-stampede-dynamics",
+          "num": "029",
           "title": "Crowd crushes & stampede dynamics",
           "epigraph": "The crowd does not turn on itself; it simply runs out of room to breathe, and no one in it is deciding anything at all.",
-          "words": 2608,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dense_Crowd_%2832235440150%29.jpg/1280px-Dense_Crowd_%2832235440150%29.jpg"
+          "file": "c-b2-029.html"
         },
         {
-          "num": "030",
           "n": 30,
-          "slug": "manias-and-delusions",
+          "num": "030",
           "title": "Manias & delusions",
           "epigraph": "Point the same crowd at the truth and it finds an ox's weight to the pound; let it price the future by watching itself and it will pay any sum for a bulb, a share, or a scapegoat.",
-          "words": 2485,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/27/%22Semper_Augustus%22_%28breaking_tulip%2C_diseased_by_Potyvirus%29.jpg"
+          "file": "c-b2-030.html"
         },
         {
-          "num": "031",
           "n": 31,
-          "slug": "moral-panics",
+          "num": "031",
           "title": "Moral panics",
           "epigraph": "A society, frightened, turns and names one of its own the source of the fear — and the naming becomes the crisis it claimed to describe.",
-          "words": 2937,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/The_Trial_of_the_Salem_Witches%2C_by_George_Fuller.jpg/1280px-The_Trial_of_the_Salem_Witches%2C_by_George_Fuller.jpg"
+          "file": "c-b2-031.html"
         },
         {
-          "num": "032",
           "n": 32,
-          "slug": "deindividuation",
+          "num": "032",
           "title": "Deindividuation",
           "epigraph": "Put on the mask and the mob is supposed to swallow the self — but the newer evidence says the self does not vanish so much as change costume.",
-          "words": 2576,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2012-05-27-Guy-Fawkes-Mask-Montreal.jpg/1280px-2012-05-27-Guy-Fawkes-Mask-Montreal.jpg"
+          "file": "c-b2-032.html"
         },
         {
-          "num": "033",
           "n": 33,
-          "slug": "emotional-contagion",
+          "num": "033",
           "title": "Emotional contagion",
           "epigraph": "Feeling travels from body to body below the threshold of choosing — and a crowd that catches one mood together has stopped being a crowd of independent minds.",
-          "words": 2802,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Man-person-people-crowd-concert-audience-41796.jpg/1280px-Man-person-people-crowd-concert-audience-41796.jpg"
+          "file": "c-b2-033.html"
         },
         {
-          "num": "034",
           "n": 34,
-          "slug": "preference-falsification",
+          "num": "034",
           "title": "Preference falsification",
           "epigraph": "A whole order can rest on a lie that no one believes and everyone tells — and it holds until, all at once, it doesn't.",
-          "words": 3261,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Emperor%27s_New_Clothes_%28Street_Procession%29.jpg/1280px-The_Emperor%27s_New_Clothes_%28Street_Procession%29.jpg"
+          "file": "c-b2-034.html"
         },
         {
-          "num": "035",
           "n": 35,
-          "slug": "asch-conformity",
+          "num": "035",
           "title": "Asch's conformity experiments",
           "epigraph": "Show a person an obvious truth, surround them with people calmly denying it, and a third of the time they will deny it too — unless a single other voice tells the truth first.",
-          "words": 2908,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Asch_conformity_experiment.png"
+          "file": "c-b2-035.html"
         },
         {
-          "num": "036",
           "n": 36,
-          "slug": "sherif-autokinetic-norms",
+          "num": "036",
           "title": "Sherif's autokinetic norms",
           "epigraph": "Put people in the dark with no fact to check against, and they will not wait in silence — they will build a truth together, and it will outlive every one of them.",
-          "words": 2426,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Muzafer_Sherif_author_photo_%281967%29.png"
+          "file": "c-b2-036.html"
         },
         {
-          "num": "037",
           "n": 37,
-          "slug": "milgram-obedience",
+          "num": "037",
           "title": "Milgram's obedience studies",
           "epigraph": "The distance between an ordinary person and an instrument of harm is often just one voice in a lab coat saying *the experiment requires that you continue.*",
-          "words": 2489,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Decision_tree_for_Milgram_experiment_subject.PNG"
+          "file": "c-b2-037.html"
         },
         {
-          "num": "038",
           "n": 38,
-          "slug": "cialdini-six-principles",
+          "num": "038",
           "title": "Cialdini's six principles of influence",
           "epigraph": "Persuasion is not a dark art but a short list of switches — reliable, adaptive, and quietly waiting for anyone who knows where they are.",
-          "words": 2524,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Black_Friday_at_the_Apple_Store_on_Fifth_Avenue%2C_New_York_City%2C_2011.jpg/1280px-Black_Friday_at_the_Apple_Store_on_Fifth_Avenue%2C_New_York_City%2C_2011.jpg"
+          "file": "c-b2-038.html"
         },
         {
-          "num": "039",
           "n": 39,
-          "slug": "social-proof",
+          "num": "039",
           "title": "Social proof",
           "epigraph": "When we do not know what is true or right, we read the answer off the behaviour of the people around us — and that reading is wisdom or folly depending entirely on whether those people knew anything.",
-          "words": 2514,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Crowd_applauding_%283051265101%29.jpg/1280px-Crowd_applauding_%283051265101%29.jpg"
+          "file": "c-b2-039.html"
         },
         {
-          "num": "040",
           "n": 40,
-          "slug": "bystander-effect",
+          "num": "040",
           "title": "The bystander effect",
           "epigraph": "The more people who witness an emergency, the less likely any one of them is to help — because a duty divided by a crowd can shrink to nothing.",
-          "words": 2575,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Downton_Nairobi%2C_Kenya%2C_bustling_with_pedestrians_and_cars.jpg/1280px-Downton_Nairobi%2C_Kenya%2C_bustling_with_pedestrians_and_cars.jpg"
+          "file": "c-b2-040.html"
         },
         {
-          "num": "041",
           "n": 41,
-          "slug": "normative-vs-informational-influence",
+          "num": "041",
           "title": "Normative versus informational influence",
           "epigraph": "There are two entirely different reasons to agree with a crowd — one changes your mind, the other only changes your mouth — and telling them apart is the key that unlocks everything else.",
-          "words": 2693,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Community_Pure_Water_Panel_discussion_in_Hyderabad.jpg/1280px-Community_Pure_Water_Panel_discussion_in_Hyderabad.jpg"
+          "file": "c-b2-041.html"
         },
         {
-          "num": "042",
           "n": 42,
-          "slug": "pluralistic-ignorance",
+          "num": "042",
           "title": "Pluralistic ignorance",
           "epigraph": "A room can hold, unanimously and in public, a conviction that almost every one of its members privately rejects — and each will point to the others as the reason it must be true.",
-          "words": 2829,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Students_at_Lecture_Hall.jpg/1280px-Students_at_Lecture_Hall.jpg"
+          "file": "c-b2-042.html"
         },
         {
-          "num": "043",
           "n": 43,
-          "slug": "groupthink",
+          "num": "043",
           "title": "Groupthink",
           "epigraph": "The most cohesive, harmonious, confident group in the room is often the one about to make the worst decision — because comfort has quietly killed the dissent that error-correction requires.",
-          "words": 2924,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Challenger_explosion.jpg/1280px-Challenger_explosion.jpg"
+          "file": "c-b2-043.html"
         }
       ]
     },
     {
       "n": 3,
-      "dir": "book-3-the-shape-flows",
-      "slug": "the-shape-flows",
       "title": "The Shape Flows",
+      "gloss": "Networks and contagion: how the shape travels.",
       "range": [
         44,
         59
       ],
-      "gloss": "Networks and contagion: how the shape travels.",
-      "chapterCount": 16,
-      "words": 41588,
-      "hasFront": true,
-      "hasBack": true,
+      "file": "book-3.html",
       "chapters": [
         {
-          "num": "044",
           "n": 44,
-          "slug": "small-world-networks",
+          "num": "044",
           "title": "Small-world networks",
           "epigraph": "Your friends all know each other, and yet six handshakes reach a stranger on the far side of the planet — and the second fact is the one that makes a rumour a wildfire.",
-          "words": 2660,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Watts-Strogatz_small-world_model_100nodes.png"
+          "file": "c-b3-044.html"
         },
         {
-          "num": "045",
           "n": 45,
-          "slug": "strength-of-weak-ties",
+          "num": "045",
           "title": "The strength of weak ties",
           "epigraph": "The news that changes your life rarely comes from your closest friends — they know what you already know; it comes from the acquaintance at the edge of your world, whose value is precisely that they are not close.",
-          "words": 2435,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Social_Network_Analysis_Visualization.png"
+          "file": "c-b3-045.html"
         },
         {
-          "num": "046",
           "n": 46,
-          "slug": "scale-free-networks-hubs",
+          "num": "046",
           "title": "Scale-free networks & hubs",
           "epigraph": "In many of the networks that matter, a handful of nodes hold most of the connections — and whoever holds the hubs holds the flow.",
-          "words": 2680,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Small_world_and_scale_free_networks.jpg"
+          "file": "c-b3-046.html"
         },
         {
-          "num": "047",
           "n": 47,
-          "slug": "centrality-measures",
+          "num": "047",
           "title": "Centrality — locating power in a network",
           "epigraph": "\"Who matters here?\" has at least four honest answers, and they do not always name the same person.",
-          "words": 2523,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Hist1_network_circular.png/1280px-Hist1_network_circular.png"
+          "file": "c-b3-047.html"
         },
         {
-          "num": "048",
           "n": 48,
-          "slug": "homophily",
+          "num": "048",
           "title": "Homophily",
           "epigraph": "Birds of a feather flock together — and in flocking, they quietly strip their own networks of the one thing a crowd needs to be wise.",
-          "words": 2759,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Network_Visualization.png/1280px-Network_Visualization.png"
+          "file": "c-b3-048.html"
         },
         {
-          "num": "049",
           "n": 49,
-          "slug": "structural-holes-brokerage",
+          "num": "049",
           "title": "Structural holes & brokerage",
           "epigraph": "Between two worlds that never speak lies a gap, and whoever stands in it holds a small monopoly on the traffic — free to enrich both sides, or to keep them apart because the keeping pays.",
-          "words": 2574,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/21/InterpersonalBridge.jpg"
+          "file": "c-b3-049.html"
         },
         {
-          "num": "050",
           "n": 50,
-          "slug": "echo-chambers-filter-bubbles",
+          "num": "050",
           "title": "Echo chambers & filter bubbles",
           "epigraph": "Remove every voice that might correct you, and the crowd around you stops being a check on your error and becomes a mirror of it.",
-          "words": 2453,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Social_Network_Visualization.png/1280px-Social_Network_Visualization.png"
+          "file": "c-b3-050.html"
         },
         {
-          "num": "051",
           "n": 51,
-          "slug": "dunbars-number",
+          "num": "051",
           "title": "Dunbar's number",
           "epigraph": "There may be a ceiling on how many people you can truly know — and above that line, a society has to be held together by something other than knowing.",
-          "words": 2479,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Village_gathering_%288592452962%29.jpg/1280px-Village_gathering_%288592452962%29.jpg"
+          "file": "c-b3-051.html"
         },
         {
-          "num": "052",
           "n": 52,
-          "slug": "diffusion-of-innovations",
+          "num": "052",
           "title": "Diffusion of innovations",
           "epigraph": "A new idea does not arrive everywhere at once; it seeps through a population along the lines of who trusts whom, and the shape it traces over time is always the same slow-then-sudden-then-slow curve.",
-          "words": 2458,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/35/Diffusion_of_inovations_curve_cz.png"
+          "file": "c-b3-052.html"
         },
         {
-          "num": "053",
           "n": 53,
-          "slug": "sir-models-of-ideas",
+          "num": "053",
           "title": "Epidemics of ideas — the SIR model",
           "epigraph": "An idea spreads by the same arithmetic as a disease, and the arithmetic does not ask whether the idea is true.",
-          "words": 2863,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/SIR_trajectory_plot.png/1280px-SIR_trajectory_plot.png"
+          "file": "c-b3-053.html"
         },
         {
-          "num": "054",
           "n": 54,
-          "slug": "simple-vs-complex-contagion",
+          "num": "054",
           "title": "Simple versus complex contagion",
           "epigraph": "Some things you catch from a single touch; others you adopt only after several people you trust have shown you it is safe — and the same network wiring that speeds the first can strangle the second.",
-          "words": 2641,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SocialNetworkAnalysis.png/1280px-SocialNetworkAnalysis.png"
+          "file": "c-b3-054.html"
         },
         {
-          "num": "055",
           "n": 55,
-          "slug": "two-step-flow-opinion-leaders",
+          "num": "055",
           "title": "Two-step flow & opinion leaders",
           "epigraph": "The message from the megaphone rarely reaches you straight; it reaches you through someone you already trust — which is why capturing a handful of the trusted moves the many without touching them at all.",
-          "words": 2552,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/International_Labour_Day_Edit-a-Thon_-_Atwater_Kent_vintage_radio.jpg/1280px-International_Labour_Day_Edit-a-Thon_-_Atwater_Kent_vintage_radio.jpg"
+          "file": "c-b3-055.html"
         },
         {
-          "num": "056",
           "n": 56,
-          "slug": "memetics",
+          "num": "056",
           "title": "Memetics",
           "epigraph": "An idea does not spread because it is true or good; it spreads because it is good at spreading — and nothing in the spreading cares which.",
-          "words": 2683,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Richard_Dawkins_Cooper_Union_Shankbone.jpg/1280px-Richard_Dawkins_Cooper_Union_Shankbone.jpg"
+          "file": "c-b3-056.html"
         },
         {
-          "num": "057",
           "n": 57,
-          "slug": "virality-network-thresholds",
+          "num": "057",
           "title": "Virality & network thresholds",
           "epigraph": "A hit is not a better song sung louder; it is an ordinary thing that happened to land in a network primed to pass it on.",
-          "words": 2375,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Disassortative_Case_of_the_SBM.png/1280px-Disassortative_Case_of_the_SBM.png"
+          "file": "c-b3-057.html"
         },
         {
-          "num": "058",
           "n": 58,
-          "slug": "first-follower-dynamic",
+          "num": "058",
           "title": "The first-follower dynamic",
           "epigraph": "A lone act of defiance is only madness until one other person joins it — the second is the one who makes the first a leader, and the crowd a possibility.",
-          "words": 2698,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/%281972%29_1_Leader_and_25_Little_Followers_%288449290932%29.jpg/1280px-%281972%29_1_Leader_and_25_Little_Followers_%288449290932%29.jpg"
+          "file": "c-b3-058.html"
         },
         {
-          "num": "059",
           "n": 59,
-          "slug": "tipping-points",
+          "num": "059",
           "title": "Tipping points",
           "epigraph": "Pressure accumulates invisibly, then a single increment crosses a line and the whole system flips — and the line has no opinion about whether what comes next is a liberation or a panic.",
-          "words": 2755,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dominoes_falling.jpg/1280px-Dominoes_falling.jpg"
+          "file": "c-b3-059.html"
         }
       ]
     },
     {
       "n": 4,
-      "dir": "book-4-the-shape-holds-power",
-      "slug": "the-shape-holds-power",
       "title": "The Shape Holds Power",
+      "gloss": "Markets, governance, and ideology — the climax.",
       "range": [
         60,
         85
       ],
-      "gloss": "Markets, governance, and ideology — the climax.",
-      "chapterCount": 26,
-      "words": 68477,
-      "hasFront": true,
-      "hasBack": true,
+      "file": "book-4.html",
       "chapters": [
         {
-          "num": "060",
           "n": 60,
-          "slug": "efficient-markets-vs-behavioural-finance",
+          "num": "060",
           "title": "Efficient markets versus behavioural finance",
           "epigraph": "A price is a crowd's whispered verdict on the future — and the whole question of this book is whether that verdict is the ox-guessers or the mob.",
-          "words": 2594,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg"
+          "file": "c-b4-060.html"
         },
         {
-          "num": "061",
           "n": 61,
-          "slug": "keynes-beauty-contest",
+          "num": "061",
           "title": "Keynes' beauty contest",
           "epigraph": "When the prize goes to whoever guesses the crowd's taste, nobody is left looking at the faces — only at each other.",
-          "words": 2633,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/John_Maynard_Keynes_1929.jpg/1280px-John_Maynard_Keynes_1929.jpg"
+          "file": "c-b4-061.html"
         },
         {
-          "num": "062",
           "n": 62,
-          "slug": "minsky-financial-instability",
+          "num": "062",
           "title": "Minsky's financial instability hypothesis",
           "epigraph": "The calm does not merely precede the storm — it builds it. Stability is the weather in which fragility is manufactured, and the longer it lasts the more it makes.",
-          "words": 3148,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/1280px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg"
+          "file": "c-b4-062.html"
         },
         {
-          "num": "063",
           "n": 63,
-          "slug": "institutional-herding",
+          "num": "063",
           "title": "Institutional herding",
           "epigraph": "The safest place to be wrong is in a crowd of experts who are wrong the same way you are — which is precisely how a market of the wise becomes a mob.",
-          "words": 2442,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Herding_sheep353_%28edited%29.jpg/1280px-Herding_sheep353_%28edited%29.jpg"
+          "file": "c-b4-063.html"
         },
         {
-          "num": "064",
           "n": 64,
-          "slug": "bubbles-and-crashes",
+          "num": "064",
           "title": "Bubbles & crashes",
           "epigraph": "Every mania is the same manias wearing new clothes, and every crash is the crowd's price-finding machine caught running in reverse.",
-          "words": 2598,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Crowd_outside_nyse.jpg"
+          "file": "c-b4-064.html"
         },
         {
-          "num": "065",
           "n": 65,
-          "slug": "reflexivity",
+          "num": "065",
           "title": "Reflexivity",
           "epigraph": "In some domains the crowd is not guessing at a fact that sits still while it guesses — it is helping to make the fact it thinks it is describing.",
-          "words": 2458,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/George_Soros_-_Festival_Economia_2012_01.JPG/1280px-George_Soros_-_Festival_Economia_2012_01.JPG"
+          "file": "c-b4-065.html"
         },
         {
-          "num": "066",
           "n": 66,
-          "slug": "tragedy-of-the-commons-and-ostrom",
+          "num": "066",
           "title": "The tragedy of the commons — and Ostrom's rebuttal",
           "epigraph": "Put strangers on a shared pasture and it dies; put a community on it and it can feed the village for six hundred years — the difference is not the grass but whether the herders can talk.",
-          "words": 2691,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cattle_Grazing_on_Hartlebury_Common_-_geograph.org.uk_-_7488219.jpg"
+          "file": "c-b4-066.html"
         },
         {
-          "num": "067",
           "n": 67,
-          "slug": "schelling-segregation-model",
+          "num": "067",
           "title": "Schelling's segregation model",
           "epigraph": "Nobody in the room wanted a wall, and yet the room built one — mild preferences, iterated, can construct an outcome that not a single person chose.",
-          "words": 2677,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Thomas_C._Schelling_%28cropped%29.jpg"
+          "file": "c-b4-067.html"
         },
         {
-          "num": "068",
           "n": 68,
-          "slug": "honeybee-democracy",
+          "num": "068",
           "title": "Honeybee democracy",
           "epigraph": "Several hundred bees, none in charge, choose the single best home out of a dozen — and get it right almost every time.",
-          "words": 2876,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bee_swarm_day2.jpg"
+          "file": "c-b4-068.html"
         },
         {
-          "num": "069",
           "n": 69,
-          "slug": "ostrom-eight-principles",
+          "num": "069",
           "title": "Ostrom's eight principles",
           "epigraph": "The tragedy of the commons is not a law of nature but a failure of design; give a community the right eight conditions and it will govern its shared world for centuries.",
-          "words": 2374,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Clever_traditional_Afghan_irrigation_canals.jpg/1280px-Clever_traditional_Afghan_irrigation_canals.jpg"
+          "file": "c-b4-069.html"
         },
         {
-          "num": "070",
           "n": 70,
-          "slug": "consensus-majority-quorum",
+          "num": "070",
           "title": "Consensus, majority, and quorum",
           "epigraph": "The rule you use to count the room decides who the room becomes; there is no neutral way to turn many minds into one decision.",
-          "words": 2557,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Show_of_hands.jpg/1280px-Show_of_hands.jpg"
+          "file": "c-b4-070.html"
         },
         {
-          "num": "071",
           "n": 71,
-          "slug": "arrow-impossibility-theorem",
+          "num": "071",
           "title": "Arrow's impossibility theorem",
           "epigraph": "There is no fair way to turn many rankings into one — not because we have not yet found the rule, but because a proof says the rule cannot exist.",
-          "words": 2637,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Kenneth_Arrow%2C_Stanford_University.jpg"
+          "file": "c-b4-071.html"
         },
         {
-          "num": "072",
           "n": 72,
-          "slug": "deliberative-democracy-failure-modes",
+          "num": "072",
           "title": "Deliberative democracy and its failure modes",
           "epigraph": "Talking together can supply the one thing raw voting lacks — informed, reason-giving diversity — or destroy the one thing that made the crowd wise: the independence of the people in the room.",
-          "words": 2362,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Christchurch_Town_Hall_of_the_Performing_Arts%2C_New_Zealand.jpg/1280px-Christchurch_Town_Hall_of_the_Performing_Arts%2C_New_Zealand.jpg"
+          "file": "c-b4-072.html"
         },
         {
-          "num": "073",
           "n": 73,
-          "slug": "liquid-delegated-democracy",
+          "num": "073",
           "title": "Liquid & delegated democracy",
           "epigraph": "A vote you can cast yourself, hand to someone you trust, or take back before breakfast — democracy with a dial between direct and representative, turned issue by issue.",
-          "words": 2313,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Urne_Ballot_box_r%C3%A9publique.jpg/1280px-Urne_Ballot_box_r%C3%A9publique.jpg"
+          "file": "c-b4-073.html"
         },
         {
-          "num": "074",
           "n": 74,
-          "slug": "jury-deliberation-research",
+          "num": "074",
           "title": "Jury deliberation",
           "epigraph": "Twelve strangers are sealed in a room and told to find the truth together — and in nine cases out of ten, the room only ratifies the verdict it walked in believing.",
-          "words": 2224,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Trial_by_Jury_-_Chaos_in_the_Courtroom.png/1280px-Trial_by_Jury_-_Chaos_in_the_Courtroom.png"
+          "file": "c-b4-074.html"
         },
         {
-          "num": "075",
           "n": 75,
-          "slug": "collective-action-free-riding",
+          "num": "075",
           "title": "Collective action & free-riding",
           "epigraph": "A hundred people who would each gain from a thing they must build together will often build nothing — because each of them is right, alone, to wait for the others.",
-          "words": 2593,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Crowd_at_demonstration.jpg/1280px-Crowd_at_demonstration.jpg"
+          "file": "c-b4-075.html"
         },
         {
-          "num": "076",
           "n": 76,
-          "slug": "durkheim-collective-effervescence",
+          "num": "076",
           "title": "Durkheim's collective effervescence",
           "epigraph": "When bodies gather and move as one, they generate a heat they cannot believe comes from themselves — so they call it God, or the nation, or the cause, and worship the thing their own assembly has made.",
-          "words": 2695,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Night_Scene_-_Court_of_Honor_Nicollet_Ave._Minneapolis_Civic_Celebration_1911_-_DPLA_-_f933d66ac9836011fc7cefdc2bfb20ad.jpg/1280px-Night_Scene_-_Court_of_Honor_Nicollet_Ave._Minneapolis_Civic_Celebration_1911_-_DPLA_-_f933d66ac9836011fc7cefdc2bfb20ad.jpg"
+          "file": "c-b4-076.html"
         },
         {
-          "num": "077",
           "n": 77,
-          "slug": "le-bon-the-crowd",
+          "num": "077",
           "title": "Le Bon and The Crowd",
           "epigraph": "The founding text of crowd psychology got the crowd exactly half right — and the missing half was so dangerous that dictators built their trade on it.",
-          "words": 2329,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Gustave_Le_Bon_about_1900.jpg/1280px-Gustave_Le_Bon_about_1900.jpg"
+          "file": "c-b4-077.html"
         },
         {
-          "num": "078",
           "n": 78,
-          "slug": "freud-group-psychology",
+          "num": "078",
           "title": "Freud on the group and the leader",
           "epigraph": "A crowd is not held together by contagion alone; it is held together by a love it has all placed in the same man, and having loved him together, its members become as one.",
-          "words": 2622,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/12/Sigmund_Freud_LIFE.jpg"
+          "file": "c-b4-078.html"
         },
         {
-          "num": "079",
           "n": 79,
-          "slug": "canetti-crowds-and-power",
+          "num": "079",
           "title": "Canetti's Crowds and Power",
           "epigraph": "The crowd is not one thing to be judged but a family of forms to be described — and the same bodies that gather to hunt a victim can gather to overthrow their masters.",
-          "words": 2566,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Elias_Canetti_2.jpg/1280px-Elias_Canetti_2.jpg"
+          "file": "c-b4-079.html"
         },
         {
-          "num": "080",
           "n": 80,
-          "slug": "cultural-evolution-dual-inheritance",
+          "num": "080",
           "title": "Cultural evolution and dual inheritance",
           "epigraph": "Humans inherit through two channels at once — genes and culture — and the second is an evolutionary system in its own right, obeying its own rules, capable of accumulating wisdom no mind could reach and error no mind would choose.",
-          "words": 2723,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Lascaux_painting.jpg"
+          "file": "c-b4-080.html"
         },
         {
-          "num": "081",
           "n": 81,
-          "slug": "ritual-behavioural-synchrony",
+          "num": "081",
           "title": "Ritual & behavioural synchrony",
           "epigraph": "Move together long enough and the boundary between you and the person beside you begins to thin — which is exactly why every power that ever wanted a unified body has put its people in step.",
-          "words": 2844,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ethiopian_soldiers_marching_in_a_military_parade_2019_%28cropped%29.jpg/1280px-Ethiopian_soldiers_marching_in_a_military_parade_2019_%28cropped%29.jpg"
+          "file": "c-b4-081.html"
         },
         {
-          "num": "082",
           "n": 82,
-          "slug": "propaganda-manufactured-consent",
+          "num": "082",
           "title": "Propaganda & manufactured consent",
           "epigraph": "Propaganda is not the art of making people believe lies; it is the art of deciding what they will think about, and of arranging that the answer look like their own.",
-          "words": 2541,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Salvage_Scrap_propaganda_poster_crop2.jpg/1280px-Salvage_Scrap_propaganda_poster_crop2.jpg"
+          "file": "c-b4-082.html"
         },
         {
-          "num": "083",
           "n": 83,
-          "slug": "shared-fictions-coordination",
+          "num": "083",
           "title": "Shared fictions as coordination devices",
           "epigraph": "A banknote is a worthless scrap of cotton that moves armies, feeds cities, and topples governments — because enough of us agree, all at once, to act as if it were not.",
-          "words": 2629,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/BOH%26MOR-10-Protectorate_of_Bohemia_and_Moravia-50_Korun_%281944%29.jpg/1280px-BOH%26MOR-10-Protectorate_of_Bohemia_and_Moravia-50_Korun_%281944%29.jpg"
+          "file": "c-b4-083.html"
         },
         {
-          "num": "084",
           "n": 84,
-          "slug": "identity-fusion-sacred-values",
+          "num": "084",
           "title": "Identity fusion & sacred values",
           "epigraph": "A person will not die for a payoff, but they will die for a group that has become the self and a value that will not be priced — and the same fusion makes both the hero and the killer.",
-          "words": 2937,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Supporters_fran%C3%A7ais.jpg/1280px-Supporters_fran%C3%A7ais.jpg"
+          "file": "c-b4-084.html"
         },
         {
-          "num": "085",
           "n": 85,
-          "slug": "stratification-as-collective-behaviour",
+          "num": "085",
           "title": "Stratification as collective behaviour",
           "epigraph": "A caste is not a thing that exists; it is a thing that is done — re-done every morning by the millions it ranks, until the doing looks like nature.",
-          "words": 3414,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Anatomical_Man.jpg/1280px-Anatomical_Man.jpg"
+          "file": "c-b4-085.html"
         }
       ]
     },
     {
       "n": 5,
-      "dir": "book-5-the-shape-remade",
-      "slug": "the-shape-remade",
       "title": "The Shape Remade",
+      "gloss": "Digital swarms, the toolkit, and epistemic humility.",
       "range": [
         86,
         100
       ],
-      "gloss": "Digital swarms, the toolkit, and epistemic humility.",
-      "chapterCount": 15,
-      "words": 38434,
-      "hasFront": true,
-      "hasBack": true,
+      "file": "book-5.html",
       "chapters": [
         {
-          "num": "086",
           "n": 86,
-          "slug": "swarm-intelligence-robotics",
+          "num": "086",
           "title": "Swarm intelligence & swarm robotics",
           "epigraph": "Take the rules an ant colony stumbled into over a hundred million years, write them into code and cheap machines, and you have built collective intelligence on purpose — with all of its promise and all of its menace intact.",
-          "words": 2487,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kilobot_robot_swarm.JPG/1280px-Kilobot_robot_swarm.JPG"
+          "file": "c-b5-086.html"
         },
         {
-          "num": "087",
           "n": 87,
-          "slug": "recommendation-algorithms-as-herding",
+          "num": "087",
           "title": "Recommendation algorithms as herding engines",
           "epigraph": "A recommendation is a machine whispering what everyone like you already chose — and the whisper is what makes them choose it.",
-          "words": 2626,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Person_holding_smartphone_with_camera_app_open_while_sitting_outdoors_on_a_sunny_day%2C_focused_on_taking_a_picture_of_the_scene.jpg/1280px-Person_holding_smartphone_with_camera_app_open_while_sitting_outdoors_on_a_sunny_day%2C_focused_on_taking_a_picture_of_the_scene.jpg"
+          "file": "c-b5-087.html"
         },
         {
-          "num": "088",
           "n": 88,
-          "slug": "outrage-virality-on-platforms",
+          "num": "088",
           "title": "Outrage & virality on platforms",
           "epigraph": "A medium that sells attention will breed the emotion that seizes it — and the emotion that seizes it fastest is anger at the people we already hate.",
-          "words": 2612,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Social_Media_App_Icons_On_The_Screen_of_A_Smartphone.jpg/1280px-Social_Media_App_Icons_On_The_Screen_of_A_Smartphone.jpg"
+          "file": "c-b5-088.html"
         },
         {
-          "num": "089",
           "n": 89,
-          "slug": "bots-astroturfing",
+          "num": "089",
           "title": "Bots, astroturfing & manufactured consensus",
           "epigraph": "If you cannot win the crowd, you can forge one — and a forged crowd, believed, recruits the real one.",
-          "words": 2614,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/PDC_server_room.jpg/1280px-PDC_server_room.jpg"
+          "file": "c-b5-089.html"
         },
         {
-          "num": "090",
           "n": 90,
-          "slug": "online-mobs-pile-ons",
+          "num": "090",
           "title": "Online mobs & pile-ons",
           "epigraph": "A thousand people each throwing a single stone still leave a body — and no one who threw feels they killed anyone.",
-          "words": 2679,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Backlit_keyboard.jpg/1280px-Backlit_keyboard.jpg"
+          "file": "c-b5-090.html"
         },
         {
-          "num": "091",
           "n": 91,
-          "slug": "wikipedia-open-source-stigmergy",
+          "num": "091",
           "title": "Wikipedia & open source as stigmergy",
           "epigraph": "Thousands of strangers who never speak build an encyclopedia and an operating system by leaving marks in a shared thing — the same trace-following that a feed uses to herd you, aimed instead at truth.",
-          "words": 2727,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mug_Wikipedia_Malayalam.jpg/1280px-Mug_Wikipedia_Malayalam.jpg"
+          "file": "c-b5-091.html"
         },
         {
-          "num": "092",
           "n": 92,
-          "slug": "superforecasting-tournaments",
+          "num": "092",
           "title": "Superforecasting & forecasting tournaments",
           "epigraph": "Take ordinary people, protect their independence, train them to think in probabilities, aggregate their guesses with a little arithmetic — and they will out-predict the experts, even the ones holding the secrets.",
-          "words": 2408,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/JMA_Surface_Analysis_Chart_09-12-2017_00Z.png/1280px-JMA_Surface_Analysis_Chart_09-12-2017_00Z.png"
+          "file": "c-b5-092.html"
         },
         {
-          "num": "093",
           "n": 93,
-          "slug": "crowdsourcing-citizen-science",
+          "num": "093",
           "title": "Crowdsourcing & citizen science",
           "epigraph": "Give a problem too large for any expert to too many strangers, and the answer walks in through a million doors at once — but so does the question of who is paying whom.",
-          "words": 2340,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Birdwatchers_on_a_deck_observe_birds_using_binoculars_and_cameras.jpg/1280px-Birdwatchers_on_a_deck_observe_birds_using_binoculars_and_cameras.jpg"
+          "file": "c-b5-093.html"
         },
         {
-          "num": "094",
           "n": 94,
-          "slug": "agent-based-modelling",
+          "num": "094",
           "title": "Agent-based modelling",
           "epigraph": "Write down a few simple rules for a few simple people, set them loose on a grid, and watch a society you never designed climb out of the arithmetic.",
-          "words": 2399,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Agent-based_model_of_the_pseudostratified_epithelium.png/1280px-Agent-based_model_of_the_pseudostratified_epithelium.png"
+          "file": "c-b5-094.html"
         },
         {
-          "num": "095",
           "n": 95,
-          "slug": "game-theory-prisoners-dilemma",
+          "num": "095",
           "title": "Game theory & the prisoner's dilemma",
           "epigraph": "Two people, each doing the smartest thing they can, walk together into the outcome both least wanted — and the mathematics says they were right to.",
-          "words": 2408,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Prisoner%27s_Dilemma_%288245423564%29.jpg"
+          "file": "c-b5-095.html"
         },
         {
-          "num": "096",
           "n": 96,
-          "slug": "evolutionary-game-theory-axelrod",
+          "num": "096",
           "title": "The evolution of cooperation",
           "epigraph": "The prisoner's dilemma says the selfish defect into ruin — until the game repeats, at which point the very same selfish agents build stable cooperation, and no one had to become good.",
-          "words": 2756,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Handshake-Ministerial_Conference_on_the_European_Cooperation_in_Science_and_Technology_%28COST%29-2016-09-22_DSC_6601_%2829222298474%29.jpg/1280px-Handshake-Ministerial_Conference_on_the_European_Cooperation_in_Science_and_Technology_%28COST%29-2016-09-22_DSC_6601_%2829222298474%29.jpg"
+          "file": "c-b5-096.html"
         },
         {
-          "num": "097",
           "n": 97,
-          "slug": "cellular-automata",
+          "num": "097",
           "title": "Cellular automata",
           "epigraph": "A grid of cells, each obeying the same trivial rule about its neighbours, will build gliders, clocks, and universal computers — proof that complexity needs no complex cause.",
-          "words": 2569,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Rule30-256-rows.png"
+          "file": "c-b5-097.html"
         },
         {
-          "num": "098",
           "n": 98,
-          "slug": "power-laws-heavy-tails",
+          "num": "098",
           "title": "Power laws & heavy tails",
           "epigraph": "Draw the distribution of almost anything a crowd does together and you get the same lopsided silhouette — a few giants, a long train of the small, and no such thing as a typical size.",
-          "words": 2457,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Poisson_graph_and_power_law.png"
+          "file": "c-b5-098.html"
         },
         {
-          "num": "099",
           "n": 99,
-          "slug": "statistical-physics-of-collective-motion",
+          "num": "099",
           "title": "The statistical physics of collective motion",
           "epigraph": "A flock, a swarm, a fleeing crowd: strip away the biology and the same short equation governs when order appears — and it does not care what the moving things are.",
-          "words": 2262,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Red-tailed_hawk_flying_towards_a_flock_of_dunlins-2545.jpg/1280px-Red-tailed_hawk_flying_towards_a_flock_of_dunlins-2545.jpg"
+          "file": "c-b5-099.html"
         },
         {
-          "num": "100",
           "n": 100,
-          "slug": "epistemics-of-the-field",
+          "num": "100",
           "title": "The epistemics of the field",
           "epigraph": "A book about how crowds fool themselves must, at the end, ask whether the crowd that produced its evidence was fooling itself too — and about whom, exactly, all of it was measured.",
-          "words": 3090,
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Blind_monks_examining_an_elephant.jpg/1280px-Blind_monks_examining_an_elephant.jpg"
+          "file": "c-b5-100.html"
         }
       ]
     }

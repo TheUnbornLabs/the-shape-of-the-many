@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Palatino Linotype', Palatino, Georgia, serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f4ee"/>
+      <stop offset="1" stop-color="#efe9f2"/>
+    </linearGradient>
+    <radialGradient id="dot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6b4f8a"/>
+      <stop offset="1" stop-color="#6b4f8a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- murmuration-like scatter, dense to sparse: the shape of the many -->
+  <g fill="#6b4f8a">
+    <g opacity="0.9">
+      <circle cx="120" cy="160" r="4"/><circle cx="150" cy="140" r="4"/><circle cx="140" cy="185" r="4"/>
+      <circle cx="185" cy="150" r="4"/><circle cx="175" cy="200" r="4"/><circle cx="210" cy="175" r="4"/>
+      <circle cx="230" cy="205" r="3.5"/><circle cx="200" cy="230" r="3.5"/><circle cx="255" cy="190" r="3.5"/>
+      <circle cx="280" cy="220" r="3"/><circle cx="245" cy="250" r="3"/><circle cx="300" cy="245" r="3"/>
+    </g>
+    <g opacity="0.6">
+      <circle cx="330" cy="270" r="3"/><circle cx="360" cy="255" r="2.6"/><circle cx="345" cy="300" r="2.6"/>
+      <circle cx="395" cy="285" r="2.4"/><circle cx="420" cy="315" r="2.2"/><circle cx="380" cy="330" r="2.2"/>
+    </g>
+    <g opacity="0.35">
+      <circle cx="455" cy="340" r="2"/><circle cx="490" cy="365" r="1.8"/><circle cx="470" cy="390" r="1.6"/>
+      <circle cx="525" cy="380" r="1.5"/><circle cx="560" cy="405" r="1.3"/>
+    </g>
+  </g>
+  <text x="90" y="360" font-size="76" font-weight="600" fill="#1d1c1a">The Shape of the Many</text>
+  <text x="92" y="418" font-size="30" fill="#4a4740" font-style="italic">A five-book study of human collective behaviour</text>
+  <line x1="92" y1="452" x2="360" y2="452" stroke="#6b4f8a" stroke-width="3"/>
+  <text x="92" y="502" font-size="24" fill="#837d72">100 chapters · one thesis · the wise crowd and the mob are the same people</text>
+  <text x="92" y="556" font-size="20" fill="#6b4f8a" letter-spacing="2">THEUNBORNLABS.GITHUB.IO/THE-SHAPE-OF-THE-MANY</text>
+</svg>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theunbornlabs.github.io/the-shape-of-the-many/sitemap.xml
