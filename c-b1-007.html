@@ -18,14 +18,14 @@
 <meta name="twitter:image" content="https://theunbornlabs.github.io/the-shape-of-the-many/assets/og-image.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Granovetter's threshold model","articleSection":"The Shape Forms","url":"https://theunbornlabs.github.io/the-shape-of-the-many/c-b1-007.html","isPartOf":{"@type":"Book","name":"The Shape Forms"},"inLanguage":"en","wordCount":2587,"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
-<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>
+<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div><script>window.__IX__={"book":1,"ch":"007","catKey":"emergence","catName":"Emergence","data":{"prediction":{"prompt":"Everyone in a crowd has a personal “tipping point” — how many others must act before they will. A riot can ignite even if:","options":["Everyone is a committed radical","Almost no one individually wants a riot","There is a single ringleader"],"answer":1,"reveal":"Granovetter’s threshold model: the outcome depends on the whole distribution of thresholds, not on average attitude. Explore it in the simulator."},"questions":[{"type":"concept","prompt":"In Granovetter’s model, a person’s threshold is:","options":["Their private opinion of the act","The number/fraction of others who must act first before they join","Their income"],"answer":1,"explanation":"Behaviour depends on how many others have already acted, not just on private preference."},{"type":"scenario","prompt":"Two crowds have identical average attitudes but different threshold distributions. They can:","options":["Only ever behave identically","Produce wildly different outcomes — one calm, one rioting","Never riot"],"answer":1,"explanation":"One missing ‘threshold-1’ instigator can be the difference between nothing and a full cascade."},{"type":"predict","prompt":"In the simulator, removing the lowest-threshold person often:","options":["Has no effect","Can stop the entire cascade from starting","Guarantees a larger riot"],"answer":1,"explanation":"Cascades need a spark low enough to go first; remove it and the chain never begins."}]}}</script>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">The Shape<span>·</span>of the Many</a>
     <div class="nav-spacer"></div>
-    <nav class="topnav"><a href="index.html">Books</a><a href="about.html">About</a></nav>
+    <nav class="topnav"><a href="index.html">Books</a><a href="dashboard.html">Progress</a><a href="about.html">About</a></nav>
     <div class="search-wrap">
       <input id="globalSearch" type="search" placeholder="Search 100 chapters…" autocomplete="off" aria-label="Search chapters" />
       <div id="searchResults" class="search-results" hidden></div>
@@ -38,6 +38,7 @@
         <a class="crumb" href="book-1.html">← Book 1 · The Shape Forms</a>
         <p class="eyebrow">Chapter 7 · The Shape Forms</p>
         <h1>Granovetter's threshold model</h1>
+        <div id="ix-predict"></div>
         <article class="prose"><blockquote><p>A riot and a quiet afternoon can be made of the exact same people; what differs is not who they are but the order in which they would move.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mexican_wave_approaches_%287707159728%29.jpg/1280px-Mexican_wave_approaches_%287707159728%29.jpg" alt="Mexican wave stadium" loading="lazy" referrerpolicy="no-referrer"><figcaption>humbert15 · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Mexican_wave_approaches_(7707159728).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -71,6 +72,8 @@
 <p>The second is the informational assumption. The model supposes each person can read, reasonably accurately, how many others are already acting — and in real crowds that count is noisy, delayed, rumoured, and often badly wrong. People act on their estimate of the number, not the number, and the gap between the two can dominate everything the clean arithmetic predicts.</p>
 <p>The third, and heaviest, is that the basic model ignores network structure. It treats the crowd as a single pool in which everyone responds to the same global tally, when in fact people watch their neighbours, their contacts, their particular corner of the room, not the aggregate. Whether a cascade spreads depends enormously on who is connected to whom — the work taken up by the small-world and network-contagion ideas of items 44 and 57, which put the missing structure back and show that the same distribution of thresholds can spread or fizzle depending purely on the wiring.</p>
 <p>The fourth is the deepest in spirit. A single number is a caricature of a human motive. Real people do not carry one fixed threshold; they carry moods, loyalties, fears, second thoughts, and reasons that shift with who is acting rather than merely how many. The threshold is a deliberate simplification, and like all the best ones it earns its keep by being wrong in a clarifying way — showing, with a starkness no richer model could match, that collective outcomes need not be read off individual desires, and that a riot and a still afternoon can be cut from the very same cloth.</p></article>
+        <div id="ix-sim" data-sim="threshold"></div>
+        <div id="ix-quiz"></div>
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Granovetter, Mark. &quot;Threshold Models of Collective Behavior.&quot; <em>American Journal of Sociology</em>, vol. 83, no. 6, 1978, pp. 1420–1443. — The founding paper. Source of the threshold definition, the rational-actor framing against contagion theory, and the 100-person riot thought-experiment including the 3-to-4 shift that turns a full cascade into a stalled one.</li><li>Schelling, Thomas C. <em>Micromotives and Macrobehavior</em>. W. W. Norton, 1978. — Companion volume of the same year; the argument that aggregate social patterns cannot be inferred from, and need not resemble, the intentions of the individuals composing them.</li><li>Le Bon, Gustave. <em>The Crowd: A Study of the Popular Mind (Psychologie des foules)</em>. 1895. — The contagion / crowd-psychology tradition Granovetter was writing against; cited here only as the target of his critique.</li><li>Granovetter, Mark. &quot;The Strength of Weak Ties.&quot; <em>American Journal of Sociology</em>, vol. 78, no. 6, 1973, pp. 1360–1380. — Granovetter's better-known paper, referenced only to identify the author.</li></ul>
 <h2>Further reading to verify before final publication</h2>
@@ -92,6 +95,6 @@
   </div>
 </footer>
 <script src="assets/js/search.js"></script>
-<script src="assets/js/chapter.js"></script>
+<script src="assets/js/chapter.js"></script><script src="assets/js/simulations.js"></script><script src="assets/js/interactive.js"></script>
 </body>
 </html>

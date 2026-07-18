@@ -25,7 +25,7 @@
   <div class="wrap">
     <a class="brand" href="index.html">The Shape<span>·</span>of the Many</a>
     <div class="nav-spacer"></div>
-    <nav class="topnav"><a href="index.html">Books</a><a href="about.html">About</a></nav>
+    <nav class="topnav"><a href="index.html">Books</a><a href="dashboard.html">Progress</a><a href="about.html">About</a></nav>
     <div class="search-wrap">
       <input id="globalSearch" type="search" placeholder="Search 100 chapters…" autocomplete="off" aria-label="Search chapters" />
       <div id="searchResults" class="search-results" hidden></div>
@@ -38,6 +38,7 @@
         <a class="crumb" href="book-3.html">← Book 3 · The Shape Flows</a>
         <p class="eyebrow">Chapter 47 · The Shape Flows</p>
         <h1>Centrality — locating power in a network</h1>
+        
         <article class="prose"><blockquote><p>&quot;Who matters here?&quot; has at least four honest answers, and they do not always name the same person.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Hist1_network_circular.png/1280px-Hist1_network_circular.png" alt="Betweenness centrality network" loading="lazy" referrerpolicy="no-referrer"><figcaption>Cdagg96 · CC0 · <a href="https://commons.wikimedia.org/wiki/File:Hist1_network_circular.png" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -72,6 +73,8 @@
 <p>The second problem is the multidimensionality itself, now read as a weakness rather than an insight. The measures disagree, and there is no principled way to choose among them without a theory of the process you care about. If influence in your network actually flows along shortest paths, betweenness is right; if it diffuses like a rumour along all paths, betweenness is the wrong model and Katz or eigenvector measures fit better. But which process is really operating is usually exactly what you do not know. Absent that theory, picking a centrality measure is picking an answer before you have understood the question — and the tool will oblige with a confident number either way.</p>
 <p>Third, the measures are static snapshots of things that move. Networks change; ties form and dissolve; a node central today may be peripheral next month. A single-frame centrality ignores the timing and direction of flows — whether a contact happened before or after another, which for contagion and information is everything.</p>
 <p>And finally, structural position is not the same as causal power. High centrality tells you a node <em>could</em> exert influence given its location; it does not tell you it <em>does</em>. The best-placed broker may lack the skill or will to broker; the highest-eigenvector page may be an accident of link topology, not authority. Centrality reifies position into importance, and the two come apart more often than the crisp rankings admit. The map shows you where power <em>could</em> sit. Whether it sits there, and whether the person who holds the map means to spread a vaccine or find a dissident, the mathematics will never say.</p></article>
+        
+        
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Freeman, Linton C. &quot;Centrality in Social Networks: Conceptual Clarification.&quot; <em>Social Networks</em>, vol. 1, no. 3, 1978/1979, pp. 215–239. — The synthesis that separated degree, betweenness, and closeness as distinct concepts, each encoding a different theory of importance (activity, control, independence). Central to the chapter's core argument.</li><li>Bonacich, Phillip. &quot;Factoring and Weighting Approaches to Status Scores and Clique Identification.&quot; <em>Journal of Mathematical Sociology</em>, vol. 2, no. 1, 1972, pp. 113–120. — Origin of eigenvector centrality: a node's status defined recursively by the status of its connections, resolving to the leading eigenvector of the adjacency matrix.</li><li>Katz, Leo. &quot;A New Status Index Derived from Sociometric Analysis.&quot; <em>Psychometrika</em>, vol. 18, no. 1, 1953, pp. 39–43. — Katz centrality: counting all paths to a node with a distance decay factor; an early formalisation of attenuating influence through a network.</li><li>Brin, Sergey, and Lawrence Page. &quot;The Anatomy of a Large-Scale Hypertextual Web Search Engine.&quot; <em>Computer Networks and ISDN Systems</em>, vol. 30, no. 1–7, 1998, pp. 107–117. — PageRank as eigenvector centrality applied to the web, with a damping/random-jump term; the foundation of Google.</li><li>Burt, Ronald S. <em>Structural Holes: The Social Structure of Competition</em>. Harvard University Press, 1992. — The theory of brokerage advantage from spanning gaps between otherwise-disconnected groups; supports the anchor example (high betweenness, low degree) and cross-reference to item 49.</li></ul>
 <h2>Further reading to verify before final publication</h2>

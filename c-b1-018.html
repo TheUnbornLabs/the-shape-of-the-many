@@ -18,14 +18,14 @@
 <meta name="twitter:image" content="https://theunbornlabs.github.io/the-shape-of-the-many/assets/og-image.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Condorcet's Jury Theorem","articleSection":"The Shape Forms","url":"https://theunbornlabs.github.io/the-shape-of-the-many/c-b1-018.html","isPartOf":{"@type":"Book","name":"The Shape Forms"},"inLanguage":"en","wordCount":2200,"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
-<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>
+<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div><script>window.__IX__={"book":1,"ch":"018","catKey":"wisdom","catName":"Crowd intelligence","data":{"prediction":{"prompt":"Each juror is right 60% of the time and votes independently. As the jury grows, the probability the majority is correct:","options":["Falls toward 0","Rises toward 1","Stays at 60%"],"answer":1,"reveal":"Condorcet’s Jury Theorem: if each member is better than chance and votes independently, majority accuracy climbs toward certainty with size. Explore the reversal below."},"questions":[{"type":"concept","prompt":"Condorcet’s theorem requires each voter to be:","options":["Better than chance and independent","Worse than chance","Perfectly informed"],"answer":0,"explanation":"Competence above 0.5 plus independence drives majority accuracy up with N."},{"type":"scenario","prompt":"If each voter is only 40% accurate (below chance), enlarging the group makes the majority:","options":["More accurate","More reliably wrong","Unchanged"],"answer":1,"explanation":"The theorem runs in reverse below 0.5 — numbers amplify systematic error."},{"type":"predict","prompt":"Correlated voters (all reading the same source) break the theorem because they:","options":["Add independent information","Effectively count as far fewer independent voters","Are always right"],"answer":1,"explanation":"Shared error means the effective N is small — independence is the load-bearing assumption."}]}}</script>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">The Shape<span>·</span>of the Many</a>
     <div class="nav-spacer"></div>
-    <nav class="topnav"><a href="index.html">Books</a><a href="about.html">About</a></nav>
+    <nav class="topnav"><a href="index.html">Books</a><a href="dashboard.html">Progress</a><a href="about.html">About</a></nav>
     <div class="search-wrap">
       <input id="globalSearch" type="search" placeholder="Search 100 chapters…" autocomplete="off" aria-label="Search chapters" />
       <div id="searchResults" class="search-results" hidden></div>
@@ -38,6 +38,7 @@
         <a class="crumb" href="book-1.html">← Book 1 · The Shape Forms</a>
         <p class="eyebrow">Chapter 18 · The Shape Forms</p>
         <h1>Condorcet's Jury Theorem</h1>
+        <div id="ix-predict"></div>
         <article class="prose"><blockquote><p>A crowd of the barely-competent can be nearly infallible — or reliably, catastrophically wrong. The same equation says both, and the sign is set by a single number.</p></blockquote>
 <figure class="chapter-figure"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Nicolas_de_Condorcet.PNG" alt="Nicolas de Condorcet" loading="lazy" referrerpolicy="no-referrer"><figcaption>Unidentified painter / Formerly attributed to Jean-Baptiste Greuze · Public domain · <a href="https://commons.wikimedia.org/wiki/File:Nicolas_de_Condorcet.PNG" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 <h2>The idea</h2>
@@ -68,6 +69,8 @@
 <p>The first and gravest is <strong>independence</strong>. Condorcet assumes each voter decides alone, uninfluenced by the others. Real groups are the opposite: people confer, defer, follow leaders, and read the room. Once votes are correlated, the tidy convergence toward certainty weakens or fails outright, and a whole literature since the 1980s has explored just how fragile the result is once you let voters share information or influence — for many realistic patterns of correlation, adding voters stops helping well short of certainty, and can hurt. The theorem is best read not as a description of how crowds behave but as a statement of the <em>ideal conditions</em> under which they could be wise — a benchmark that shows, by contrast, exactly what real crowds are missing.</p>
 <p>The second is <strong>homogeneous competence</strong>. Condorcet gives every voter the same <em>p</em>. Drop that, and the picture gets subtler: a crowd's wisdom then depends on the distribution of competence, and in some configurations a few highly-competent voters outperform a large mediocre majority, which complicates any simple &quot;more voters is better&quot; reading. Later results generalise the theorem to unequal and even individually-sub-threshold voters under certain conditions, but the clean guarantee softens.</p>
 <p>The third is the binary, single-shot, one-right-answer frame itself. Many real collective decisions are not binary, have no verifiable correct answer, or involve strategic voting where people misrepresent their views to influence the outcome — and Condorcet's own broader work exposed a related problem, the voting paradox in which majority preferences over three or more options can cycle incoherently (A beats B beats C beats A), a discovery that runs straight into Arrow's impossibility theorem (item 71) in Book Four. The Jury Theorem is thus both foundational and narrow: a beautiful, exact result about an idealised case, whose chief value is the sharpness with which its assumptions, when violated, explain the failures. It is the clean floor beneath a very messy building — which is precisely why it is one of the three nails.</p></article>
+        <div id="ix-sim" data-sim="condorcet"></div>
+        <div id="ix-quiz"></div>
         <details class="refs"><summary>References &amp; sources</summary><div class="prose"><h2>Confirmed sources</h2>
 <ul><li>Condorcet, Marquis de (Marie Jean Antoine Nicolas de Caritat). <em>Essai sur l'application de l'analyse à la probabilité des décisions rendues à la pluralité des voix.</em> Paris: Imprimerie Royale, 1785. — The original statement of the theorem. Its Discours préliminaire opens by dedicating the work to the memory of Turgot (&quot;Un grand homme, dont je regretterai toujours les leçons, les exemples, et surtout l'amitié&quot;), Condorcet's mentor and patron, confirming the Turgot framing. Digitised copy available via the Bibliothèque nationale de France (Gallica, ark:/12148/bpt6k417181).</li><li>Boland, Philip J. &quot;Majority Systems and the Condorcet Jury Theorem.&quot; <em>The Statistician</em> (Journal of the Royal Statistical Society, Series D), vol. 38, no. 3, 1989, pp. 181–189. — A clear modern statement and generalisation; source for the homogeneous-competence and majority-system analysis.</li><li>&quot;Condorcet's jury theorem.&quot; <em>Encyclopaedia / reference overview.</em> — Used to confirm the two-edged result (p &gt; 1/2 → 1; p &lt; 1/2 → 0 as n → ∞), the independence and homogeneity assumptions, and Condorcet's dates (1743–1794). Cross-checked against the sources above.</li><li>Biographical facts on Condorcet (1743–1794; philosophe; death during the Terror, 1794) are uncontested and drawn from standard reference biographies.</li></ul>
 <h2>Further reading to verify before final publication</h2>
@@ -87,6 +90,6 @@
   </div>
 </footer>
 <script src="assets/js/search.js"></script>
-<script src="assets/js/chapter.js"></script>
+<script src="assets/js/chapter.js"></script><script src="assets/js/simulations.js"></script><script src="assets/js/interactive.js"></script>
 </body>
 </html>

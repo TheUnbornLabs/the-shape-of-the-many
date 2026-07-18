@@ -52,6 +52,17 @@ JavaScript only enhances (search, reading progress, continue-reading).
 - `sitemap.xml`, `robots.txt`, per-page Open Graph / Twitter / JSON-LD metadata.
 - `downloads/` — the typeset 6×9 PDFs, DOCX, and Markdown masters.
 
+### Interactive edition (Book One pilot)
+
+Book One chapters carry a learning layer, driven by data in `data/interactive/book-1.json`
+and rendered at build time: an **opening prediction**, **confidence-rated quizzes**, and
+five **live simulations** — boids flocking (Ch 3), the threshold cascade (Ch 7), the
+wisdom-of-crowds estimator (Ch 17), the Condorcet jury (Ch 18), and the diversity-prediction
+identity (Ch 19). Progress is stored locally (no accounts) and surfaced on `dashboard.html`
+(a mastery map + confidence calibration); `assessment-b1.html` is the end-of-book test.
+Engine: `assets/js/interactive.js`, `simulations.js`, `dashboard.js`, `assessment.js`.
+To extend to later books, add `data/interactive/book-N.json` in the same shape and rebuild.
+
 ### Chapter images
 
 Each chapter carries one relevant, freely-licensed image **hotlinked** from

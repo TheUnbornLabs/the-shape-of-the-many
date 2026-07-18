@@ -1,0 +1,366 @@
+{
+  "book": 1,
+  "title": "The Shape Forms",
+  "categories": {
+    "emergence": "Emergence",
+    "grouping": "Evolutionary grouping",
+    "wisdom": "Crowd intelligence"
+  },
+  "chapters": {
+    "001": {
+      "category": "emergence",
+      "prediction": {
+        "prompt": "A traffic jam can crawl backwards down a motorway while every car in it moves forwards. Where does the jam “live”?",
+        "options": ["In one blocked car at the front", "In no single car — only in the pattern of the whole", "In the road surface itself"],
+        "answer": 1,
+        "reveal": "The jam is an emergent pattern of the arrangement, not a property of any car. This is the book’s first lesson: the many can have properties none of the one possesses."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "“The whole is more than the sum of its parts,” taken precisely, means a collection can:", "options": ["Weigh more than its components", "Have properties absent from every individual part", "Never be predicted by any science"], "answer": 1, "explanation": "Emergence names properties that belong to the arrangement and cannot be found by studying a part in isolation — wetness, a colony’s intelligence, the phantom jam." },
+        { "type": "scenario", "prompt": "A single ant is nearly witless, yet the colony farms, wages war, and repairs itself. The colony’s intelligence is best described as:", "options": ["Stored in the queen’s brain", "An emergent property of many local interactions", "An illusion of human observers"], "answer": 1, "explanation": "No ant holds the plan; the capacity appears at the level of the many, from local interaction plus nonlinearity." },
+        { "type": "predict", "prompt": "If emergence is real, studying one neuron ever harder will:", "options": ["Eventually reveal the mind in full", "Never by itself reveal decisions that belong to the whole brain", "Prove the mind does not exist"], "answer": 1, "explanation": "Weak emergence: the higher-level behaviour is derivable only by letting the parts interact (often only by simulation), not by inspecting a part alone." }
+      ]
+    },
+    "002": {
+      "category": "emergence",
+      "prediction": {
+        "prompt": "Order can appear in a system with no leader, blueprint, or external hand arranging it. Most likely?",
+        "options": ["Impossible — order needs a designer", "Possible — local rules plus energy can self-organise", "Only in living things"],
+        "answer": 1,
+        "reveal": "Self-organisation: global order arising from local interaction without central control — from convection cells to sand ripples to markets."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Self-organisation differs from mere emergence by emphasising:", "options": ["A designer’s intent", "Order arising spontaneously from local rules without central control", "Randomness with no pattern"], "answer": 1, "explanation": "Self-organisation is the mechanism; the resulting pattern is the emergent property." },
+        { "type": "scenario", "prompt": "Bénard convection cells form neat hexagons when a fluid is heated from below. This shows order can be paid for by:", "options": ["A hidden controller", "A throughput of energy dissipated by the system", "Nothing at all"], "answer": 1, "explanation": "Self-organised order is typically sustained by energy flowing through an open system, not created from nothing." },
+        { "type": "predict", "prompt": "Remove the energy input from a self-organised pattern and it will usually:", "options": ["Persist forever", "Decay back toward disorder", "Grow stronger"], "answer": 1, "explanation": "Dissipative structures depend on continued throughput; cut it and the pattern relaxes." }
+      ]
+    },
+    "003": {
+      "category": "emergence",
+      "sim": "boids",
+      "prediction": {
+        "prompt": "A flock wheels as one. How many rules does each simulated bird need to reproduce it?",
+        "options": ["One global choreography", "Three simple local rules", "Hundreds of specific instructions"],
+        "answer": 1,
+        "reveal": "Reynolds’ boids need only three local rules — separation, alignment, cohesion — with no leader and no global plan. Try it in the simulator below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The three boids rules are separation, alignment and:", "options": ["Cohesion", "Competition", "Command"], "answer": 0, "explanation": "Each bird steers to avoid crowding (separation), match neighbours’ heading (alignment), and move toward the local centre (cohesion)." },
+        { "type": "scenario", "prompt": "In the boids model there is no lead bird. The flock’s coordinated turn is therefore:", "options": ["Directed by the front bird", "Emergent from local rules applied by every bird", "Pre-programmed globally"], "answer": 1, "explanation": "Global coordination emerges from identical local rules — the essence of decentralised order." },
+        { "type": "predict", "prompt": "Raise separation far above cohesion in the simulator. The flock will most likely:", "options": ["Bind into a tight ball", "Scatter and stop cohering", "Freeze in place"], "answer": 1, "explanation": "Cohesion pulls together; separation pushes apart. Tip the balance and the flock disperses." }
+      ]
+    },
+    "004": {
+      "category": "emergence",
+      "prediction": {
+        "prompt": "Termites build vast, ventilated mounds with no architect and no shared plan. They coordinate mainly through:",
+        "options": ["A blueprint held by the queen", "Signals left in the shared environment", "Direct order from a foreman"],
+        "answer": 1,
+        "reveal": "Stigmergy: individuals coordinate by modifying a shared environment that in turn cues the next action — the work itself is the memory."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Stigmergy means coordination through:", "options": ["Traces left in a shared environment", "Face-to-face negotiation", "A central schedule"], "answer": 0, "explanation": "An ant’s pheromone trail or a termite’s deposited pellet changes the environment, cueing others — indirect coordination." },
+        { "type": "scenario", "prompt": "Ants converge on the shortest route to food because pheromone on shorter paths:", "options": ["Is chosen by a leader ant", "Accumulates faster and evaporates less per trip", "Is invisible to other ants"], "answer": 1, "explanation": "Shorter round-trips reinforce their trail more per unit time, so the shortest path wins by positive feedback." },
+        { "type": "predict", "prompt": "Wikipedia edits and open-source commits resemble stigmergy because contributors respond to:", "options": ["A manager’s daily orders", "The current state of the shared artefact", "Private messages only"], "answer": 1, "explanation": "The evolving document/codebase is the shared environment that cues the next contribution." }
+      ]
+    },
+    "005": {
+      "category": "emergence",
+      "prediction": {
+        "prompt": "A microphone near its own speaker produces a screech that grows until it saturates. This runaway is an example of:",
+        "options": ["Negative feedback", "Positive feedback", "No feedback"],
+        "answer": 1,
+        "reveal": "Positive feedback amplifies; negative feedback stabilises. Collective behaviour is largely a story of which loop dominates."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Negative feedback tends to:", "options": ["Amplify deviations", "Damp deviations toward a set point", "Do nothing"], "answer": 1, "explanation": "A thermostat is negative feedback: it counteracts change and stabilises. Positive feedback compounds change." },
+        { "type": "scenario", "prompt": "A bank run spreads as withdrawals trigger more withdrawals. The dominant loop is:", "options": ["Negative feedback", "Positive feedback", "Neither"], "answer": 1, "explanation": "Each withdrawal raises the incentive to withdraw — self-amplifying, the signature of a cascade." },
+        { "type": "predict", "prompt": "A collective system with only positive feedback and no damping will most likely:", "options": ["Settle into balance", "Run to an extreme or collapse", "Oscillate gently forever"], "answer": 1, "explanation": "Unchecked amplification drives systems to saturation or breakdown; stability needs some negative feedback." }
+      ]
+    },
+    "006": {
+      "category": "emergence",
+      "prediction": {
+        "prompt": "As you slowly heat water, its temperature rises smoothly — then at 100°C something abrupt happens. Collective systems often behave:",
+        "options": ["Always smoothly", "With sudden phase-transition-like jumps at thresholds", "Never predictably"],
+        "answer": 1,
+        "reveal": "Phase transitions: small continuous changes in a control parameter can trigger a sudden, qualitative shift once a threshold is crossed."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A phase transition is marked by:", "options": ["A gradual, proportional response", "A sudden qualitative change at a critical point", "No change at all"], "answer": 1, "explanation": "Near the critical point, tiny changes in the control parameter produce a large, abrupt shift in the system’s state." },
+        { "type": "scenario", "prompt": "A protest stays small for weeks, then explodes in a day. Framed as a phase transition, the crowd crossed:", "options": ["A critical threshold in participation/incentives", "A fixed calendar date", "A legal boundary"], "answer": 0, "explanation": "Once enough people join to tip others’ thresholds, participation cascades — a social critical point." },
+        { "type": "predict", "prompt": "Near a critical point, systems typically show:", "options": ["Small, independent fluctuations", "Large correlated fluctuations and sensitivity", "Perfect stillness"], "answer": 1, "explanation": "Critical systems become highly sensitive, with fluctuations spanning many scales — a warning sign of imminent transition." }
+      ]
+    },
+    "007": {
+      "category": "emergence",
+      "sim": "threshold",
+      "prediction": {
+        "prompt": "Everyone in a crowd has a personal “tipping point” — how many others must act before they will. A riot can ignite even if:",
+        "options": ["Everyone is a committed radical", "Almost no one individually wants a riot", "There is a single ringleader"],
+        "answer": 1,
+        "reveal": "Granovetter’s threshold model: the outcome depends on the whole distribution of thresholds, not on average attitude. Explore it in the simulator."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "In Granovetter’s model, a person’s threshold is:", "options": ["Their private opinion of the act", "The number/fraction of others who must act first before they join", "Their income"], "answer": 1, "explanation": "Behaviour depends on how many others have already acted, not just on private preference." },
+        { "type": "scenario", "prompt": "Two crowds have identical average attitudes but different threshold distributions. They can:", "options": ["Only ever behave identically", "Produce wildly different outcomes — one calm, one rioting", "Never riot"], "answer": 1, "explanation": "One missing ‘threshold-1’ instigator can be the difference between nothing and a full cascade." },
+        { "type": "predict", "prompt": "In the simulator, removing the lowest-threshold person often:", "options": ["Has no effect", "Can stop the entire cascade from starting", "Guarantees a larger riot"], "answer": 1, "explanation": "Cascades need a spark low enough to go first; remove it and the chain never begins." }
+      ]
+    },
+    "008": {
+      "category": "emergence",
+      "prediction": {
+        "prompt": "A “complex adaptive system” (an economy, an immune system, an ecosystem) is best steered by:",
+        "options": ["Precise top-down commands", "Shaping incentives and letting agents adapt", "Ignoring it entirely"],
+        "answer": 1,
+        "reveal": "Complex adaptive systems are made of many adapting agents; they respond to rules and incentives, often defeating precise central control."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A complex adaptive system consists of many agents that:", "options": ["Never change behaviour", "Adapt their behaviour based on experience and interaction", "Are centrally programmed"], "answer": 1, "explanation": "Adaptation and interaction produce emergent, often surprising, system-level behaviour." },
+        { "type": "scenario", "prompt": "A regulator bans one risky product; firms invent a similar one. This illustrates that adaptive agents:", "options": ["Obey rules literally and passively", "Route around interventions", "Cannot respond at all"], "answer": 1, "explanation": "Because agents adapt, interventions reshape rather than simply stop behaviour — a hallmark of CAS." },
+        { "type": "predict", "prompt": "Compared with a simple machine, a complex adaptive system is:", "options": ["More precisely controllable", "Harder to control precisely, better steered by incentives", "Identical to control"], "answer": 1, "explanation": "You nudge distributions and incentives; you rarely command exact outcomes." }
+      ]
+    },
+    "009": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "Why do prey animals bunch together when a predator appears? Hamilton’s answer:",
+        "options": ["To defend each other bravely", "Each individual selfishly shrinks its own danger zone by hiding behind others", "For no reason"],
+        "answer": 1,
+        "reveal": "The “selfish herd”: aggregation can arise from each individual reducing its own risk, not from group altruism. Cohesion needn’t be cooperative."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Hamilton’s selfish herd explains grouping as the result of each animal:", "options": ["Sacrificing itself for the group", "Minimising its own ‘domain of danger’", "Being herded by a leader"], "answer": 1, "explanation": "If each moves to put others between itself and danger, a tight aggregation emerges from pure self-interest." },
+        { "type": "scenario", "prompt": "A tight fish school forms with no coordination signal. The selfish-herd reading says it is:", "options": ["Cooperative defence", "An emergent by-product of individual risk-reduction", "Random"], "answer": 1, "explanation": "Group structure can emerge without any group-level intention." },
+        { "type": "predict", "prompt": "The selfish herd warns us that visible cooperation-looking behaviour:", "options": ["Always implies altruism", "May be explained by individual self-interest", "Is impossible"], "answer": 1, "explanation": "Apparent togetherness is not proof of altruism — a recurring caution in the book." }
+      ]
+    },
+    "010": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "In a herd of 100, your personal chance of being the one taken by a single predator, versus being alone, is:",
+        "options": ["Higher", "Lower — risk is diluted across many", "The same"],
+        "answer": 1,
+        "reveal": "The dilution effect: for a given attack, being one of many lowers each individual’s probability of being the victim."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The dilution effect reduces individual risk because:", "options": ["Predators eat less in groups", "A single attack is spread over more potential victims", "Groups are invisible"], "answer": 1, "explanation": "Per-capita risk from one predator event falls as group size rises — ‘safety in numbers’, arithmetic version." },
+        { "type": "scenario", "prompt": "Dilution can favour grouping even if the group attracts more predators, provided:", "options": ["The per-capita risk still falls", "Predators never notice groups", "The group is small"], "answer": 0, "explanation": "What matters to each individual is per-capita risk, not total attention drawn." },
+        { "type": "predict", "prompt": "Dilution is a benefit that requires:", "options": ["Coordination among prey", "No cooperation at all — just numbers", "A sentinel"], "answer": 1, "explanation": "It is a statistical benefit of being one-of-many, needing no cooperation." }
+      ]
+    },
+    "011": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "A dense, swirling school of fish makes a predator’s job harder mainly by:",
+        "options": ["Blinding it with colour", "Overloading its ability to lock onto a single target", "Smelling bad"],
+        "answer": 1,
+        "reveal": "The confusion effect: many similar moving targets degrade a predator’s ability to single one out and attack successfully."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The predator confusion effect works by:", "options": ["Making prey faster", "Impairing target selection among many similar moving prey", "Poisoning the predator"], "answer": 1, "explanation": "Sensory and attentional limits make it hard to track one target in a shifting many." },
+        { "type": "scenario", "prompt": "Confusion is strongest when prey in a group are:", "options": ["Highly distinctive individuals", "Similar and densely moving together", "Completely still"], "answer": 1, "explanation": "Oddity breaks confusion; uniformity strengthens it — hence the cost of standing out." },
+        { "type": "predict", "prompt": "An ‘odd’ differently-coloured fish in a school is likely to be:", "options": ["Safer than the rest", "Preferentially targeted (the oddity effect)", "Ignored"], "answer": 1, "explanation": "Predators exploit oddity to defeat confusion, pressuring prey toward uniformity." }
+      ]
+    },
+    "012": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "A larger group can spot an approaching predator sooner because:",
+        "options": ["Bigger animals see further", "More eyes scan more of the surroundings", "Groups are luckier"],
+        "answer": 1,
+        "reveal": "The many-eyes effect: collective vigilance rises with group size, so each individual can afford to look up less and feed more."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The many-eyes effect lets each individual in a big group:", "options": ["Be more vigilant personally", "Spend less time scanning while detection stays high", "Stop eating"], "answer": 1, "explanation": "Detection is a collective good; individuals trade personal vigilance for feeding as numbers grow." },
+        { "type": "scenario", "prompt": "Collective vigilance is vulnerable to free-riding because each animal is tempted to:", "options": ["Scan more than its share", "Scan less and rely on others", "Leave the group"], "answer": 1, "explanation": "If everyone under-scans hoping others watch, detection can quietly erode — a public-goods problem." },
+        { "type": "predict", "prompt": "As group size increases, individual scanning typically:", "options": ["Rises", "Falls while group-level detection stays adequate", "Stays fixed"], "answer": 1, "explanation": "This is the empirical signature of the many-eyes trade-off." }
+      ]
+    },
+    "013": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "Group living clearly has benefits. Does it also carry real costs?",
+        "options": ["No — groups are pure benefit", "Yes — competition, disease, conspicuousness and more", "Only for weak animals"],
+        "answer": 1,
+        "reveal": "Grouping is a balance sheet: dilution and many-eyes on one side; competition for food, disease transmission, and visibility to predators on the other."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A major cost of group living is:", "options": ["Reduced disease risk", "Faster parasite and disease transmission", "Less competition"], "answer": 1, "explanation": "Proximity spreads pathogens; density also intensifies competition for food and mates." },
+        { "type": "scenario", "prompt": "Optimal group size is set where:", "options": ["Groups are as large as possible", "Marginal benefit of joining equals marginal cost", "Groups are as small as possible"], "answer": 1, "explanation": "Animals should join until the next member’s cost outweighs its benefit — a marginal balance." },
+        { "type": "predict", "prompt": "Because costs and benefits both scale with size, real groups tend to be:", "options": ["Infinitely large", "Bounded at an intermediate optimum", "Always solitary"], "answer": 1, "explanation": "Trade-offs produce intermediate optima rather than runaway aggregation." }
+      ]
+    },
+    "014": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "A vampire bat shares blood with an unrelated roost-mate that fed it before. This is best explained by:",
+        "options": ["Pure kindness", "Reciprocal altruism — help now, be helped later", "A mistake"],
+        "answer": 1,
+        "reveal": "Reciprocal altruism: cooperation between non-kin can be stable when individuals interact repeatedly and remember who reciprocated."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Reciprocal altruism is stabilised mainly by:", "options": ["One-off anonymous encounters", "Repeated interaction with memory of past behaviour", "Genetic relatedness"], "answer": 1, "explanation": "Repeated games plus the ability to detect and punish cheats make ‘help now, helped later’ pay." },
+        { "type": "scenario", "prompt": "Reciprocity breaks down when interactions become:", "options": ["Repeated and identifiable", "One-shot and anonymous", "Frequent"], "answer": 1, "explanation": "Without a shadow of the future, defection dominates — the classic prisoner’s-dilemma result." },
+        { "type": "predict", "prompt": "For reciprocal altruism, a good cognitive prerequisite is:", "options": ["Individual recognition and memory", "Total forgetfulness", "Large body size"], "answer": 0, "explanation": "You must remember who cooperated to reward them and withhold from cheats." }
+      ]
+    },
+    "015": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "A ground squirrel gives an alarm call that endangers itself but warns relatives. Hamilton’s rule says this spreads when:",
+        "options": ["It never spreads", "relatedness × benefit-to-others > cost-to-self", "The caller is dominant"],
+        "answer": 1,
+        "reveal": "Kin selection / inclusive fitness: helping relatives can propagate the helper’s genes. Hamilton’s rule: rb > c."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Hamilton’s rule rb > c says altruism spreads when:", "options": ["Cost exceeds benefit", "Relatedness times benefit to recipient exceeds cost to actor", "Everyone is unrelated"], "answer": 1, "explanation": "Genes for helping kin can increase in frequency via the reproduction of relatives — inclusive fitness." },
+        { "type": "scenario", "prompt": "A worker bee forgoing reproduction to raise the queen’s offspring is explained by:", "options": ["Reciprocity", "High relatedness making indirect fitness pay", "Random error"], "answer": 1, "explanation": "Haplodiploidy and high relatedness make helping kin a route to genetic success." },
+        { "type": "predict", "prompt": "As relatedness r falls toward zero, kin-selected altruism should:", "options": ["Increase", "Become harder to sustain", "Stay constant"], "answer": 1, "explanation": "With low r, the rb term shrinks and altruism no longer clears Hamilton’s threshold." }
+      ]
+    },
+    "016": {
+      "category": "grouping",
+      "prediction": {
+        "prompt": "A peacock’s enormous tail is a survival handicap. Why would such waste be honest signalling?",
+        "options": ["It isn’t a signal", "Only high-quality individuals can afford the cost, so it can’t be faked cheaply", "Predators like it"],
+        "answer": 1,
+        "reveal": "The handicap principle: signals are believable when they are costly enough that low-quality fakers can’t afford them."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Costly signalling keeps signals honest because cost:", "options": ["Is the same for everyone", "Is higher for low-quality fakers, deterring bluffs", "Is zero"], "answer": 1, "explanation": "Differential cost — cheaper for the genuinely fit — makes the signal a reliable index of quality." },
+        { "type": "scenario", "prompt": "A gazelle ‘stotting’ (leaping high) in front of a predator likely signals:", "options": ["Fear", "‘I’m fit; chasing me is futile’ — an honest, costly display", "Confusion"], "answer": 1, "explanation": "Only fit gazelles can afford to waste energy stotting, so predators believe it." },
+        { "type": "predict", "prompt": "Make a signal cheap to produce and it will tend to become:", "options": ["More honest", "Prone to cheating and devaluation", "Impossible"], "answer": 1, "explanation": "Cheap signals invite fakery; costliness is what underwrites honesty." }
+      ]
+    },
+    "017": {
+      "category": "wisdom",
+      "sim": "crowd",
+      "prediction": {
+        "prompt": "At a country fair, 787 people guessed an ox’s weight. Galton found the crowd’s median guess versus the true weight was:",
+        "options": ["Wildly off", "Almost exactly right — within a pound", "Worse than any expert"],
+        "answer": 1,
+        "reveal": "Galton’s ox: aggregated independent guesses can beat almost every individual. Try it in the estimator below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Crowd estimates beat most individuals because independent errors:", "options": ["Add up", "Tend to cancel when averaged", "Never occur"], "answer": 1, "explanation": "Over- and under-estimates offset, leaving the shared signal — provided guesses are independent." },
+        { "type": "scenario", "prompt": "In the simulator, letting participants copy each other before guessing tends to:", "options": ["Improve the crowd estimate", "Correlate errors and degrade accuracy", "Have no effect"], "answer": 1, "explanation": "Copying destroys independence, so errors no longer cancel — the central caution of Book One." },
+        { "type": "predict", "prompt": "The crowd’s advantage is largest when guesses are:", "options": ["Independent and diverse", "Identical", "All from one expert"], "answer": 0, "explanation": "Independence plus diversity maximises error cancellation." }
+      ]
+    },
+    "018": {
+      "category": "wisdom",
+      "sim": "condorcet",
+      "prediction": {
+        "prompt": "Each juror is right 60% of the time and votes independently. As the jury grows, the probability the majority is correct:",
+        "options": ["Falls toward 0", "Rises toward 1", "Stays at 60%"],
+        "answer": 1,
+        "reveal": "Condorcet’s Jury Theorem: if each member is better than chance and votes independently, majority accuracy climbs toward certainty with size. Explore the reversal below."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Condorcet’s theorem requires each voter to be:", "options": ["Better than chance and independent", "Worse than chance", "Perfectly informed"], "answer": 0, "explanation": "Competence above 0.5 plus independence drives majority accuracy up with N." },
+        { "type": "scenario", "prompt": "If each voter is only 40% accurate (below chance), enlarging the group makes the majority:", "options": ["More accurate", "More reliably wrong", "Unchanged"], "answer": 1, "explanation": "The theorem runs in reverse below 0.5 — numbers amplify systematic error." },
+        { "type": "predict", "prompt": "Correlated voters (all reading the same source) break the theorem because they:", "options": ["Add independent information", "Effectively count as far fewer independent voters", "Are always right"], "answer": 1, "explanation": "Shared error means the effective N is small — independence is the load-bearing assumption." }
+      ]
+    },
+    "019": {
+      "category": "wisdom",
+      "sim": "diversity",
+      "prediction": {
+        "prompt": "A crowd’s error depends on its members’ average error and their diversity. Adding a member who is individually worse but thinks differently can:",
+        "options": ["Only hurt the crowd", "Improve the crowd by adding diversity", "Do nothing"],
+        "answer": 1,
+        "reveal": "The diversity prediction theorem: Crowd error = Average individual error − Diversity. Diversity is not a nicety; it is subtracted straight off the error."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The diversity prediction theorem states crowd error equals:", "options": ["Average error + diversity", "Average individual error − diversity", "Diversity alone"], "answer": 1, "explanation": "Greater spread of independent predictions mathematically lowers the collective error." },
+        { "type": "scenario", "prompt": "A team of near-identical experts will, by this theorem, have:", "options": ["Low diversity, so little crowd bonus", "Maximum diversity", "Zero average error"], "answer": 0, "explanation": "Similarity means small diversity term, so the crowd barely beats the average member." },
+        { "type": "predict", "prompt": "The theorem implies that, for a fixed average ability, you should prefer members who are:", "options": ["As similar as possible", "Cognitively diverse", "Highly confident"], "answer": 1, "explanation": "Diversity is subtracted from error, so difference is directly valuable." }
+      ]
+    },
+    "020": {
+      "category": "wisdom",
+      "prediction": {
+        "prompt": "Surowiecki lists conditions for a wise crowd. Which single ingredient, if lost, most reliably turns wisdom into folly?",
+        "options": ["Large size", "Independence of judgments", "Fast internet"],
+        "answer": 1,
+        "reveal": "Surowiecki’s four conditions: diversity, independence, decentralisation, and aggregation. Losing independence is the classic route to madness of crowds."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Surowiecki’s four conditions are diversity, independence, decentralisation and:", "options": ["Unanimity", "Aggregation", "Leadership"], "answer": 1, "explanation": "You need a way to combine dispersed private judgments into one estimate." },
+        { "type": "scenario", "prompt": "An online poll where everyone sees the running tally before voting most violates:", "options": ["Aggregation", "Independence", "Decentralisation"], "answer": 1, "explanation": "Seeing others’ answers first correlates judgments and can trigger herding." },
+        { "type": "predict", "prompt": "Decentralisation matters because it lets the crowd draw on:", "options": ["One central viewpoint", "Local, private, tacit knowledge", "Only public data"], "answer": 1, "explanation": "Dispersed local knowledge is exactly what aggregation can harvest — if independence is preserved." }
+      ]
+    },
+    "021": {
+      "category": "wisdom",
+      "prediction": {
+        "prompt": "Averaging many independent estimates shrinks error because the noise part of each estimate is:",
+        "options": ["Perfectly correlated", "Largely independent, so it cancels", "Always positive"],
+        "answer": 1,
+        "reveal": "Independent-error cancellation is the engine under the wisdom of crowds: shared signal survives averaging; independent noise washes out."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Averaging helps most when individual errors are:", "options": ["Correlated", "Independent", "Zero"], "answer": 1, "explanation": "Independent errors cancel; correlated errors survive averaging and can even dominate." },
+        { "type": "scenario", "prompt": "If a rumour biases everyone’s guess in the same direction, averaging will:", "options": ["Remove the bias", "Preserve the shared bias", "Reverse it"], "answer": 1, "explanation": "Common bias is correlated error — averaging cannot cancel what everyone shares." },
+        { "type": "predict", "prompt": "Doubling the number of independent estimates reduces the noise’s standard error by roughly:", "options": ["A factor of 2", "A factor of √2", "Not at all"], "answer": 1, "explanation": "Standard error of the mean falls as 1/√N — diminishing but real returns to numbers." }
+      ]
+    },
+    "022": {
+      "category": "wisdom",
+      "prediction": {
+        "prompt": "The Delphi method asks experts to answer in private rounds, then share anonymous summaries and revise. The anonymity is there to:",
+        "options": ["Save time", "Protect independence from status and bandwagons", "Hide incompetence"],
+        "answer": 1,
+        "reveal": "Delphi engineers the wise-crowd conditions on purpose: private judgment, anonymity to prevent dominance, structured feedback, iteration toward convergence."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Delphi uses anonymity chiefly to prevent:", "options": ["Aggregation", "Dominance by loud or senior voices", "Diversity"], "answer": 1, "explanation": "Anonymous rounds protect independence so status doesn’t stampede the group." },
+        { "type": "scenario", "prompt": "Compared with an open committee meeting, Delphi is designed to reduce:", "options": ["Independence", "Conformity pressure and anchoring", "Expertise"], "answer": 1, "explanation": "Structured, anonymous iteration curbs the very forces that wreck open discussion." },
+        { "type": "predict", "prompt": "Delphi is essentially an attempt to:", "options": ["Force unanimity", "Recreate Surowiecki’s conditions procedurally", "Pick one expert"], "answer": 1, "explanation": "It manufactures independence, diversity and aggregation deliberately." }
+      ]
+    },
+    "023": {
+      "category": "wisdom",
+      "prediction": {
+        "prompt": "Prediction markets let people bet on outcomes. Their forecasts are often accurate because prices:",
+        "options": ["Reflect one expert’s view", "Aggregate dispersed information and reward being right", "Are set by a regulator"],
+        "answer": 1,
+        "reveal": "Prediction markets aggregate private information via prices and give a financial incentive for accuracy over posturing."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "A prediction market’s price is best read as:", "options": ["A random number", "A probability-like aggregate of participants’ information", "One trader’s opinion"], "answer": 1, "explanation": "Trading pulls dispersed knowledge into a single price that behaves like a probability." },
+        { "type": "scenario", "prompt": "Prediction markets can fail when they are thin and dominated by a few correlated traders because:", "options": ["Independence and diversity collapse", "Prices become too accurate", "Incentives disappear"], "answer": 0, "explanation": "Small, correlated crowds lose the error-cancellation that makes markets wise." },
+        { "type": "predict", "prompt": "A key advantage of markets over polls is that they:", "options": ["Reward confident nonsense", "Attach a cost to being wrong, filtering cheap talk", "Ignore information"], "answer": 1, "explanation": "Skin in the game weights informed views and penalises bluffing." }
+      ]
+    },
+    "024": {
+      "category": "wisdom",
+      "prediction": {
+        "prompt": "Machine-learning ‘random forests’ average many mediocre decision trees and often beat one carefully tuned model because:",
+        "options": ["More compute always wins", "Averaging diverse weak learners cancels their independent errors", "Trees are magic"],
+        "answer": 1,
+        "reveal": "Ensemble methods are the wisdom of crowds in code: combine many diverse, decorrelated weak models and their errors cancel."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "Ensemble methods improve accuracy by combining models that are:", "options": ["Identical", "Diverse and decorrelated", "Always perfect"], "answer": 1, "explanation": "Bagging and feature randomness decorrelate the trees so their errors offset — exactly the crowd principle." },
+        { "type": "scenario", "prompt": "If every tree in a forest is trained identically on the same data, the ensemble gains:", "options": ["Little — no diversity to exploit", "Maximum benefit", "Perfect accuracy"], "answer": 0, "explanation": "Without diversity there is nothing to cancel — the same failure as a room of identical experts." },
+        { "type": "predict", "prompt": "Random forests deliberately inject randomness in order to:", "options": ["Slow training", "Decorrelate the trees", "Reduce accuracy"], "answer": 1, "explanation": "Decorrelation is the whole point — diversity engineered on purpose." }
+      ]
+    },
+    "025": {
+      "category": "wisdom",
+      "prediction": {
+        "prompt": "Research finds a group’s ‘collective intelligence’ (factor c) predicts performance across tasks. It correlates most with:",
+        "options": ["The single smartest member’s IQ", "Even turn-taking and social sensitivity", "Group size alone"],
+        "answer": 1,
+        "reveal": "Collective intelligence ‘c’: a group-level ability that depends more on equal participation and social perceptiveness than on members’ average or peak IQ."
+      },
+      "questions": [
+        { "type": "concept", "prompt": "The collective intelligence factor c is predicted best by:", "options": ["Max individual IQ", "Equality of conversational turn-taking and social sensitivity", "Room temperature"], "answer": 1, "explanation": "Groups where participation is balanced and members read each other well score higher across varied tasks." },
+        { "type": "scenario", "prompt": "A team dominated by one talker tends to have:", "options": ["Higher c", "Lower c despite individual brilliance", "Unchanged c"], "answer": 1, "explanation": "Domination suppresses the independent, diverse input that raises collective intelligence." },
+        { "type": "predict", "prompt": "To raise a team’s c, the most reliable lever is to:", "options": ["Hire only geniuses", "Improve balanced participation and listening", "Add more people"], "answer": 1, "explanation": "Process — how the group interacts — outweighs raw individual horsepower." }
+      ]
+    }
+  }
+}

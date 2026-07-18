@@ -121,7 +121,7 @@ ${extraHead}
   <div class="wrap">
     <a class="brand" href="index.html">The Shape<span>·</span>of the Many</a>
     <div class="nav-spacer"></div>
-    <nav class="topnav"><a href="index.html">Books</a><a href="about.html">About</a></nav>
+    <nav class="topnav"><a href="index.html">Books</a><a href="dashboard.html">Progress</a><a href="about.html">About</a></nav>
     <div class="search-wrap">
       <input id="globalSearch" type="search" placeholder="Search 100 chapters…" autocomplete="off" aria-label="Search chapters" />
       <div id="searchResults" class="search-results" hidden></div>
@@ -148,6 +148,18 @@ ${bodyEnd}
 function build() {
   const images = existsSync(join(DATA, 'images.json'))
     ? JSON.parse(readFileSync(join(DATA, 'images.json'), 'utf8')) : {};
+
+  // Interactive learning data, keyed "book/num" (currently Book One pilot).
+  const interactive = {};
+  const ixDir = join(DATA, 'interactive');
+  if (existsSync(ixDir)) {
+    for (const f of readdirSync(ixDir).filter((x) => /^book-\d+\.json$/.test(x))) {
+      const d = JSON.parse(readFileSync(join(ixDir, f), 'utf8'));
+      for (const [num, entry] of Object.entries(d.chapters || {})) {
+        interactive[`${d.book}/${num}`] = { ...entry, catName: (d.categories || {})[entry.category] || entry.category };
+      }
+    }
+  }
 
   // ---- Pass 1: gather everything --------------------------------------------
   const books = [];
@@ -236,6 +248,10 @@ function build() {
         <span class="ct"><b>${escapeHtml(c.title)}</b>${c.epigraph ? `<span>${escapeHtml(c.epigraph.slice(0, 120))}${c.epigraph.length > 120 ? '…' : ''}</span>` : ''}</span>
         <span class="cw">${pretty(c.words)} w</span>
       </a>`).join('');
+    const bookHasIx = b.chapters.some((c) => interactive[`${b.n}/${c.num}`]);
+    const ixBanner = bookHasIx ? `<div class="ix-banner">
+        <div><strong>Interactive edition.</strong> Every chapter in this book opens with a prediction, runs a live demonstration or confidence-rated quiz, and feeds a <a href="dashboard.html">mastery map</a>. End with the <a href="assessment-b1.html">Book One assessment</a>.</div>
+      </div>` : '';
     const body = `
       <a class="crumb" href="index.html">← The Shape of the Many</a>
       <header class="book-head">
@@ -243,6 +259,7 @@ function build() {
         <h1>${escapeHtml(b.title)}</h1>
         <p class="gloss">${escapeHtml(b.gloss)}</p>
       </header>
+      ${ixBanner}
       ${b.frontHtml ? `<details class="matter-fold" open><summary>Front matter — introduction &amp; movements</summary><div class="prose">${b.frontHtml}</div></details>` : ''}
       <h2 class="section-title">Chapters</h2>
       <div class="chapter-list">${rows}</div>
@@ -266,12 +283,19 @@ function build() {
         isPartOf: { '@type': 'Book', name: b.title }, inLanguage: 'en',
         wordCount: c.words, license: 'https://creativecommons.org/licenses/by/4.0/'
       });
+      const ix = interactive[`${b.n}/${c.num}`];
+      const predictBlock = ix ? `<div id="ix-predict"></div>` : '';
+      const simBlock = ix && ix.sim ? `<div id="ix-sim" data-sim="${escapeHtml(ix.sim)}"></div>` : '';
+      const quizBlock = ix ? `<div id="ix-quiz"></div>` : '';
       const body = `
       <div class="reader" data-title="${escapeHtml(c.title)}" data-book="${b.n}">
         <a class="crumb" href="${bookFile(b.n)}">← Book ${b.n} · ${escapeHtml(b.title)}</a>
         <p class="eyebrow">Chapter ${c.n} · ${escapeHtml(b.title)}</p>
         <h1>${escapeHtml(c.title)}</h1>
+        ${predictBlock}
         <article class="prose">${c.html}</article>
+        ${simBlock}
+        ${quizBlock}
         ${c.refsHtml ? `<details class="refs"><summary>References &amp; sources</summary><div class="prose">${c.refsHtml}</div></details>` : ''}
         <nav class="chapter-nav">
           ${prev ? `<a class="prev" href="${chapterFile(b.n, prev.num)}"><span class="dir">← Previous</span><span class="name">${escapeHtml(prev.title)}</span></a>`
@@ -280,17 +304,25 @@ function build() {
                  : `<a class="next" href="${nextBookHref(books, b, chapterFile)}"><span class="dir">Next →</span><span class="name">${escapeHtml(nextBookLabel(books, b))}</span></a>`}
         </nav>
       </div>`;
+      const ixData = ix ? { book: b.n, ch: c.num, catKey: ix.category, catName: ix.catName,
+        data: { prediction: ix.prediction, questions: ix.questions } } : null;
+      const ixHead = ix ? `<script>window.__IX__=${JSON.stringify(ixData)}</script>` : '';
+      const ixScripts = ix ? `${ix.sim ? '<script src="assets/js/simulations.js"></script>' : ''}<script src="assets/js/interactive.js"></script>` : '';
       writeFileSync(join(ROOT, chapterFile(b.n, c.num)), page({
         title: `${c.title} — The Shape of the Many`,
         desc, canonical: `${SITE_URL}/${chapterFile(b.n, c.num)}`, jsonld,
-        extraHead: '<div class="read-progress" id="readProgress"></div>'.replace('<div', '<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div'),
-        body, bodyEnd: `<script src="assets/js/chapter.js"></script>`
+        extraHead: '<style>.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:50;transition:width .1s}</style><div class="read-progress" id="readProgress"></div>' + ixHead,
+        body, bodyEnd: `<script src="assets/js/chapter.js"></script>${ixScripts}`
       }));
     });
   }
 
   // About page
   writeAbout(books, totalChapters, totalWords, pretty);
+
+  // Mastery dashboard + Book One assessment (interactive pilot)
+  writeDashboard();
+  writeAssessment(interactive);
 
   // 404
   writeFileSync(join(ROOT, '404.html'), page({
@@ -311,7 +343,7 @@ function build() {
   };
   writeFileSync(join(DATA, 'manifest.json'), JSON.stringify(manifest, null, 2));
 
-  const urls = [`${SITE_URL}/`, `${SITE_URL}/about.html`,
+  const urls = [`${SITE_URL}/`, `${SITE_URL}/about.html`, `${SITE_URL}/dashboard.html`, `${SITE_URL}/assessment-b1.html`,
     ...books.map((b) => `${SITE_URL}/${bookFile(b.n)}`),
     ...books.flatMap((b) => b.chapters.map((c) => `${SITE_URL}/${chapterFile(b.n, c.num)}`))];
   writeFileSync(join(ROOT, 'sitemap.xml'),
@@ -342,6 +374,69 @@ function nextBookHref(books, b, cf) {
 function nextBookLabel(books, b) {
   const nb = books.find((x) => x.n === b.n + 1);
   return nb ? `Book ${nb.n} · ${nb.title}` : 'Back to the series home';
+}
+
+function writeDashboard() {
+  // Book One category map baked in; JS fills mastery from localStorage.
+  const cfg = {
+    book1: { title: 'Book One · The Shape Forms', cats: [
+      { key: 'emergence', name: 'Emergence', chapters: 8 },
+      { key: 'grouping', name: 'Evolutionary grouping', chapters: 8 },
+      { key: 'wisdom', name: 'Crowd intelligence', chapters: 9 }
+    ] },
+    soon: ['Conformity', 'Networks', 'Power', 'Digital systems', 'Intervention design']
+  };
+  const body = `
+    <a class="crumb" href="index.html">← The Shape of the Many</a>
+    <div class="reader">
+      <p class="eyebrow">Your progress</p>
+      <h1>Mastery map</h1>
+      <p class="mastery-note">Mastery is earned through understanding, not activity. Everything below is stored only
+      on this device — no account, no server. Answer chapter quizzes to build each track.</p>
+      <div id="masteryRoot" class="mastery-grid"></div>
+      <div id="calibration" class="ix-block" hidden></div>
+      <p class="mastery-note" style="margin-top:1.5rem">Coming as later books gain the interactive treatment:
+      ${cfg.soon.join(' · ')}.</p>
+      <div class="cta-row"><a class="btn-primary" href="assessment-b1.html">Take the Book One assessment →</a>
+        <a class="btn-ghost" href="book-1.html">Back to Book One</a></div>
+    </div>`;
+  writeFileSync(join(ROOT, 'dashboard.html'), page({
+    title: 'Mastery map — The Shape of the Many',
+    desc: 'Track your understanding across Book One: Emergence, evolutionary grouping, and crowd intelligence.',
+    canonical: SITE_URL + '/dashboard.html',
+    extraHead: `<script>window.__MASTERY__=${JSON.stringify(cfg)}</script>`,
+    body, bodyEnd: `<script src="assets/js/dashboard.js"></script>`
+  }));
+}
+
+function writeAssessment(interactive) {
+  // Curate 12 questions across the three Book One tracks (chapter/qIndex pairs).
+  const pick = [
+    ['1/001', 2], ['1/006', 1], ['1/007', 1], ['1/008', 1],
+    ['1/009', 2], ['1/012', 1], ['1/015', 2], ['1/016', 2],
+    ['1/017', 1], ['1/018', 1], ['1/019', 0], ['1/021', 1]
+  ];
+  const questions = pick.map(([key, qi]) => {
+    const ix = interactive[key]; if (!ix) return null;
+    const q = ix.questions[qi];
+    return { prompt: q.prompt, options: q.options, answer: q.answer, explanation: q.explanation, cat: ix.catName };
+  }).filter(Boolean);
+  const body = `
+    <a class="crumb" href="book-1.html">← Book One</a>
+    <div class="reader">
+      <p class="eyebrow">Book One · Assessment</p>
+      <h1>What did the shape teach you?</h1>
+      <p class="mastery-note">Twelve questions spanning emergence, evolutionary grouping, and crowd intelligence.
+      Answer them all, then see your score and which track to revisit. No timer, no leaderboard.</p>
+      <div id="assessRoot"></div>
+    </div>`;
+  writeFileSync(join(ROOT, 'assessment-b1.html'), page({
+    title: 'Book One assessment — The Shape of the Many',
+    desc: 'A twelve-question assessment across Book One of The Shape of the Many.',
+    canonical: SITE_URL + '/assessment-b1.html',
+    extraHead: `<script>window.__ASSESS__=${JSON.stringify({ title: 'Book One', questions })}</script>`,
+    body, bodyEnd: `<script src="assets/js/assessment.js"></script>`
+  }));
 }
 
 function writeAbout(books, totalChapters, totalWords, pretty) {
